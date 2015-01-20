@@ -1,0 +1,27 @@
+--<<
+
+           O  
+   M       N  
+   K       L  
+   I       J  
+   G       H  
+   A B C D E F
+-----------------
+
+Is a somewhere left of b?   yes
+Is a somewhere left of e?   yes
+Is d somewhere left of h?   yes
+Is d somewhere left of o?   yes
+Is a somewhere left of o?   yes
+Is m somewhere left of e?   yes
+Is m somewhere left of o?   yes
+Is i somewhere left of j?   yes
+Is c somewhere left of b?   no
+Is f somewhere left of a?   no
+Is j somewhere left of i?   no
+Is o somewhere left of a?   no
+Is o somewhere left of m?   no
+Is o somewhere left of e?   no
+Is a somewhere left of a?   no
+Is a somewhere left of table?   no
+Is table somewhere left of a?   no
