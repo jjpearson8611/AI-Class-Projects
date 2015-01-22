@@ -12,15 +12,18 @@
 %medium(Thing) :- . . .
 
 color(X,Y) :-
-	staticFact(X,_,Y,_).
+	staticFact(X,_,Y,_,_).
 
+size(X,Y) :-
+	staticFact(X,_,_,_,Y).
+	
 shape(X,Y) :-
-	staticFact(X,Y,_,_).
+	staticFact(X,Y,_,_,_).
 	
 material(X,Y) :-
-	staticFact(X,_,_,Y).
+	staticFact(X,_,_,Y,_).
 	
-oreintation(X,Y) :-
+orientation(X,Y) :-
 	dynFact(X,Y,_).
 	
 full(X,Y) :-

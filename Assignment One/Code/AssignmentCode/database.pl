@@ -14,27 +14,27 @@
 %- Robbie and the table facts might have different number & order of parameters than the objects’ facts do 
 
 %static facts
-%name, shape, color, material
-staticFact(robbie, claw, gray, metal).
-staticFact(thetable, table, gray, metal).
-staticFact(theprism, pyramid, transparent, glass).
-staticFact(thecube, cube, silver, metal).
-staticFact(themarble, sphere, transparent, glass).
-staticFact(thebaseball, sphere, white, leather).
-staticFact(thebox, rectangularPrism, brown, cardboard).
-staticFact(therock, rock, gray, granite).
-staticFact(theglass, cylinder, transparent, glass).
-staticFact(thecup, cone, white, paper).
-staticFact(thetube, cylinder, brown, cardboard).
-staticFact(theball, sphere, black, rubber).
-staticFact(thedish, circle, white, china).
-staticFact(theblockA, cube, brown, wood).
-staticFact(theblockB, cube, brown, wood).
-staticFact(theblockC, cube, brown, wood).
-staticFact(theblockD, cube, brown, wood).
-staticFact(theblockE, cube, brown, wood).
-staticFact(thepencil, cylinder, yellow, wood).
-staticFact(theballoon, sphere, yellow, rubber).
+%name, shape, color, material, size
+staticFact(robbie, claw, gray, metal, large).
+staticFact(thetable, table, gray, metal, large).
+staticFact(theprism, pyramid, transparent, glass, medium).
+staticFact(thecube, cube, silver, metal, medium).
+staticFact(themarble, sphere, transparent, glass, small).
+staticFact(thebaseball, sphere, white, leather, medium).
+staticFact(thebox, rectangularPrism, brown, cardboard, medium).
+staticFact(therock, rock, gray, granite, medium).
+staticFact(theglass, cylinder, transparent, glass, medium).
+staticFact(thecup, cone, white, paper, medium).
+staticFact(thetube, cylinder, brown, cardboard, medium).
+staticFact(theball, sphere, black, rubber, medium).
+staticFact(thedish, circle, white, china, medium).
+staticFact(theblockA, cube, brown, wood, small).
+staticFact(theblockB, cube, brown, wood, small).
+staticFact(theblockC, cube, brown, wood, small).
+staticFact(theblockD, cube, brown, wood, small).
+staticFact(theblockE, cube, brown, wood, small).
+staticFact(thepencil, cylinder, yellow, wood, small).
+staticFact(theballoon, sphere, yellow, rubber, medium).
 
 %dynamic facts
 %name, orientation, filled
