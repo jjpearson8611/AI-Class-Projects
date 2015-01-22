@@ -3,10 +3,10 @@
 %re-routing output to a file called Asgn1.txt
 %automatically runs the questions
 
-loadandgo():-
+loadandgo :-
 	consult('database.pl'),
-	consult('knowledgeBase.pl'),
+	consult('knowledgebase.pl'),
 	consult('query.pl'),
 	consult('questions.pl'),
 	consult('translator.pl'),
-	consult('runQuestions.pl').
+	consult('runquestions.pl').

@@ -17,7 +17,7 @@
 %name, shape, color, material
 staticFact(robbie, claw, gray, metal).
 staticFact(thetable, table, gray, metal).
-staticFact(theprism, prism, transparent, glass).
+staticFact(theprism, pyramid, transparent, glass).
 staticFact(thecube, cube, silver, metal).
 staticFact(themarble, sphere, transparent, glass).
 staticFact(thebaseball, sphere, white, leather).
@@ -37,31 +37,31 @@ staticFact(thepencil, cylinder, yellow, wood).
 staticFact(theballoon, sphere, yellow, rubber).
 
 %dynamic facts
-%name, orientation, 
-dynFact(robbie, upright).
-dynFact(theprism, onBase).
-dynFact(thecube, none).
-dynFact(themarble, none).
-dynFact(thebaseball, none).
-dynFact(thebox, onBase).
-dynFact(therock, none).
-dynFact(theglass, onBase).
-dynFact(thecup, onBase).
-dynFact(thetube, onBase).
-dynFact(theball, none).
-dynFact(thedish, onBase).
-dynFact(theblockA, none).
-dynFact(theblockB, none).
-dynFact(theblockC, none).
-dynFact(theblockD, none).
-dynFact(theblockE, none).
-dynFact(thepencil, onSide).
-dynFact(theballoon, onSide).
+%name, orientation, filled
+dynFact(robbie, upright, unable).
+dynFact(theprism, onBase, unable).
+dynFact(thecube, none, unable).
+dynFact(themarble, none, unable).
+dynFact(thebaseball, none, unable).
+dynFact(thebox, onBase, empty).
+dynFact(therock, none, unable).
+dynFact(theglass, onBase, empty).
+dynFact(thecup, onBase, empty).
+dynFact(thetube, onBase, empty).
+dynFact(theball, none, unable).
+dynFact(thedish, onBase, theball).
+dynFact(theblockA, none, unable).
+dynFact(theblockB, none, unable).
+dynFact(theblockC, none, unable).
+dynFact(theblockD, none, unable).
+dynFact(theblockE, none, unable).
+dynFact(thepencil, onSide, unable).
+dynFact(theballoon, onSide, air).
 
 
 %dynamic relation facts
 %name, directly to the left of, ontop of
-dynrelFact(robbie, nothing, nothing)
+dynRelFact(robbie, nothing, nothing).
 dynRelFact(theprism, themarble, thecube).
 dynRelFact(thecube, themarble, thetable).
 dynRelFact(themarble, thebaseball, thetable).
@@ -80,3 +80,6 @@ dynRelFact(theblockD, thepencil, theblockC).
 dynRelFact(theblockE, thepencil, theblockD).
 dynRelFact(thepencil, theballoon, thetable).
 dynRelFact(theballoon, nothing, thetable).
+
+%robbie, holding
+robbie(robbie,nothing).
