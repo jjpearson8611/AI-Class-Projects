@@ -1,21 +1,21 @@
 %Prolog queries which correspond to my English-language questions
 
 %There's a rock on the table
-q1 :-
+q(1) :-
 	on(therock,thetable).
 	
 %The rock is above the table
-q2 :-
+q(2) :-
 	above(therock,thetable).
 	
 %The table is below a rubber thing which is black
-q3 :-
+q(3) :-
 	below(thetable,Z),
 	color(Z,black),
 	material(Z,rubber).
 	
 %There is a round object directly right of an empty white thing
-q4 :-
+q(4) :-
 	round(X),
 	rightOf(X,Y),
 	empty(Y),
@@ -24,7 +24,15 @@ q4 :-
 	
 	
 %There's a cardboard or paper thing next to a small or solid object
+q(5) :-
+	material(X,'cardboard');
+	material(X,'paper'),
+	size(Y,'small');
+	solid(Y),
+	nextTo(X,Y).
+	
 %There is a hollow striped thing which can roll
+
 %There's a large round thing next to something made of glass
 %There is a yellow thing above a black thing
 %There is a yellow thing above a black object

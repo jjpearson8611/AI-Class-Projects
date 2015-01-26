@@ -14,27 +14,27 @@
 %- Robbie and the table facts might have different number & order of parameters than the objects’ facts do 
 
 %static facts
-%name, shape, color, material, size
-staticFact(robbie, claw, gray, metal, large).
-staticFact(thetable, table, gray, metal, large).
-staticFact(theprism, pyramid, transparent, glass, medium).
-staticFact(thecube, cube, silver, metal, medium).
-staticFact(themarble, sphere, transparent, glass, small).
-staticFact(thebaseball, sphere, white, leather, medium).
-staticFact(thebox, rectangularPrism, brown, cardboard, medium).
-staticFact(therock, rock, gray, granite, medium).
-staticFact(theglass, cylinder, transparent, glass, medium).
-staticFact(thecup, cone, white, paper, medium).
-staticFact(thetube, cylinder, brown, cardboard, medium).
-staticFact(theball, sphere, black, rubber, medium).
-staticFact(thedish, circle, white, china, medium).
-staticFact(theblockA, cube, brown, wood, small).
-staticFact(theblockB, cube, brown, wood, small).
-staticFact(theblockC, cube, brown, wood, small).
-staticFact(theblockD, cube, brown, wood, small).
-staticFact(theblockE, cube, brown, wood, small).
-staticFact(thepencil, cylinder, yellow, wood, small).
-staticFact(theballoon, sphere, yellow, rubber, medium).
+%name, shape, color, material, size, type
+staticFact(robbie, claw, gray, userule, large, arobot).
+staticFact(thetable, table, gray, metal, large, atable).
+staticFact(theprism, pyramid, transparent, userule, medium, aprism).
+staticFact(thecube, cube, silver, metal, medium, acube).
+staticFact(themarble, sphere, transparent, userule, small, amarble).
+staticFact(thebaseball, sphere, white, leather, medium, aball).
+staticFact(thebox, rectangularPrism, brown, cardboard, medium, abox).
+staticFact(therock, rock, gray, granite, medium, arock).
+staticFact(theglass, cylinder, transparent, userule, medium, aglass).
+staticFact(thecup, cone, white, paper, medium, acup).
+staticFact(thetube, cylinder, brown, cardboard, medium, atube).
+staticFact(theball, sphere, black, rubber, medium, aball).
+staticFact(thedish, circle, white, userule, medium, adish).
+staticFact(theblockA, cube, brown, userule, small, ablock).
+staticFact(theblockB, cube, brown, userule, small, ablock).
+staticFact(theblockC, cube, brown, userule, small, ablock).
+staticFact(theblockD, cube, brown, userule, small, ablock).
+staticFact(theblockE, cube, brown, userule, small, ablock).
+staticFact(thepencil, cylinder, yellow, userule, small, apencil).
+staticFact(theballoon, sphere, yellow, userule, medium, aballoon).
 
 %dynamic facts
 %name, orientation, filled
