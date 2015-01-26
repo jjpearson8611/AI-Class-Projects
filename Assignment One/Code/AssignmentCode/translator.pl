@@ -38,7 +38,7 @@ on(X,Y) :-
 leftOf(X,Y) :-
 	dynRelFact(X,Y,_).
 	
-holding(X,Y) :-
+hold(X,Y) :-
 	robbie(X,Y).
 	
 

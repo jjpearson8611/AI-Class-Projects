@@ -1,6 +1,27 @@
 
 
 
+holding(X,Y) :-
+	hold(X,Y).
+	
+holdingNothing(X) :-
+	hold(X,Y),
+	Y == 'nothing'.
+	
+holdingSomething(X) :-
+	hold(X,Y),
+	Y \= 'nothing'.
+
+object(X) :-
+	X \= 'robbie',
+	X \= 'thetable'.
+
+thing(X) :-
+	true.
+
+popable(X) :-
+	X == 'aballoon'.
+	
 nextTo(X,Y) :-
 	leftOf(X,Y);
 	leftOf(Y,X).
@@ -21,7 +42,17 @@ solid(X) :-
 	
 hollow(X) :-
 	solid(X) \= 'true'.
+	
+canRoll(X) :-
+	round(X).
 
+couldRoll(X) :-
+	shape(X,'sphere');
+	shape(X,'cylinder').
+	
+directlyLeft(X,Y) :-
+	leftOf(X,Y).
+	
 above(X,Y) :-
 	on(X,Y).
 
@@ -39,6 +70,10 @@ round(X) :-
 round(X) :- 
 	shape(X,Y),
 	Y = 'cylinder'.
+	
+round(X) :- 
+	shape(X,Y),
+	Y = 'circle'.
 	
 rightOf(X,Y) :-
 	leftOf(Y,X).
@@ -83,7 +118,6 @@ madeOf(X,Y) :-
 	material(X,Y) == 'userule',
 	type(X,Y) == 'aballoon',
 	Y == 'rubber'.
-	
 	
 madeOf(X,Y) :-
 	material(X,Y) == 'userule',
