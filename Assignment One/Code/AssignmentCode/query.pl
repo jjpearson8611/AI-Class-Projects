@@ -209,10 +209,37 @@ q(22) :-
 	write('FALSE').
 
 %There is a heavy spotted thing next to a small square wood thing
+q(23) :-
+	heavy(X),
+	spotted(X),
+	nextTo(X,Y),
+	small(Y),
+	madeOf(Y,'wood').
+	write('TRUE').
+	
+q(23) :-
+	write('FALSE').
 
 %The box or the cup is made of rubber or metal or glass
+q(24) :-
+	madeOf('thebox','metal');
+	madeOf('thebox','rubber');
+	madeOf('thebox','glass');
+	madeOf('thecup','metal');
+	madeOf('thecup','rubber');
+	madeOf('thecup','glass'),
+	write('TRUE').
+	
+q(24) :-
+	write('FALSE').
 
 %The glass can not crack
+q(25) :-
+	breakable('theglass'),
+	write('TRUE').
+	
+q(25) :-
+	write('FALSE').
 
 %There is something which is not black or cardboard or wood
 

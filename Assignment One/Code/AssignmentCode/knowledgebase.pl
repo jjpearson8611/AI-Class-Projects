@@ -20,14 +20,21 @@ thing(X) :-
 	true.
 
 popable(X) :-
-	X == 'aballoon'.
+	type(X,'aballoon').
 	
 nextTo(X,Y) :-
 	leftOf(X,Y);
 	leftOf(Y,X).
 	
 striped(X) :-
-	X == 'abox'.
+	X == 'thebox'.
+	
+spotted(X) :-
+	X == 'therock'.
+	
+breakable(X) :-
+	madeOf(X,'glass');
+	madeOf(X,'china').
 	
 solid(X) :-
 	X == 'arobot';
@@ -56,6 +63,16 @@ directlyLeft(X,Y) :-
 above(X,Y) :-
 	on(X,Y).
 
+heavy(X) :-
+	weight(X) == 'heavy'.
+	
+medium(X) :-
+	weight(X) == 'medium'.
+	
+light(X) :-
+	weight(X) == 'light'.
+	
+	
 above(X,Y) :-
 	on(X,Z),
 	above(Z,Y).
