@@ -27,6 +27,7 @@ doExam :-
 doTrueFalseQuestions :-
 	tf_item(Num, Text),	% grabs the next question,
 				% instantiating the 2 parameter values.
+	nl,
 	write(Num),
 	write(' - '),
 	write(Text),

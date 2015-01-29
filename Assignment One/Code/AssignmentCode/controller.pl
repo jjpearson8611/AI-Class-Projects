@@ -10,3 +10,5 @@ loadandgo :-
 	consult('questions.pl'),
 	consult('translator.pl'),
 	consult('runquestions.pl').
+
+loadandgo.

@@ -14,30 +14,30 @@
 %- Robbie and the table facts might have different number & order of parameters than the objects’ facts do 
 
 %static facts
-%name, shape, color, material, size, type, weight
-staticFact(robbie, claw, gray, userule, large, arobot, heavy).
-staticFact(thetable, table, gray, metal, large, atable, heavy).
-staticFact(theprism, pyramid, transparent, userule, medium, aprism, medium).
-staticFact(thecube, cube, silver, metal, medium, acube, heavy).
-staticFact(themarble, sphere, transparent, userule, small, amarble, light).
-staticFact(thebaseball, sphere, white, leather, medium, aball, medium).
-staticFact(thebox, rectangularPrism, brown, cardboard, medium, abox, light).
-staticFact(therock, rock, gray, granite, medium, arock, heavy).
-staticFact(theglass, cylinder, transparent, userule, medium, aglass, medium).
-staticFact(thecup, cone, white, paper, medium, acup, light).
-staticFact(thetube, cylinder, brown, cardboard, medium, atube, light).
-staticFact(theball, sphere, black, rubber, medium, aball, light).
-staticFact(thedish, circle, white, userule, medium, adish, light).
-staticFact(theblockA, cube, brown, userule, small, ablock, light).
-staticFact(theblockB, cube, brown, userule, small, ablock, light).
-staticFact(theblockC, cube, brown, userule, small, ablock, light).
-staticFact(theblockD, cube, brown, userule, small, ablock, light).
-staticFact(theblockE, cube, brown, userule, small, ablock, light).
-staticFact(thepencil, cylinder, yellow, userule, small, apencil, light).
-staticFact(theballoon, sphere, yellow, userule, medium, aballoon, light).
+%name, shape, color, material, size, type
+staticFact(robbie, claw, gray, userule, large, arobot).
+staticFact(thetable, table, gray, metal, large, atable).
+staticFact(theprism, pyramid, transparent, userule, medium, aprism).
+staticFact(thecube, cube, silver, metal, medium, acube).
+staticFact(themarble, sphere, transparent, userule, small, amarble).
+staticFact(thebaseball, sphere, white, leather, medium, aball).
+staticFact(thebox, rectangularPrism, brown, cardboard, medium, abox).
+staticFact(therock, rock, gray, granite, medium, arock).
+staticFact(theglass, cylinder, transparent, userule, medium, aglass).
+staticFact(thecup, cone, white, paper, medium, acup).
+staticFact(thetube, cylinder, brown, cardboard, medium, atube).
+staticFact(theball, sphere, black, rubber, medium, aball).
+staticFact(thedish, circle, white, userule, medium, adish).
+staticFact(theblockA, cube, brown, userule, small, ablock).
+staticFact(theblockB, cube, brown, userule, small, ablock).
+staticFact(theblockC, cube, brown, userule, small, ablock).
+staticFact(theblockD, cube, brown, userule, small, ablock).
+staticFact(theblockE, cube, brown, userule, small, ablock).
+staticFact(thepencil, cylinder, yellow, userule, small, apencil).
+staticFact(theballoon, sphere, yellow, userule, medium, aballoon).
 
 %dynamic facts
-%name, orientation, filled
+%name, orientation
 dynFact(robbie, upright).
 dynFact(theprism, onBase).
 dynFact(thecube, none).
@@ -80,6 +80,7 @@ dynRelFact(theblockD, thepencil, theblockC, unable).
 dynRelFact(theblockE, thepencil, theblockD, unable).
 dynRelFact(thepencil, theballoon, thetable, unable).
 dynRelFact(theballoon, nothing, thetable, air).
+dynRelFact(thetable,nothing,nothing,unable).
 
 %robbie, holding
 robbie(robbie,nothing).

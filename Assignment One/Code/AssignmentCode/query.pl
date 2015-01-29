@@ -41,10 +41,10 @@ q(4) :-
 	
 %There's a cardboard or paper thing next to a small or solid object
 q(5) :-
-	material(X,'cardboard');
-	material(X,'paper'),
-	size(Y,'small');
-	solid(Y),
+	(material(X,'cardboard');
+	material(X,'paper')),
+	(size(Y,'small');
+	solid(Y)),
 	nextTo(X,Y),
 	write('TRUE').
 	
@@ -102,15 +102,15 @@ q(10) :-
 	write('TRUE').
 	
 q(10) :-
-	write('FALSE')
+	write('FALSE').
 	
 %Block e is on block a
 q(11) :-
 	on('theblockE','theblockA'),
-	write('FALSE').
+	write('TRUE').
 	
 q(11) :-
-	write('TRUE')
+	write('FALSE').
 
 %The table is under block d
 q(12) :-
@@ -124,7 +124,7 @@ q(12) :-
 q(13) :-
 	shape(X,'pyramid'),
 	directlyLeft(X,Y),
-	popable(Y).
+	popable(Y),
 	write('TRUE').
 	
 q(13) :-
@@ -141,8 +141,8 @@ q(14) :-
 
 %Robbie's hand is black
 q(15) :-
-	write('TRUE'),
-	color('robbie','black').
+	color('robbie','black'),
+	write('TRUE').
 	
 q(15) :-
 	write('FALSE').
@@ -214,7 +214,7 @@ q(23) :-
 	spotted(X),
 	nextTo(X,Y),
 	small(Y),
-	madeOf(Y,'wood').
+	madeOf(Y,'wood'),
 	write('TRUE').
 	
 q(23) :-
@@ -222,12 +222,12 @@ q(23) :-
 
 %The box or the cup is made of rubber or metal or glass
 q(24) :-
-	madeOf('thebox','metal');
+	(madeOf('thebox','metal');
 	madeOf('thebox','rubber');
-	madeOf('thebox','glass');
-	madeOf('thecup','metal');
+	madeOf('thebox','glass')),
+	(madeOf('thecup','metal');
 	madeOf('thecup','rubber');
-	madeOf('thecup','glass'),
+	madeOf('thecup','glass')),
 	write('TRUE').
 	
 q(24) :-
@@ -242,14 +242,45 @@ q(25) :-
 	write('FALSE').
 
 %There is something which is not black or cardboard or wood
-
+q(26) :-
+	
+	write('THIS ONE NEEDS WORK').
+	
+q(26) :-
+	write('FALSE').
+	
 %There is an object with nothing on it
+q(27) :-
+	object(X),
+	object(Z),
+	\+ on(Z,X),
+	write('TRUE').
+	
+q(27) :-
+	write('FALSE').
 
 %There is something with nothing on it
+q(28) :-
+	type(X,Y),
+	type(Z,W),
+	\+ on(Z,X),
+	write('TRUE').
+	
+q(28) :-
+	write('FALSE').
 
 %There is not something not on the table
+q(29) :-
+	type(X,'atable'),
+	\+ type(Z,W),
+	\+ on(Z,X),
+	write('TRUE').
+	
+q(29) :-
+	write('FALSE').
 
-
+	
+%Short answer questions
 %Which are black metal things
 
 %Which are black metal objects

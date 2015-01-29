@@ -13,14 +13,16 @@ holdingSomething(X) :-
 	Y \= 'nothing'.
 
 object(X) :-
+	isA(X,Y),
 	X \= 'robbie',
-	X \= 'thetable'.
-
-thing(X) :-
-	true.
+	Y \= 'atable'.
 
 popable(X) :-
 	type(X,'aballoon').
+	
+thing(X) :-
+	isA(X,Y),
+	Y \= 'notAThing'.
 	
 nextTo(X,Y) :-
 	leftOf(X,Y);
@@ -59,9 +61,9 @@ couldRoll(X) :-
 	
 directlyLeft(X,Y) :-
 	leftOf(X,Y).
-	
-above(X,Y) :-
-	on(X,Y).
+
+large(X) :-
+	type(X) = 'arock'.
 
 heavy(X) :-
 	weight(X) == 'heavy'.
@@ -71,7 +73,9 @@ medium(X) :-
 	
 light(X) :-
 	weight(X) == 'light'.
-	
+
+above(X,Y) :-
+	on(X,Y).	
 	
 above(X,Y) :-
 	on(X,Z),
@@ -79,6 +83,13 @@ above(X,Y) :-
 
 below(X,Y) :-
 	above(Y,X).
+	
+under(X,Y) :-
+	on(Y,X).
+	
+flat(X) :-
+	isA(X,Y),
+	Y = 'adish'.
 	
 round(X) :-
 	shape(X,Y),
@@ -96,7 +107,7 @@ rightOf(X,Y) :-
 	leftOf(Y,X).
 	
 empty(X) :-
-	full(X,Y),
+	fullOf(X,Y),
 	Y = 'empty'.
 	
 white(X) :-
