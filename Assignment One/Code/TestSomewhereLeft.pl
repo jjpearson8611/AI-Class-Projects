@@ -45,8 +45,17 @@ above(X,Y) :-
 % *** PLUG IN YOUR somewhereLeft RULE HERE ***
 
 
-
-
+somewhereLeft(X,Y) :-
+	left(X,Y).
+	
+somewhereLeft(X,Y) :-
+	(left(X,Z),
+	somewhereLeft(Z,Y));
+	(left(X,Z),
+	above(Y,Z));
+	(above(X,Z),
+	somewhereLeft(Z,Y)).
+	
 
 
 
