@@ -16,35 +16,36 @@
 %		or it would need to be cleared off or moved somewhere or ...".
 % --------------------------------------------------------------------------------
 
-tf_item(1, 'There''s a rock on the table').
-tf_item(2, 'The rock is above the table').
-tf_item(3, 'The table is below a rubber thing which is black').
-tf_item(4, 'There is a round object directly right of an empty white thing').
-tf_item(5, 'There''s a cardboard or paper thing next to a small or solid object').
-tf_item(6, 'There is a hollow striped thing which can roll').
-tf_item(7, 'There''s a large round thing next to something made of glass').
-tf_item(8, 'There is a yellow thing above a black thing').
-tf_item(9, 'There is a yellow thing above a black object').
-tf_item(10, 'Block e is above block a').
-tf_item(11, 'Block e is on block a').
-tf_item(12, 'The table is under block d').
-tf_item(13, 'There is a pyramid directly left of an object which can pop').
-tf_item(14, 'The prism is somewhere left of the balloon').
-tf_item(15, 'Robbie''s hand is black').
-tf_item(16, 'There is an object made of china which can roll').
-tf_item(17, 'There is an object made of china which could roll').
-tf_item(18, 'Robbie is holding nothing').
-tf_item(19, 'Robbie is holding something').
-tf_item(20, 'Robbie is not holding something').
-tf_item(21, 'Robbie is holding a flat thing').
-tf_item(22, 'Robbie is above the balloon').
-tf_item(23, 'There is a heavy spotted thing next to a small square wood thing').
-tf_item(24, 'The box or the cup is made of rubber or metal or glass').
-tf_item(25, 'The glass can not crack').
-tf_item(26, 'There is something which is not black or cardboard or wood').
-tf_item(27, 'There is an object with nothing on it').
-tf_item(28, 'There is something with nothing on it').
-tf_item(29, 'There is not something not on the table').
+%number, question
+tf_item(1, 'There''s a rock on the table'). 												%true
+tf_item(2, 'The rock is above the table'). 													%true
+tf_item(3, 'The table is below a rubber thing which is black'). 							%true
+tf_item(4, 'There is a round object directly right of an empty white thing'). 				%true
+tf_item(5, 'There''s a cardboard or paper thing next to a small or solid object').  		%true
+tf_item(6, 'There is a hollow striped thing which can roll'). 								%false
+tf_item(7, 'There''s a large round thing next to something made of glass'). 				%true
+tf_item(8, 'There is a yellow thing above a black thing'). 									%false
+tf_item(9, 'There is a yellow thing above a black object'). 								%true table below pencil
+tf_item(10, 'Block e is above block a'). 													%true
+tf_item(11, 'Block e is on block a'). 														%false
+tf_item(12, 'The table is under block d'). 													%true
+tf_item(13, 'There is a pyramid directly left of an object which can pop'). 				%false
+tf_item(14, 'The prism is somewhere left of the balloon'). 									%true
+tf_item(15, 'Robbie''s hand is black'). 													%false
+tf_item(16, 'There is an object made of china which can roll').  							%false
+tf_item(17, 'There is an object made of china which could roll'). 							%true
+tf_item(18, 'Robbie is holding nothing'). 													%true
+tf_item(19, 'Robbie is holding something'). 												%false
+tf_item(20, 'Robbie is not holding something'). 											%true
+tf_item(21, 'Robbie is holding a flat thing'). 												%false
+tf_item(22, 'Robbie is above the balloon'). 												%false
+tf_item(23, 'There is a heavy spotted thing next to a small square wood thing'). 			%false
+tf_item(24, 'The box or the cup is made of rubber or metal or glass'). 						%true
+tf_item(25, 'The glass can not crack'). 													%False
+tf_item(26, 'There is something which is not black or cardboard or wood'). 					%uhh
+tf_item(27, 'There is an object with nothing on it'). 										%true
+tf_item(28, 'There is something with nothing on it').										%true
+tf_item(29, 'There is not something not on the table'). 									%true
 
 ans_ques(30, 'Which are black metal things').
 ans_ques(31, 'Which are black metal objects').
