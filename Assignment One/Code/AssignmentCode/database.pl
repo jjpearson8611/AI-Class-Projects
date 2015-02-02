@@ -15,17 +15,17 @@
 
 %static facts
 %name, shape, color, material, size, type
-staticFact(robbie, claw, gray, userule, large, arobot).
-staticFact(thetable, table, gray, metal, large, atable).
+staticFact(robbie, claw, black, userule, large, arobot).
+staticFact(thetable, table, black, metal, large, atable).
 staticFact(theprism, pyramid, transparent, userule, medium, aprism).
-staticFact(thecube, cube, silver, metal, medium, acube).
+staticFact(thecube, cube, black, metal, medium, acube).
 staticFact(themarble, sphere, transparent, userule, small, amarble).
-staticFact(thebaseball, sphere, white, leather, medium, aball).
-staticFact(thebox, rectangularPrism, brown, cardboard, medium, abox).
-staticFact(therock, rock, gray, granite, medium, arock).
-staticFact(theglass, cylinder, transparent, userule, medium, aglass).
-staticFact(thecup, cone, white, paper, medium, acup).
-staticFact(thetube, cylinder, brown, cardboard, medium, atube).
+staticFact(thebaseball, sphere, white, leather, large, aball).
+staticFact(thebox, cube, brown, cardboard, large, abox).
+staticFact(therock, sphere, grey, granite, large, arock).
+staticFact(theglass, cylinder, transparent, userule, large, aglass).
+staticFact(thecup, cylinder, white, paper, large, acup).
+staticFact(thetube, cylinder, brown, cardboard, large, atube).
 staticFact(theball, sphere, black, rubber, medium, aball).
 staticFact(thedish, circle, white, userule, medium, adish).
 staticFact(theblockA, cube, brown, userule, small, ablock).
@@ -34,11 +34,11 @@ staticFact(theblockC, cube, brown, userule, small, ablock).
 staticFact(theblockD, cube, brown, userule, small, ablock).
 staticFact(theblockE, cube, brown, userule, small, ablock).
 staticFact(thepencil, cylinder, yellow, userule, small, apencil).
-staticFact(theballoon, sphere, yellow, userule, medium, aballoon).
+staticFact(theballoon, sphere, white, userule, large, aballoon).
 
 %dynamic facts
 %name, orientation
-dynFact(robbie, upright).
+dynFact(robbie, none).
 dynFact(theprism, onBase).
 dynFact(thecube, none).
 dynFact(themarble, none).
@@ -71,7 +71,7 @@ dynRelFact(therock, theglass, thetable, unable).
 dynRelFact(theglass, thecup, thetable, empty).
 dynRelFact(thecup, thetube, thetable, empty).
 dynRelFact(thetube, theball, thetable, empty).
-dynRelFact(theball, theblockA, thetable, unable).
+dynRelFact(theball, theblockA, thedish, unable).
 dynRelFact(thedish, theblockA, thetable, theball).
 dynRelFact(theblockA, thepencil, thetable, unable).
 dynRelFact(theblockB, thepencil, theblockA, unable).

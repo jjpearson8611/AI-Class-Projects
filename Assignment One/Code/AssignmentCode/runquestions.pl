@@ -28,10 +28,10 @@ doTrueFalseQuestions :-
 	tf_item(Num, Text),	% grabs the next question,
 				% instantiating the 2 parameter values.
 	nl,
-	write(Num),
-	write(' - '),
-	write(Text),
-	write('.'), nl,
+	%write(Num),
+	%write(' - '),
+	%write(Text),
+	%write('.'), nl,
 	once(q(Num)),		% calls YOUR query which writes an answer
 				%	AND which MUST succeed.
 	fail.			% fail causes backtracking to the top.

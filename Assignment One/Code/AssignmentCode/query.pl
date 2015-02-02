@@ -78,7 +78,7 @@ q(8) :-
 	color(X,'black'),
 	thing(Y),
 	color(Y,'yellow'),
-	on(X,Y),
+	above(Y,X),
 	write('TRUE').
 	
 q(8) :-
@@ -86,11 +86,11 @@ q(8) :-
 
 %There is a yellow thing above a black object
 q(9) :-
-	thing(X),
+	object(X),
 	color(X,'black'),
 	thing(Y),
 	color(Y,'yellow'),
-	above(X,Y),
+	above(Y,X),
 	write('TRUE').
 	
 q(9) :-
@@ -114,7 +114,7 @@ q(11) :-
 
 %The table is under block d
 q(12) :-
-	under('theblockD','thetable'),
+	under('thetable','theblockD'),
 	write('TRUE').
 	
 q(12) :-
@@ -132,8 +132,7 @@ q(13) :-
 
 %The prism is somewhere left of the balloon
 q(14) :-
-	shape(X,'prism'),
-	left(X,'theballoon'),
+	somewhereLeft('theprism','theballoon'),
 	write('TRUE').
 	
 q(14) :-
@@ -224,7 +223,7 @@ q(23) :-
 q(24) :-
 	(madeOf('thebox','metal');
 	madeOf('thebox','rubber');
-	madeOf('thebox','glass')),
+	madeOf('thebox','glass'));
 	(madeOf('thecup','metal');
 	madeOf('thecup','rubber');
 	madeOf('thecup','glass')),
@@ -235,7 +234,7 @@ q(24) :-
 
 %The glass can not crack
 q(25) :-
-	breakable('theglass'),
+	\+ crack('theglass'),
 	write('TRUE').
 	
 q(25) :-
@@ -243,8 +242,13 @@ q(25) :-
 
 %There is something which is not black or cardboard or wood
 q(26) :-
-	
-	write('THIS ONE NEEDS WORK').
+	thing(X),
+	color(X,Y),
+	material(X,Z),
+	\+ Y == 'black',
+	\+ Z == 'cardboard',
+	\+ Z == 'wood',
+	write('TRUE').
 	
 q(26) :-
 	write('FALSE').
@@ -261,8 +265,8 @@ q(27) :-
 
 %There is something with nothing on it
 q(28) :-
-	type(X,Y),
-	type(Z,W),
+	type(X,_),
+	type(Z,_),
 	\+ on(Z,X),
 	write('TRUE').
 	
@@ -271,9 +275,8 @@ q(28) :-
 
 %There is not something not on the table
 q(29) :-
-	type(X,'atable'),
-	\+ type(Z,W),
-	\+ on(Z,X),
+	thing(X),
+	\+ on(X,'thetable'),
 	write('TRUE').
 	
 q(29) :-
@@ -282,32 +285,172 @@ q(29) :-
 	
 %Short answer questions
 %Which are black metal things
+q(30) :-
+	thing(X),
+	color(X,'black'),
+	madeOf(X,'metal'),
+	write(X),
+	nl,
+	fail.
+	
+q(30) :-
+	nl.
 
 %Which are black metal objects
+q(31) :-
+	object(X),
+	color(X,'black'),
+	madeOf(X,'metal'),
+	write(X),
+	nl,
+	fail.
+	
+q(31) :-
+	nl.
+
 
 %Which black or grey things could not roll
+q(32) :-
+	thing(X),
+	(color(X,'black');
+	color(X,'grey')),
+	\+ couldRoll(X),
+	write(X),
+	nl,
+	fail.
+	
+q(32) :-
+	nl.
 
 %Which things are neither black nor white, but are round
-
+q(33) :-
+	thing(X),
+	color(X,Y),
+	\+ Y == 'black',
+	\+ Y == 'white',
+	round(X),
+	write(X),
+	nl,
+	fail.
+	
+q(33) :-
+	nl.
+	
 %Which white china objects are the same shape as another object
-
+q(34) :-
+	color(X,'white'),
+	madeOf(X,'china'),
+	shape(X,Y),
+	shape(_,W),
+	Y == W,
+	write(X),
+	nl,
+	fail.
+	
+q(34) :-
+	nl.
+	
 %What color is robbie
+q(35) :-
+	color('robbie',X),
+	write(X),
+	nl,
+	nl.
+	
+q(35) :-
+	nl.
 
 %What shape is the thing made of grey cardboard
-
+q(36) :-
+	thing(Y),
+	color(Y,'grey'),
+	madeOf(Y,'cardboard'),
+	shape(Y,X),
+	write(X).
+		
+q(36) :-
+	write('Nothing'),
+	nl,
+	nl.
 %What are all the things that are flat on top
-
+q(37) :-
+	flatTop(X),
+	write(X),
+	nl,
+	fail.
+		
+q(37) :-
+	nl.
+	
 %What are all the things that are flat on top made of wood
-
+q(38) :-
+	flatTop(X),
+	madeOf(X,'wood'),
+	write(X),
+	nl,
+	fail.
+		
+q(38) :-
+	nl.
+	
 %Which big things are next to small things
+q(39) :-
+	big(X),
+	small(Y),
+	nextTo(X,Y),
+	write(X),
+	nl,
+	fail.
+	
+q(39) :-
+	nl.
+
 
 %Which things are round and can not roll
+q(40) :-
+	thing(X),
+	round(X),
+	\+ canRoll(X),
+	write(X),
+	nl,
+	fail.
+	
+q(40) :-
+	nl.
 
 %Which things can not have something put on them
+q(41) :-
+	thing(X),
+	\+ canPlaceOnTop(X),
+	write(X),
+	nl,
+	fail.
+	
+q(41) :-
+	nl.
 
 %What is robbie holding
+q(42) :-
+	hold('robbie',Y),
+	write(Y),
+	nl,
+	fail.
+	
+q(42) :-
+	nl.
 
 %Which things are somewhere right of paper object
+q(43) :-
+	thing(X),
+	object(Y),
+	madeOf(Y,'paper'),
+	somewhereRight(X,Y),
+	write(X),
+	nl,
+	fail.
+	
+q(43) :-
+	nl.
 
 %What's crushable or popable things but not grey or white
 

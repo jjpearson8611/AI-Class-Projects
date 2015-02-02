@@ -42,7 +42,7 @@ tf_item(22, 'Robbie is above the balloon'). 												%false
 tf_item(23, 'There is a heavy spotted thing next to a small square wood thing'). 			%false
 tf_item(24, 'The box or the cup is made of rubber or metal or glass'). 						%true
 tf_item(25, 'The glass can not crack'). 													%False
-tf_item(26, 'There is something which is not black or cardboard or wood'). 					%uhh
+tf_item(26, 'There is something which is not black or cardboard or wood'). 					%true
 tf_item(27, 'There is an object with nothing on it'). 										%true
 tf_item(28, 'There is something with nothing on it').										%true
 tf_item(29, 'There is not something not on the table'). 									%true
