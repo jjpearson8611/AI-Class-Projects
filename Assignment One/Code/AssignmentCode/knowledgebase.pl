@@ -33,16 +33,16 @@ thing(X) :-
 	Y \= 'notAThing'.
 	
 nextTo(X,Y) :-
-	leftOf(X,Y);
-	leftOf(Y,X).
+	directlyLeft(X,Y);
+	directlyLeft(Y,X).
 	
 somewhereLeft(X,Y) :-
-	leftOf(X,Y).
+	directlyLeft(X,Y).
 	
 somewhereLeft(X,Y) :-
-	(leftOf(X,Z),
+	(directlyLeft(X,Z),
 	somewhereLeft(Z,Y));
-	(leftOf(X,Z),
+	(directlyLeft(X,Z),
 	above(Y,Z));
 	(above(X,Z),
 	somewhereLeft(Z,Y)).
@@ -96,7 +96,9 @@ couldRoll(X) :-
 	round(X).
 	
 directlyLeft(X,Y) :-
-	leftOf(X,Y).
+	leftOf(X,Y),
+	Y \= 'unable',
+	Y \= 'nothing'.
 
 large(X) :-
 	size(X,Y),
@@ -169,6 +171,9 @@ flatTop(X) :-
 	 Y == 'cylinder';
 	 Y == 'circle').
 	
+flatTop(X) :-
+	X == 'theTable'.
+	
 crack(X) :-
 	breakable(X).
 	
@@ -195,15 +200,15 @@ round(X) :-
 	Z = 'circle'.
 	
 rightOf(X,Y) :-
-	leftOf(Y,X).
+	directlyLeft(Y,X).
 	
-bounce(X),
+bounce(X) :-
 	isA(X,Y),
 	Y == 'aball',
 	madeOf(X,Z),
 	Z == 'rubber'.
 	
-makeRainbows(X),
+makeRainbows(X) :-
 	isA(X,'aunicorn').
 	
 empty(X) :-

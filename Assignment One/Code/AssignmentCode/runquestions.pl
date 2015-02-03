@@ -6,13 +6,13 @@
 % the DRIVER rule for this module
 
 doExam :-
-	write('* * * * * * * * * * * * * * * * * * * TRUE / FALSE'), nl,
+	write('* * * * * * * * * * * * * * * * * * * TRUE / FALSE * * * * * * * * * * * * * * * * * * * '), nl,
 	doTrueFalseQuestions,
 	nl,nl,
-	write('* * * * * * * * * * * * * * * * * * * FILL IN THE BLANK'), nl,
+	write('* * * * * * * * * * * * * * * * * * * FILL IN THE BLANK * * * * * * * * * * * * * * * * * * * '), nl,
 	doFillInTheBlankQuestions,
 	nl,
-	write('* * * * * * * * * * * * * * * * * * * END OF EXAM'), nl.
+	write('* * * * * * * * * * * * * * * * * * * END OF EXAM * * * * * * * * * * * * * * * * * * * '), nl.
 
 % --------------------------------------------------------------------------
 % The following 2 rules use a backtrack/fail "loop" to go through all the
@@ -28,10 +28,10 @@ doTrueFalseQuestions :-
 	tf_item(Num, Text),	% grabs the next question,
 				% instantiating the 2 parameter values.
 	nl,
-	%write(Num),
-	%write(' - '),
-	%write(Text),
-	%write('.'), nl,
+	write(Num),
+	write(' - '),
+	write(Text),
+	write('.'), nl,
 	once(q(Num)),		% calls YOUR query which writes an answer
 				%	AND which MUST succeed.
 	fail.			% fail causes backtracking to the top.

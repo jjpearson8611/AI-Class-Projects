@@ -38,49 +38,49 @@ staticFact(theballoon, 	sphere, 	white, 			userule, 	large, 		aballoon).
 
 %dynamic facts
 %name, orientation
-dynFact(robbie, none).
-dynFact(theprism, onBase).
-dynFact(thecube, none).
-dynFact(themarble, none).
-dynFact(thebaseball, none).
-dynFact(thebox, onBase).
-dynFact(therock, none).
-dynFact(theglass, onBase).
-dynFact(thecup, onBase).
-dynFact(thetube, onBase).
-dynFact(theball, none).
-dynFact(thedish, onBase).
-dynFact(theblockA, none).
-dynFact(theblockB, none).
-dynFact(theblockC, none).
-dynFact(theblockD, none).
-dynFact(theblockE, none).
-dynFact(thepencil, onSide).
-dynFact(theballoon, onSide).
+dynFact(robbie, 		none).
+dynFact(theprism, 		onBase).
+dynFact(thecube, 		none).
+dynFact(themarble, 		none).
+dynFact(thebaseball, 	none).
+dynFact(thebox, 		onBase).
+dynFact(therock, 		none).
+dynFact(theglass, 		onBase).
+dynFact(thecup, 		onBase).
+dynFact(thetube, 		onBase).
+dynFact(theball, 		none).
+dynFact(thedish, 		onBase).
+dynFact(theblockA, 		none).
+dynFact(theblockB, 		none).
+dynFact(theblockC, 		none).
+dynFact(theblockD, 		none).
+dynFact(theblockE, 		none).
+dynFact(thepencil, 		onSide).
+dynFact(theballoon, 	onSide).
 
 
 %dynamic relation facts
 %name, directly to the left of, ontop of, in the object
-dynRelFact(robbie, nothing, nothing, unable).
-dynRelFact(theprism, themarble, thecube, unable).
-dynRelFact(thecube, themarble, thetable, unable).
-dynRelFact(themarble, thebaseball, thetable, unable).
-dynRelFact(thebaseball, thebox, thetable, unable).
-dynRelFact(thebox, therock, thetable, empty).
-dynRelFact(therock, theglass, thetable, unable).
-dynRelFact(theglass, thecup, thetable, empty).
-dynRelFact(thecup, thetube, thetable, empty).
-dynRelFact(thetube, theball, thetable, empty).
-dynRelFact(theball, theblockA, thedish, unable).
-dynRelFact(thedish, theblockA, thetable, theball).
-dynRelFact(theblockA, thepencil, thetable, unable).
-dynRelFact(theblockB, thepencil, theblockA, unable).
-dynRelFact(theblockC, thepencil, theblockB, unable).
-dynRelFact(theblockD, thepencil, theblockC, unable).
-dynRelFact(theblockE, thepencil, theblockD, unable).
-dynRelFact(thepencil, theballoon, thetable, unable).
-dynRelFact(theballoon, nothing, thetable, air).
-dynRelFact(thetable,nothing,nothing,unable).
+dynRelFact(robbie, 		unable, 		nothing, 	unable).
+dynRelFact(theprism, 	nothing, 		thecube, 	unable).
+dynRelFact(thecube, 	themarble, 		thetable,	unable).
+dynRelFact(themarble, 	thebaseball,	thetable,	unable).
+dynRelFact(thebaseball, thebox, 		thetable,	unable).
+dynRelFact(thebox, 		therock, 		thetable,	empty).
+dynRelFact(therock, 	theglass, 		thetable,	unable).
+dynRelFact(theglass, 	thecup, 		thetable,	empty).
+dynRelFact(thecup, 		thetube, 		thetable,	empty).
+dynRelFact(thetube, 	thedish, 		thetable,	empty).
+dynRelFact(theball, 	nothing, 		thedish, 	unable).
+dynRelFact(thedish, 	theblockA, 		thetable,	theball).
+dynRelFact(theblockA, 	thepencil, 		thetable,	unable).
+dynRelFact(theblockB, 	nothing, 		theblockA,	unable).
+dynRelFact(theblockC, 	nothing, 		theblockB,	unable).
+dynRelFact(theblockD, 	nothing, 		theblockC,	unable).
+dynRelFact(theblockE, 	nothing, 		theblockD, 	unable).
+dynRelFact(thepencil, 	theballoon, 	thetable, 	unable).
+dynRelFact(theballoon, 	nothing, 		thetable, 	air).
+dynRelFact(thetable,	unable,			nothing,	unable).
 
 %robbie, holding
 robbie(robbie,nothing).

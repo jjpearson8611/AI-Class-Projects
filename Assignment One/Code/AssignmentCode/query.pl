@@ -284,6 +284,10 @@ q(29) :-
 
 	
 %Short answer questions
+%Short answer questions	
+%Short answer questions
+%Short answer questions
+%Short answer questions
 %Which are black metal things
 q(30) :-
 	thing(X),
@@ -440,12 +444,15 @@ q(42) :-
 	nl.
 
 %Which things are somewhere right of paper object
-q(43) :-
+cond43(X) :-
 	thing(X),
 	object(Y),
 	madeOf(Y,'paper'),
-	somewhereRight(X,Y),
-	write(X),
+	somewhereRight(X,Y).
+
+q(43) :-
+	setof(X, cond43(X), List),
+	write(List),
 	nl,
 	fail.
 	
@@ -487,6 +494,7 @@ q(46) :-
 	fail.
 	
 q(46) :-
+	write('nothing'),nl,
 	nl.
 
 %What's not on the table
@@ -570,10 +578,13 @@ q(53) :-
 	nl.
 
 %Which cubes are under something
-q(54) :-
+cond54(X) :-
 	shape(X,'cube'),
-	under(X,Y),
-	write(X),
+	under(X,_).
+
+q(54) :-
+	setof(X,cond54(X),List),
+	write(List),
 	nl,
 	fail.
 	
@@ -585,11 +596,11 @@ q(55) :-
 	on(X,'thetable'),
 	\+ on(X,'thetable'),
 	write(X),
-	nl,
+	nl,nl,
 	fail.
 
 q(55) :-
-	write('Nothing'),
+	write('Nothing'),nl,
 	nl.
 
 %Which red striped cubes are somewhere left of blue spotted rocks
@@ -605,7 +616,7 @@ q(56) :-
 	
 q(56) :-
 	write('Nothing'),
-	nl.
+	nl,nl.
 
 %What can bounce or make rainbows
 q(57) :-

@@ -1,36 +1,65 @@
-* * * * * * * * * * * * * * * * * * * TRUE / FALSE
+* * * * * * * * * * * * * * * * * * * TRUE / FALSE * * * * * * * * * * * * * * * * * * * 
 
+1 - There's a rock on the table.
 TRUE
+2 - The rock is above the table.
 TRUE
+3 - The table is below a rubber thing which is black.
 TRUE
+4 - There is a round object directly right of an empty white thing.
 TRUE
+5 - There's a cardboard or paper thing next to a small or solid object.
 TRUE
+6 - There is a hollow striped thing which can roll.
 FALSE
+7 - There's a large round thing next to something made of glass.
 TRUE
+8 - There is a yellow thing above a black thing.
 TRUE
+9 - There is a yellow thing above a black object.
 FALSE
+10 - Block e is above block a.
 TRUE
+11 - Block e is on block a.
 FALSE
+12 - The table is under block d.
 TRUE
+13 - There is a pyramid directly left of an object which can pop.
 FALSE
+14 - The prism is somewhere left of the balloon.
 TRUE
+15 - Robbie's hand is black.
 TRUE
+16 - There is an object made of china which can roll.
 FALSE
+17 - There is an object made of china which could roll.
 TRUE
+18 - Robbie is holding nothing.
 TRUE
+19 - Robbie is holding something.
 FALSE
+20 - Robbie is not holding something.
 TRUE
+21 - Robbie is holding a flat thing.
 FALSE
+22 - Robbie is above the balloon.
 FALSE
+23 - There is a heavy spotted thing next to a small square wood thing.
 FALSE
+24 - The box or the cup is made of rubber or metal or glass.
 FALSE
+25 - The glass can not crack.
 FALSE
+26 - There is something which is not black or cardboard or wood.
 TRUE
+27 - There is an object with nothing on it.
 TRUE
+28 - There is something with nothing on it.
 TRUE
+29 - There is not something not on the table.
 TRUE
 
-* * * * * * * * * * * * * * * * * * * FILL IN THE BLANK
+* * * * * * * * * * * * * * * * * * * FILL IN THE BLANK * * * * * * * * * * * * * * * * * * * 
 30 - Which are black metal things?
 robbie
 thetable
@@ -109,277 +138,111 @@ theballoon
 nothing
 
 43 - Which things are somewhere right of paper object?
-robbie
-robbie
-robbie
-robbie
-robbie
-robbie
-robbie
-robbie
-robbie
-robbie
-robbie
-robbie
-thetable
-thetable
-thetable
-thetable
-thetable
-thetable
-thetable
-thetable
-thetable
-thetable
-thetable
-thetable
-theprism
-theprism
-theprism
-theprism
-theprism
-theprism
-theprism
-theprism
-theprism
-theprism
-theprism
-theprism
-thecube
-thecube
-thecube
-thecube
-thecube
-thecube
-thecube
-thecube
-thecube
-thecube
-thecube
-thecube
-themarble
-themarble
-themarble
-themarble
-themarble
-themarble
-themarble
-themarble
-themarble
-themarble
-themarble
-themarble
-thebaseball
-thebaseball
-thebaseball
-thebaseball
-thebaseball
-thebaseball
-thebaseball
-thebaseball
-thebaseball
-thebaseball
-thebaseball
-thebaseball
-thebox
-thebox
-thebox
-thebox
-thebox
-thebox
-thebox
-thebox
-thebox
-thebox
-thebox
-thebox
-therock
-therock
-therock
-therock
-therock
-therock
-therock
-therock
-therock
-therock
-therock
-therock
-theglass
-theglass
-theglass
-theglass
-theglass
-theglass
-theglass
-theglass
-theglass
-theglass
-theglass
-theglass
-thecup
-thecup
-thecup
-thecup
-thecup
-thecup
-thecup
-thecup
-thecup
-thecup
-thecup
-thecup
-thetube
-thetube
-thetube
-thetube
-thetube
-thetube
-thetube
-thetube
-thetube
-thetube
-thetube
-thetube
-thetube
-theball
-theball
-theball
-theball
-theball
-theball
-theball
-theball
-theball
-theball
-theball
-theball
-theball
-thedish
-thedish
-thedish
-thedish
-thedish
-thedish
-thedish
-thedish
-thedish
-thedish
-thedish
-thedish
-theblockA
-theblockA
-theblockA
-theblockA
-theblockA
-theblockA
-theblockA
-theblockA
-theblockA
-theblockA
-theblockA
-theblockA
-theblockA
-theblockA
-theblockB
-theblockB
-theblockB
-theblockB
-theblockB
-theblockB
-theblockB
-theblockB
-theblockB
-theblockB
-theblockB
-theblockB
-theblockB
-theblockB
-theblockC
-theblockC
-theblockC
-theblockC
-theblockC
-theblockC
-theblockC
-theblockC
-theblockC
-theblockC
-theblockC
-theblockC
-theblockC
-theblockC
-theblockD
-theblockD
-theblockD
-theblockD
-theblockD
-theblockD
-theblockD
-theblockD
-theblockD
-theblockD
-theblockD
-theblockD
-theblockD
-theblockD
-theblockE
-theblockE
-theblockE
-theblockE
-theblockE
-theblockE
-theblockE
-theblockE
-theblockE
-theblockE
-theblockE
-theblockE
-theblockE
-theblockE
-thepencil
-thepencil
-thepencil
-thepencil
-thepencil
-thepencil
-thepencil
-thepencil
-thepencil
-thepencil
-thepencil
-thepencil
-thepencil
-thepencil
-theballoon
-theballoon
-theballoon
-theballoon
-theballoon
-theballoon
-theballoon
-theballoon
-theballoon
-theballoon
-theballoon
-theballoon
-theballoon
-theballoon
+[theball,theballoon,theblockA,theblockB,theblockC,theblockD,theblockE,thedish,thepencil,thetube]
 
 44 - What's crushable or popable things but not grey or white?
+thebox
+thetube
+
 45 - What things could not crack?
+robbie
+thetable
+thecube
+thebaseball
+thebox
+therock
+thecup
+thetube
+theball
+theblockA
+theblockB
+theblockC
+theblockD
+theblockE
+thepencil
+theballoon
+
 46 - Which things can roll and could not roll?
+nothing
+
 47 - What's not on the table?
+robbie
+thetable
+theprism
+theball
+theblockB
+theblockC
+theblockD
+theblockE
+
 48 - Block D is above which things?
+thetable
+theblockA
+theblockB
+theblockC
+
 49 - Which things is the dish next to?
+thetube
+theblockA
+
 50 - What has a breakable object directly left or right of itself?
+thebaseball
+thecube
+thecup
+therock
+theblockA
+thetube
+
 51 - Which flat things could roll and not shatter?
+
 52 - Which objects are below something?
+thecube
+thedish
+theblockA
+theblockA
+theblockA
+theblockA
+theblockB
+theblockB
+theblockB
+theblockC
+theblockC
+theblockD
+
 53 - Which things can robbie not pickup?
+robbie
+thetable
+theprism
+thecube
+themarble
+thebaseball
+thebox
+therock
+theglass
+thecup
+thetube
+theball
+thedish
+theblockA
+theblockB
+theblockC
+theblockD
+theblockE
+thepencil
+theballoon
+
 54 - Which cubes are under something?
+[theblockA,theblockB,theblockC,theblockD,thecube]
+
 55 - What's on the table and not on the table?
+Nothing
+
 56 - Which red striped cubes are somewhere left of blue spotted rocks?
+Nothing
+
 57 - What can bounce or make rainbows?
+theball
+
 58 - Which hollow objects are dark or light?
 59 - What solid things are transparent?
 60 - Which things could not have something put on them?
@@ -387,4 +250,4 @@ theballoon
 62 - What has nothing on it?
 63 - What kind of things are the cardboard, metal and wood things?
 
-* * * * * * * * * * * * * * * * * * * END OF EXAM
+* * * * * * * * * * * * * * * * * * * END OF EXAM * * * * * * * * * * * * * * * * * * * 
