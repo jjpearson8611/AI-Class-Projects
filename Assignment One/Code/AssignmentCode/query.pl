@@ -451,34 +451,173 @@ q(43) :-
 	
 q(43) :-
 	nl.
-
+	
 %What's crushable or popable things but not grey or white
-
+q(44) :-
+	color(X,Y),
+	(popable(X) ;
+	crushable(X)),
+	Y \= 'white',
+	Y \= 'grey',
+	write(X),
+	nl,
+	fail.
+	
+q(44) :-
+	nl.
+	
 %What things could not crack
+q(45) :-
+	thing(X),
+	\+ crack(X),
+	write(X),
+	nl,
+	fail.
+	
+q(45) :-
+	nl.
 
 %Which things can roll and could not roll
+q(46) :-
+	thing(X),
+	canRoll(X),
+	\+ couldRoll(X),
+	write(X),
+	nl,
+	fail.
+	
+q(46) :-
+	nl.
 
 %What's not on the table
+q(47) :-
+	thing(X),
+	\+ on(X,'thetable'),
+	write(X),
+	nl, 
+	fail.
+	
+q(47) :-
+	nl.
 
 %Block D is above which things
+q(48) :-
+	thing(X),
+	above('theblockD',X),
+	write(X),
+	nl,
+	fail.
+	
+q(48) :-
+	nl.
 
 %Which things is the dish next to
+q(49) :-
+	thing(X),
+	nextTo(X,'thedish'),
+	write(X),
+	nl,
+	fail.
+	
+q(49) :-
+	nl.
 
 %What has a breakable object directly left or right of itself
+q(50) :-
+	object(X),
+	breakable(X),
+	nextTo(X,Y),
+	write(Y),
+	nl,
+	fail.
+	
+q(50) :-
+	nl.
 
 %Which flat things could roll and not shatter
+q(51) :-
+	flat(X),
+	couldRoll(X),
+	\+ shatter(X),
+	write(X),
+	nl,
+	fail.
+	
+q(51) :-
+	nl.
 
 %Which objects are below something
+q(52) :-
+	object(X),
+	below(X,Y),
+	Y \= 'nothing',
+	write(X),
+	nl,
+	fail.
+	
+q(52) :-
+	nl.
 
 %Which things can robbie not pickup
+q(53) :-
+	thing(X),
+	\+ canPickup(X),
+	write(X),
+	nl,
+	fail.
+	
+q(53) :-
+	nl.
 
 %Which cubes are under something
+q(54) :-
+	shape(X,'cube'),
+	under(X,Y),
+	write(X),
+	nl,
+	fail.
+	
+q(54) :-
+	nl.
 
 %What's on the table and not on the table
+q(55) :-
+	on(X,'thetable'),
+	\+ on(X,'thetable'),
+	write(X),
+	nl,
+	fail.
+
+q(55) :-
+	write('Nothing'),
+	nl.
 
 %Which red striped cubes are somewhere left of blue spotted rocks
+q(56) :-
+	color(X,'red'),
+	color(Y,'blue'),
+	striped(X),
+	spotted(Y),
+	somewhereLeft(X,Y),
+	write(X),
+	nl,
+	fail.
+	
+q(56) :-
+	write('Nothing'),
+	nl.
 
 %What can bounce or make rainbows
+q(57) :-
+	(bounce(X);
+	makeRainbows(X)),
+	write(X),
+	nl,
+	fail.
+	
+q(57) :-
+	nl.
+	
 
 %Which hollow objects are dark or light
 

@@ -15,26 +15,26 @@
 
 %static facts
 %name, shape, color, material, size, type
-staticFact(robbie, claw, black, userule, large, arobot).
-staticFact(thetable, table, black, metal, large, atable).
-staticFact(theprism, pyramid, transparent, userule, medium, aprism).
-staticFact(thecube, cube, black, metal, medium, acube).
-staticFact(themarble, sphere, transparent, userule, small, amarble).
-staticFact(thebaseball, sphere, white, leather, large, aball).
-staticFact(thebox, cube, brown, cardboard, large, abox).
-staticFact(therock, sphere, grey, granite, large, arock).
-staticFact(theglass, cylinder, transparent, userule, large, aglass).
-staticFact(thecup, cylinder, white, paper, large, acup).
-staticFact(thetube, cylinder, brown, cardboard, large, atube).
-staticFact(theball, sphere, black, rubber, medium, aball).
-staticFact(thedish, circle, white, userule, medium, adish).
-staticFact(theblockA, cube, brown, userule, small, ablock).
-staticFact(theblockB, cube, brown, userule, small, ablock).
-staticFact(theblockC, cube, brown, userule, small, ablock).
-staticFact(theblockD, cube, brown, userule, small, ablock).
-staticFact(theblockE, cube, brown, userule, small, ablock).
-staticFact(thepencil, cylinder, yellow, userule, small, apencil).
-staticFact(theballoon, sphere, white, userule, large, aballoon).
+staticFact(robbie, 		claw, 		black, 			userule, 	large, 		arobot).
+staticFact(thetable, 	table, 		black, 			metal, 		large, 		atable).
+staticFact(theprism, 	pyramid, 	transparent, 	userule, 	medium, 	aprism).
+staticFact(thecube, 	cube, 		black, 			metal,		medium, 	acube).
+staticFact(themarble, 	sphere, 	transparent, 	userule,	small, 		amarble).
+staticFact(thebaseball, sphere, 	white, 			leather, 	large, 		aball).
+staticFact(thebox, 		cube, 		brown, 			cardboard,	large, 		abox).
+staticFact(therock, 	sphere, 	grey, 			granite, 	large, 		arock).
+staticFact(theglass, 	cylinder, 	transparent, 	userule, 	large, 		aglass).
+staticFact(thecup, 		cylinder, 	white, 			paper, 		large, 		acup).
+staticFact(thetube, 	cylinder, 	brown, 			cardboard, 	large, 		atube).
+staticFact(theball, 	sphere, 	black, 			rubber, 	medium, 	aball).
+staticFact(thedish, 	circle, 	white, 			userule, 	medium,		adish).
+staticFact(theblockA, 	cube, 		brown, 			userule, 	small, 		ablock).
+staticFact(theblockB, 	cube, 		brown, 			userule, 	small, 		ablock).
+staticFact(theblockC, 	cube, 		brown, 			userule, 	small, 		ablock).
+staticFact(theblockD, 	cube, 		brown, 			userule, 	small, 		ablock).
+staticFact(theblockE, 	cube, 		brown, 			userule, 	small, 		ablock).
+staticFact(thepencil, 	cylinder, 	yellow, 		userule, 	small, 		apencil).
+staticFact(theballoon, 	sphere, 	white, 			userule, 	large, 		aballoon).
 
 %dynamic facts
 %name, orientation

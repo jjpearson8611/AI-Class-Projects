@@ -20,6 +20,14 @@ object(X) :-
 popable(X) :-
 	type(X,'aballoon').
 	
+crushable(X) :-
+	material(X,Y),
+	Y == 'paper'.
+	
+crushable(X) :-
+	material(X,Y),
+	Y == 'cardboard'.
+	
 thing(X) :-
 	isA(X,Y),
 	Y \= 'notAThing'.
@@ -45,8 +53,21 @@ somewhereRight(X,Y) :-
 striped(X) :-
 	X == 'thebox'.
 	
+	
+darkColor(X) :-
+	color(X,Y),
+	( Y == 'black';
+	Y == 'brown';
+	Y == 'grey').
+	
+lightColor(X) :-
+	\+ darkColor(X).
+	
 spotted(X) :-
 	X == 'therock'.
+	
+shatter(X) :-
+	breakable(X).
 	
 breakable(X) :-
 	madeOf(X,'glass');
@@ -80,6 +101,12 @@ directlyLeft(X,Y) :-
 large(X) :-
 	size(X,Y),
 	Y == 'large'.
+	
+canPickup(X) :-
+	on(Y,X),
+	X \= 'robbie',
+	X \= 'thetable',
+	Y == 'nothing'.
 	
 medium(X) :-
 	size(X,Y),
@@ -169,6 +196,15 @@ round(X) :-
 	
 rightOf(X,Y) :-
 	leftOf(Y,X).
+	
+bounce(X),
+	isA(X,Y),
+	Y == 'aball',
+	madeOf(X,Z),
+	Z == 'rubber'.
+	
+makeRainbows(X),
+	isA(X,'aunicorn').
 	
 empty(X) :-
 	fullOf(X,Y),
