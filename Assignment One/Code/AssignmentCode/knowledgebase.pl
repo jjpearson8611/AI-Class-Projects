@@ -1,4 +1,7 @@
-
+%This is robbie's brain.
+%this defines how robbie thinks
+%there isn't much structure to this list just a pile of information
+%Best strategy to find something is to ctrl + f to find it
 
 
 holding(X,Y) :-
@@ -76,6 +79,7 @@ breakable(X) :-
 solid(X) :-
 	isA(X,Y),
 	(Y == 'arobot';
+	Y == 'acube';
 	Y == 'atable';
 	Y == 'aprism';
 	Y == 'amarble';
@@ -86,7 +90,8 @@ solid(X) :-
 	Y == 'apencil').
 	
 hollow(X) :-
-	solid(X) \= 'true'.
+	thing(X),
+	\+ solid(X).
 	
 canRoll(X) :-
 	shape(X,'sphere');
@@ -99,16 +104,18 @@ directlyLeft(X,Y) :-
 	leftOf(X,Y),
 	Y \= 'unable',
 	Y \= 'nothing'.
+	
+onSide(X) :-
+	orientation(X,Y),
+	Y == 'onSide'.
 
 large(X) :-
 	size(X,Y),
 	Y == 'large'.
 	
 canPickup(X) :-
-	on(Y,X),
-	X \= 'robbie',
-	X \= 'thetable',
-	Y == 'nothing'.
+	object(X),
+	\+ on(_,X).
 	
 medium(X) :-
 	size(X,Y),
@@ -172,7 +179,7 @@ flatTop(X) :-
 	 Y == 'circle').
 	
 flatTop(X) :-
-	X == 'theTable'.
+	X == 'thetable'.
 	
 crack(X) :-
 	breakable(X).
@@ -181,7 +188,7 @@ big(X) :-
 	large(X).
 	
 under(X,Y) :-
-	above(Y,X).
+	on(Y,X).
 	
 flat(X) :-
 	isA(X,Y),
@@ -220,49 +227,38 @@ white(X) :-
 	Y = 'white'.
 
 madeOf(X,Y) :-
-	material(X,Z),
-	Z == 'userule',
 	isA(X,W),
 	W == 'adish',
-	Y == 'china'.
+	Y = 'china'.
 	
 madeOf(X,Y) :-
-	material(X,Z),
-	Z == 'userule',
 	isA(X,W),
 	W == 'ablock',
-	Y ==  'wood'.
+	Y =  'wood'.
 	
 madeOf(X,Y) :-
-	material(X,Z),
-	Z == 'userule',
 	isA(X,W),
 	W == 'aballoon',
-	Y == 'rubber'.
+	Y = 'rubber'.
 	
 madeOf(X,Y) :-
-	material(X,Z),
-	Z == 'userule',
 	isA(X,W),
 	W == 'apencil',
-	Y == 'wood'.
+	Y = 'wood'.
 	
 madeOf(X,Y) :-
-	material(X,Z),
-	Z == 'userule',
 	isA(X,W),
 	W == 'arobot',
-	Y == 'metal'.
+	Y = 'metal'.
 	
 madeOf(X,Y) :-
-	material(X,Z),
-	Z == 'userule',
 	isA(X,W),
 	(W == 'aglass';
 	 W == 'aprism';
 	 W == 'amarble'),
-	Y == 'glass'.	
+	Y = 'glass'.	
 	
 	
 madeOf(X,Y) :-
-	material(X,Y).
+	material(X,Y),
+	Y \= 'userule'.

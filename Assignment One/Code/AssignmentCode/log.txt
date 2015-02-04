@@ -23,7 +23,7 @@ TRUE
 11 - Block e is on block a.
 FALSE
 12 - The table is under block d.
-TRUE
+FALSE
 13 - There is a pyramid directly left of an object which can pop.
 FALSE
 14 - The prism is somewhere left of the balloon.
@@ -81,8 +81,7 @@ thetube
 thepencil
 
 34 - Which white china objects are the same shape as another object?
-thedish
-
+nothing
 35 - What color is robbie?
 black
 
@@ -194,26 +193,74 @@ theblockA
 thetube
 
 51 - Which flat things could roll and not shatter?
+nothing
 
 52 - Which objects are below something?
-thecube
-thedish
-theblockA
-theblockA
-theblockA
-theblockA
-theblockB
-theblockB
-theblockB
-theblockC
-theblockC
-theblockD
+[theblockA,theblockB,theblockC,theblockD,thecube,thedish]
+
 
 53 - Which things can robbie not pickup?
 robbie
 thetable
+thecube
+thedish
+theblockA
+theblockB
+theblockC
+theblockD
+
+
+54 - Which cubes are under something?
+[theblockA,theblockB,theblockC,theblockD,thecube]
+
+
+55 - What's on the table and not on the table?
+Nothing
+
+56 - Which red striped cubes are somewhere left of blue spotted rocks?
+nothing
+
+57 - What can bounce or make rainbows?
+theball
+
+58 - Which hollow objects are dark or light?
+thebox
+theglass
+thecup
+thetube
+theballoon
+
+
+59 - What solid things are transparent?
+theprism
+themarble
+
+
+60 - Which things could not have something put on them?
+robbie
 theprism
 thecube
+themarble
+thebaseball
+therock
+theball
+thedish
+theblockA
+theblockB
+theblockC
+theblockD
+thepencil
+theballoon
+
+
+61 - Which things are on their sides?
+thepencil
+theballoon
+
+
+62 - What has nothing on it?
+robbie
+theprism
 themarble
 thebaseball
 thebox
@@ -222,32 +269,24 @@ theglass
 thecup
 thetube
 theball
-thedish
+theblockE
+thepencil
+theballoon
+
+
+63 - What kind of things are the cardboard, metal and wood things?
+robbie
+thetable
+thecube
+thebox
+thetube
 theblockA
 theblockB
 theblockC
 theblockD
 theblockE
 thepencil
-theballoon
 
-54 - Which cubes are under something?
-[theblockA,theblockB,theblockC,theblockD,thecube]
 
-55 - What's on the table and not on the table?
-Nothing
-
-56 - Which red striped cubes are somewhere left of blue spotted rocks?
-Nothing
-
-57 - What can bounce or make rainbows?
-theball
-
-58 - Which hollow objects are dark or light?
-59 - What solid things are transparent?
-60 - Which things could not have something put on them?
-61 - Which things are on their sides?
-62 - What has nothing on it?
-63 - What kind of things are the cardboard, metal and wood things?
 
 * * * * * * * * * * * * * * * * * * * END OF EXAM * * * * * * * * * * * * * * * * * * * 

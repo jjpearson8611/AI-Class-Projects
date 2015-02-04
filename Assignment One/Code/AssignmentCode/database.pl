@@ -61,7 +61,7 @@ dynFact(theballoon, 	onSide).
 
 %dynamic relation facts
 %name, directly to the left of, ontop of, in the object
-dynRelFact(robbie, 		unable, 		nothing, 	unable).
+dynRelFact(robbie, 		unable, 		unable, 	unable).
 dynRelFact(theprism, 	nothing, 		thecube, 	unable).
 dynRelFact(thecube, 	themarble, 		thetable,	unable).
 dynRelFact(themarble, 	thebaseball,	thetable,	unable).
@@ -80,7 +80,7 @@ dynRelFact(theblockD, 	nothing, 		theblockC,	unable).
 dynRelFact(theblockE, 	nothing, 		theblockD, 	unable).
 dynRelFact(thepencil, 	theballoon, 	thetable, 	unable).
 dynRelFact(theballoon, 	nothing, 		thetable, 	air).
-dynRelFact(thetable,	unable,			nothing,	unable).
+dynRelFact(thetable,	unable,			unable,		unable).
 
 %robbie, holding
 robbie(robbie,nothing).

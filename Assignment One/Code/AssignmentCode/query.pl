@@ -345,13 +345,15 @@ q(34) :-
 	color(X,'white'),
 	madeOf(X,'china'),
 	shape(X,Y),
-	shape(_,W),
+	shape(Z,W),
 	Y == W,
+	Z \= X,
 	write(X),
 	nl,
 	fail.
 	
 q(34) :-
+	write('nothing'),
 	nl.
 	
 %What color is robbie
@@ -362,7 +364,7 @@ q(35) :-
 	nl.
 	
 q(35) :-
-	nl.
+	nl,nl.
 
 %What shape is the thing made of grey cardboard
 q(36) :-
@@ -376,6 +378,7 @@ q(36) :-
 	write('Nothing'),
 	nl,
 	nl.
+	
 %What are all the things that are flat on top
 q(37) :-
 	flatTop(X),
@@ -552,19 +555,23 @@ q(51) :-
 	fail.
 	
 q(51) :-
-	nl.
+	write('nothing'),
+	nl,nl.
 
 %Which objects are below something
-q(52) :-
+cond52(X) :-
 	object(X),
 	below(X,Y),
-	Y \= 'nothing',
-	write(X),
+	Y \= 'nothing'.
+
+q(52) :-
+	setof(X,cond52(X), List),
+	write(List),
 	nl,
 	fail.
 	
 q(52) :-
-	nl.
+	nl, nl.
 
 %Which things can robbie not pickup
 q(53) :-
@@ -575,7 +582,7 @@ q(53) :-
 	fail.
 	
 q(53) :-
-	nl.
+	nl, nl.
 
 %Which cubes are under something
 cond54(X) :-
@@ -589,7 +596,7 @@ q(54) :-
 	fail.
 	
 q(54) :-
-	nl.
+	nl, nl.
 
 %What's on the table and not on the table
 q(55) :-
@@ -615,7 +622,7 @@ q(56) :-
 	fail.
 	
 q(56) :-
-	write('Nothing'),
+	write('nothing'),
 	nl,nl.
 
 %What can bounce or make rainbows
@@ -631,13 +638,74 @@ q(57) :-
 	
 
 %Which hollow objects are dark or light
+q(58) :-
+	hollow(X),
+	(darkColor(X) ;
+	lightColor(X)),
+	write(X),
+	nl,
+	fail.
+	
+q(58) :-
+	nl,
+	nl.
 
 %What solid things are transparent
+q(59) :-
+	color(X,'transparent'),
+	solid(X),
+	write(X),
+	nl,
+	fail.
+	
+q(59) :-
+	nl,nl.
+
 
 %Which things could not have something put on them
+q(60) :-
+	thing(X),
+	\+ canPlaceOnTop(X),
+	write(X),
+	nl,
+	fail.
+	
+q(60) :-
+	nl,nl.
 
 %Which things are on their sides
+q(61) :-
+	thing(X),
+	onSide(X),
+	write(X),
+	nl,
+	fail.
+	
+q(61) :-
+	nl,nl.
 
 %What has nothing on it
+q(62) :-
+	thing(X),
+	\+ on(_,X),
+	write(X),
+	nl,
+	fail.
+	
+q(62) :-
+	nl,nl.
+
 
 %What kind of things are the cardboard, metal and wood things
+q(63) :-
+	thing(X),
+	madeOf(X,Y),
+	(Y == 'metal';
+	Y == 'wood';
+	Y == 'cardboard'),
+	write(X),
+	nl,
+	fail.
+	
+q(63) :-
+	nl,nl.
