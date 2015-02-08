@@ -20,25 +20,24 @@ staticFact(thetable, 	table, 		black, 			metal, 		large, 		atable).
 staticFact(theprism, 	pyramid, 	transparent, 	userule, 	medium, 	aprism).
 staticFact(thecube, 	cube, 		black, 			metal,		medium, 	acube).
 staticFact(themarble, 	sphere, 	transparent, 	userule,	small, 		amarble).
-staticFact(thebaseball, sphere, 	white, 			leather, 	large, 		aball).
-staticFact(thebox, 		cube, 		brown, 			cardboard,	large, 		abox).
+staticFact(thebaseball, sphere, 	white, 			leather, 	medium,		aball).
+staticFact(thebox, 		cube, 		grey, 			cardboard,	large, 		abox).
 staticFact(therock, 	sphere, 	grey, 			granite, 	large, 		arock).
-staticFact(theglass, 	cylinder, 	transparent, 	userule, 	large, 		aglass).
-staticFact(thecup, 		cylinder, 	white, 			paper, 		large, 		acup).
-staticFact(thetube, 	cylinder, 	brown, 			cardboard, 	large, 		atube).
+staticFact(theglass, 	cylinder, 	black,		 	userule, 	medium,		aglass).
+staticFact(thecup, 		cylinder, 	white, 			paper, 		medium, 	acup).
+staticFact(thetube, 	cylinder, 	black, 			cardboard, 	large, 		atube).
 staticFact(theball, 	sphere, 	black, 			rubber, 	medium, 	aball).
-staticFact(thedish, 	circle, 	white, 			userule, 	medium,		adish).
-staticFact(theblockA, 	cube, 		brown, 			userule, 	small, 		ablock).
-staticFact(theblockB, 	cube, 		brown, 			userule, 	small, 		ablock).
-staticFact(theblockC, 	cube, 		brown, 			userule, 	small, 		ablock).
-staticFact(theblockD, 	cube, 		brown, 			userule, 	small, 		ablock).
-staticFact(theblockE, 	cube, 		brown, 			userule, 	small, 		ablock).
+staticFact(thedish, 	circle, 	white, 			userule, 	large,		adish).
+staticFact(theblockA, 	cube, 		white, 			userule, 	small, 		ablock).
+staticFact(theblockB, 	cube, 		white, 			userule, 	small, 		ablock).
+staticFact(theblockC, 	cube, 		white, 			userule, 	small, 		ablock).
+staticFact(theblockD, 	cube, 		white, 			userule, 	small, 		ablock).
+staticFact(theblockE, 	cube, 		white, 			userule, 	small, 		ablock).
 staticFact(thepencil, 	cylinder, 	yellow, 		userule, 	small, 		apencil).
-staticFact(theballoon, 	sphere, 	white, 			userule, 	large, 		aballoon).
+staticFact(theballoon, 	sphere, 	white, 			userule, 	medium, 	aballoon).
 
 %dynamic facts
 %name, orientation
-dynFact(robbie, 		none).
 dynFact(theprism, 		onBase).
 dynFact(thecube, 		none).
 dynFact(themarble, 		none).
@@ -61,7 +60,6 @@ dynFact(theballoon, 	onSide).
 
 %dynamic relation facts
 %name, directly to the left of, ontop of, in the object
-dynRelFact(robbie, 		unable, 		unable, 	unable).
 dynRelFact(theprism, 	nothing, 		thecube, 	unable).
 dynRelFact(thecube, 	themarble, 		thetable,	unable).
 dynRelFact(themarble, 	thebaseball,	thetable,	unable).
@@ -80,7 +78,6 @@ dynRelFact(theblockD, 	nothing, 		theblockC,	unable).
 dynRelFact(theblockE, 	nothing, 		theblockD, 	unable).
 dynRelFact(thepencil, 	theballoon, 	thetable, 	unable).
 dynRelFact(theballoon, 	nothing, 		thetable, 	air).
-dynRelFact(thetable,	unable,			unable,		unable).
 
 %robbie, holding
 robbie(robbie,nothing).

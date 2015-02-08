@@ -50,23 +50,16 @@ somewhereLeft(X,Y) :-
 	
 somewhereLeft(X,Y) :-
 	(left(X,Z),
-	somewhereLeft(Z,Y));
+	somewhereLeft(Z,Y)).
+	
+somewhereLeft(X,Y) :-
 	(left(X,Z),
-	above(Y,Z));
+	above(Y,Z)).
+	
+somewhereLeft(X,Y) :-
 	(above(X,Z),
 	somewhereLeft(Z,Y)).
 	
-
-
-
-
-
-
-
-
-
-
-
 % *************************************************
 
 % SET OF QUESTION VALUES --------------------------

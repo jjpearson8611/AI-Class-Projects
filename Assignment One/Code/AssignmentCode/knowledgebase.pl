@@ -36,17 +36,27 @@ thing(X) :-
 	Y \= 'notAThing'.
 	
 nextTo(X,Y) :-
-	directlyLeft(X,Y);
 	directlyLeft(Y,X).
+
+nextTo(X,Y) :-
+	directlyLeft(X,Y).
+	
+nextTo(X,Y) :-
+	on(X,Y),
+	X \= 'thetable'.
 	
 somewhereLeft(X,Y) :-
 	directlyLeft(X,Y).
 	
 somewhereLeft(X,Y) :-
+	directlyLeft(X,Z),
+	somewhereLeft(Z,Y).
+	
+somewhereLeft(X,Y) :-
 	(directlyLeft(X,Z),
-	somewhereLeft(Z,Y));
-	(directlyLeft(X,Z),
-	above(Y,Z));
+	above(Y,Z)).
+	
+somewhereLeft(X,Y) :-
 	(above(X,Z),
 	somewhereLeft(Z,Y)).
 	
@@ -56,15 +66,25 @@ somewhereRight(X,Y) :-
 striped(X) :-
 	X == 'thebox'.
 	
+darkColor(X) :-
+	color(X,Y),
+	Y == 'grey'.
 	
 darkColor(X) :-
 	color(X,Y),
-	( Y == 'black';
-	Y == 'brown';
-	Y == 'grey').
+	Y == 'black'.
 	
 lightColor(X) :-
-	\+ darkColor(X).
+	color(X,Y),
+	Y == 'transparent'.
+	
+lightColor(X) :-
+	color(X,Y),
+	Y == 'white'.
+	
+lightColor(X) :-
+	color(X,Y),
+	Y == 'yellow'.
 	
 spotted(X) :-
 	X == 'therock'.
@@ -73,29 +93,65 @@ shatter(X) :-
 	breakable(X).
 	
 breakable(X) :-
-	madeOf(X,'glass');
+	madeOf(X,'glass').
+	
+breakable(X) :-
 	madeOf(X,'china').
 	
 solid(X) :-
 	isA(X,Y),
-	(Y == 'arobot';
-	Y == 'acube';
-	Y == 'atable';
-	Y == 'aprism';
-	Y == 'amarble';
-	Y == 'aball';
-	Y == 'ablock';
-	Y == 'arock';
-	Y == 'adish';
-	Y == 'apencil').
+	Y == 'arobot'.
+	
+solid(X) :-
+	isA(X,Y),
+	Y == 'acube'.
+	
+solid(X) :-
+	isA(X,Y),
+	Y == 'atable'.
+	
+solid(X) :-
+	isA(X,Y),
+	Y == 'aprism'.
+	
+solid(X) :-
+	isA(X,Y),
+	Y == 'amarble'.
+	
+solid(X) :-
+	isA(X,Y),
+	Y == 'aball'.
+	
+solid(X) :-
+	isA(X,Y),
+	Y == 'ablock'.
+	
+solid(X) :-
+	isA(X,Y),
+	Y == 'arock'.
+	
+solid(X) :-
+	isA(X,Y),
+	Y == 'adish'.
+	
+solid(X) :-
+	isA(X,Y),
+	Y == 'apencil'.
 	
 hollow(X) :-
-	thing(X),
+	object(X),
 	\+ solid(X).
 	
 canRoll(X) :-
-	shape(X,'sphere');
-	shape(X,'cylinder').
+	shape(X,'sphere').
+	
+canRoll(X) :-	
+	shape(X,'cylinder'),
+	onSide(X).
+	
+canRoll(X) :-	
+	shape(X,'circle'),
+	onSide(X).
 
 couldRoll(X) :-
 	round(X).
@@ -140,27 +196,51 @@ small(X) :-
 
 heavy(X) :-
 	isA(X,Y),
-	( Y == 'arock';
-	Y == 'atable';
-	Y == 'aball';
-	Y == 'robbie').
+	Y == 'arock'.
+	
+heavy(X) :-
+	isA(X,Y),
+	Y == 'atable'.
+	
+heavy(X) :-
+	isA(X,Y),
+	Y == 'aball'.
+	
+heavy(X) :-
+	isA(X,Y),
+	Y == 'robbie'.
 	
 heavy(X) :-
 	material(X,Y),
-	(Y == 'glass'; 
-	 Y == 'metal';
-	 Y == 'china').
+	Y == 'glass'. 
+	
+heavy(X) :-
+	material(X,Y),
+	Y == 'metal'.
+	
+heavy(X) :-
+	material(X,Y),
+	Y == 'china'.
 	
 light(X) :-
 	isA(X,Y),
-	(Y == 'apencil';
-	Y == 'aballoon').
+	Y == 'apencil'.
+	
+light(X) :-
+	isA(X,Y),
+	Y == 'aballoon'.
 	
 light(X) :-
 	material(X,Y),
-	( Y == 'wood';
-	Y == 'cardboard';
-	Y == 'paper').
+	Y == 'wood'.
+
+light(X) :-
+	material(X,Y),
+	Y == 'cardboard'.
+
+light(X) :-
+	material(X,Y),
+	Y == 'paper'.
 
 above(X,Y) :-
 	on(X,Y).	
@@ -174,9 +254,15 @@ below(X,Y) :-
 	
 flatTop(X) :-
 	shape(X,Y),
-	( Y == 'cube';
-	 Y == 'cylinder';
-	 Y == 'circle').
+	Y == 'cube'.
+	
+flatTop(X) :-
+	shape(X,Y),
+	Y == 'cylinder'.
+
+flatTop(X) :-
+	shape(X,Y),
+	Y == 'circle'.
 	
 flatTop(X) :-
 	X == 'thetable'.
@@ -188,7 +274,7 @@ big(X) :-
 	large(X).
 	
 under(X,Y) :-
-	on(Y,X).
+	below(X,Y).
 	
 flat(X) :-
 	isA(X,Y),

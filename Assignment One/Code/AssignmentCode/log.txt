@@ -23,7 +23,7 @@ TRUE
 11 - Block e is on block a.
 FALSE
 12 - The table is under block d.
-FALSE
+TRUE
 13 - There is a pyramid directly left of an object which can pop.
 FALSE
 14 - The prism is somewhere left of the balloon.
@@ -72,12 +72,11 @@ thecube
 robbie
 thetable
 thecube
+thebox
 
 33 - Which things are neither black nor white, but are round?
 themarble
 therock
-theglass
-thetube
 thepencil
 
 34 - Which white china objects are the same shape as another object?
@@ -86,21 +85,20 @@ nothing
 black
 
 36 - What shape is the thing made of grey cardboard?
-Nothing
-
+cube
 37 - What are all the things that are flat on top?
 thecube
 thebox
-theglass
-thecup
-thetube
-thedish
 theblockA
 theblockB
 theblockC
 theblockD
 theblockE
+theglass
+thecup
+thetube
 thepencil
+thedish
 
 38 - What are all the things that are flat on top made of wood?
 theblockA
@@ -111,10 +109,12 @@ theblockE
 thepencil
 
 39 - Which big things are next to small things?
-thebaseball
-theballoon
+thedish
 
 40 - Which things are round and can not roll?
+theglass
+thecup
+thetube
 thedish
 
 41 - Which things can not have something put on them?
@@ -140,7 +140,6 @@ nothing
 [theball,theballoon,theblockA,theblockB,theblockC,theblockD,theblockE,thedish,thepencil,thetube]
 
 44 - What's crushable or popable things but not grey or white?
-thebox
 thetube
 
 45 - What things could not crack?
@@ -182,6 +181,7 @@ theblockC
 
 49 - Which things is the dish next to?
 thetube
+theball
 theblockA
 
 50 - What has a breakable object directly left or right of itself?

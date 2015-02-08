@@ -372,7 +372,8 @@ q(36) :-
 	color(Y,'grey'),
 	madeOf(Y,'cardboard'),
 	shape(Y,X),
-	write(X).
+	write(X),
+	nl.
 		
 q(36) :-
 	write('Nothing'),
@@ -537,7 +538,8 @@ q(49) :-
 q(50) :-
 	object(X),
 	breakable(X),
-	nextTo(X,Y),
+	(directlyLeft(X,Y);
+	directlyLeft(Y,X)),
 	write(Y),
 	nl,
 	fail.
