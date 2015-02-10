@@ -448,11 +448,7 @@ q(42) :-
 	nl.
 
 %Which things are somewhere right of paper object
-cond43(X) :-
-	thing(X),
-	object(Y),
-	madeOf(Y,'paper'),
-	somewhereRight(X,Y).
+
 
 q(43) :-
 	setof(X, cond43(X), List),
@@ -561,11 +557,6 @@ q(51) :-
 	nl,nl.
 
 %Which objects are below something
-cond52(X) :-
-	object(X),
-	below(X,Y),
-	Y \= 'nothing'.
-
 q(52) :-
 	setof(X,cond52(X), List),
 	write(List),
@@ -587,10 +578,6 @@ q(53) :-
 	nl, nl.
 
 %Which cubes are under something
-cond54(X) :-
-	shape(X,'cube'),
-	under(X,_).
-
 q(54) :-
 	setof(X,cond54(X),List),
 	write(List),
@@ -711,3 +698,19 @@ q(63) :-
 	
 q(63) :-
 	nl,nl.
+	
+cond43(X) :-
+	thing(X),
+	object(Y),
+	madeOf(Y,'paper'),
+	somewhereRight(X,Y).
+	
+cond52(X) :-
+	object(X),
+	below(X,Y),
+	Y \= 'nothing'.
+	
+cond54(X) :-
+	shape(X,'cube'),
+	under(X,_).
+
