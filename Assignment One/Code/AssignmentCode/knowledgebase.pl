@@ -302,7 +302,7 @@ bounce(X) :-
 	Z == 'rubber'.
 	
 makeRainbows(X) :-
-	isA(X,'aunicorn').
+	isA(X,'aprism').
 	
 empty(X) :-
 	fullOf(X,Y),

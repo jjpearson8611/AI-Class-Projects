@@ -222,6 +222,7 @@ nothing
 
 57 - What can bounce or make rainbows?
 theball
+theprism
 
 58 - Which hollow objects are dark or light?
 thebox
