@@ -1,8 +1,4 @@
-%this is the load and go for our project
-%This is in charge of loading the six files into prolog
-%re-routing output to a file called Asgn1.txt
-%automatically runs the questions
-
+%Controller jason pearson CS5820 assign 1
 go :-
 	consult('database.pl'),
 	consult('knowledgebase.pl'),

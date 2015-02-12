@@ -1,4 +1,4 @@
-%Prolog queries which correspond to my English-language questions
+%Query Jason Pearson CS582 AssignOne
 
 %There's a rock on the table
 q(1) :-

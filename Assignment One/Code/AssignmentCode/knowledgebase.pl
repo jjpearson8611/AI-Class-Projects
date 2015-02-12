@@ -1,8 +1,4 @@
-%This is robbie's brain.
-%this defines how robbie thinks
-%there isn't much structure to this list just a pile of information
-%Best strategy to find something is to ctrl + f to find it
-
+%KnowledgeBase Jason Pearson CS5820 assgn1
 
 holding(X,Y) :-
 	hold(X,Y).
