@@ -30,13 +30,48 @@ showBlockRobbieIsHolding :-
 	
 showAllOtherBlocks :-
 	bagof(X,onTableBlocks(X),List),
-	showStackedBlocks(List).
+	handleNotBagBlocks(List),
+	writeList(List),
+	nl.
+	
+	
+	
+handleNotBagBlocks(List) :-
+	showStackedBlocks(List,X),
+	\+ isAllNothing(X),
+	handleNotBagBlocks(X),
+	writeList(X),nl.
+	
+handleNotBagBlocks(List).
+	
+isAllNothing([]).
+
+isAllNothing([Head | Tail]) :- 
+	Head == 'nothing',
+	isAllNothing(Tail).
+	
+showAllOtherBlocks.
+
+showStackedBlocks([],[]).
+	
+showStackedBlocks([HeadOne | TailOne], [HeadTwo | TailTwo]) :-
+	isSomethingOn(HeadOne,HeadTwo),
+	showStackedBlocks(TailOne,TailTwo).
+	
+
+writeList([]).
+
+writeList([Head | Tail]) :-
+	showOneBlock(Head),
+	writeList(Tail).
 
 	
-showStackedBlocks(X) :-
-	[Head | Tail]
-	write(Head),
-	write('made it here').
+isSomethingOn(X,Y) :-
+	on(Y,X).
+	
+isSomethingOn(X,Y) :-
+	\+ on(Y,X),
+	Y = 'nothing'.
 	
 onTableBlocks(X) :-
 	on(X,'table').
@@ -73,6 +108,10 @@ showOneBlock(X) :-			% finish this rule
 	capitalizeIt(X,Z),
 	write(Z),
 	write('\\ ').
+	
+showOneBlock(X) :-
+	X == 'nothing',
+	write('     ').
 
 % NOTES:
 % - allow for any number of blocks high &
