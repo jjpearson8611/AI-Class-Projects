@@ -7,7 +7,6 @@ go :-
 	consult('staticDatabase.pl'),
 	consult('moves.pl'),
 	consult('initialState.pl').
-	
 %	write('Batch mode or Interative mode'),
 %	nl,
 %	read(X),
