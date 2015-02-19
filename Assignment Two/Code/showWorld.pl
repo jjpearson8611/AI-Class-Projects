@@ -34,8 +34,6 @@ showAllOtherBlocks :-
 	writeList(List),
 	nl.
 	
-	
-	
 handleNotBagBlocks(List) :-
 	showStackedBlocks(List,X),
 	\+ isAllNothing(X),

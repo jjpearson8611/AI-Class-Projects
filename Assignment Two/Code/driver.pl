@@ -6,11 +6,12 @@ go :-
 	consult('showWorld.pl'),
 	consult('staticDatabase.pl'),
 	consult('moves.pl'),
-	consult('initialState.pl'),
-	write('Batch mode or Interative mode'),
-	nl,
-	read(X),
-	write(X).
+	consult('initialState.pl').
+	
+%	write('Batch mode or Interative mode'),
+%	nl,
+%	read(X),
+%	write(X).
 	
 	
 	

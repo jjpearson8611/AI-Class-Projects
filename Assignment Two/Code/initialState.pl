@@ -2,6 +2,12 @@
 %    - use this file AS IS, but add :- dynamic directives
 %	(which SWI Prolog requires) for the 3 predicates
 
+
+:- dynamic on/2.
+:- dynamic holding/1.
+:- dynamic left/2.
+
+
 holding(nothing).
 
 on(a,table).

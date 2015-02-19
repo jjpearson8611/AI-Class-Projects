@@ -14,7 +14,7 @@
 % / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / /
 
 thePlan :-
-	write('@ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ CURRENT STATE'),nl,
+	write('@ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ CURRENT STATE @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @'),nl,
 		% at prompt from your program, user chooses currentState
 		% but it does NOT exist so initial state is automatically used
 	csw,
