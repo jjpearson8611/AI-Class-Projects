@@ -34,13 +34,15 @@ showAllOtherBlocks :-
 	writeList(List),
 	nl.
 	
+showAllOtherBlocks.
+
 handleNotBagBlocks(List) :-
 	showStackedBlocks(List,X),
 	\+ isAllNothing(X),
 	handleNotBagBlocks(X),
 	writeList(X),nl.
 	
-handleNotBagBlocks(List).
+handleNotBagBlocks(_).
 	
 isAllNothing([]).
 
@@ -48,7 +50,6 @@ isAllNothing([Head | Tail]) :-
 	Head == 'nothing',
 	isAllNothing(Tail).
 	
-showAllOtherBlocks.
 
 showStackedBlocks([],[]).
 	
@@ -96,7 +97,8 @@ showOneBlock(X) :-			% finish this rule
 	shape(X,Y),
 	Y == 'cube',
 	write(' ['),
-	write(X),
+	capitalizeIt(X,Z),
+	write(Z),
 	write('] ').
 
 showOneBlock(X) :-			% finish this rule

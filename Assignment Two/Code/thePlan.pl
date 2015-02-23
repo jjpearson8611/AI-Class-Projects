@@ -96,14 +96,22 @@ group3Moves :-
 group4Moves :-
     nl,write('* * * * * * *  group 4 moves  * * * * * * * * *'),nl,
 	slideRight,	slideLeft,
-	putOnCarefully(c,n),	putOnCarefully(robbie,table),
-	putOnCarefully(z,table), putOnCarefully(k,z),
-	putOnCarefully(c,z),	putOnCarefully(e,table),
-	putOnCarefully(n,d),	putOnCarefully(d,e),
-	putOnCarefully(e,d),	putOnCarefully(k,table),
-	putOnCarefully(c,j),	pol(e),
-	pickUp(l),		putOnCarefully(k,n),
-	poc(l,c),		pickUp(g).
+	putOnCarefully(c,n),				%do nothing
+	putOnCarefully(robbie,table),		%do nothing
+	putOnCarefully(z,table), 			%do nothing
+	putOnCarefully(k,z),				%do nothing
+	putOnCarefully(c,z),				%do nothing
+	putOnCarefully(e,table),			%pick it up and put it back down on right side
+	putOnCarefully(n,d),				%puts n on d
+	putOnCarefully(d,e),				%do nothing
+	putOnCarefully(e,d),				%do nothing
+	putOnCarefully(k,table),			%moves k to the table right side
+	putOnCarefully(c,j),				%moves c to stack
+	pol(e),								%puts e on left
+	pickUp(l),							%picks up l
+	putOnCarefully(k,n),				%cant holding l
+	poc(l,c),							%put l on c
+	pickUp(g).							%pick up g
 
 % --<< g					*** WORLD #5
 %

@@ -1,0 +1,176 @@
+@ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ CURRENT STATE @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @
+:- dynamic holding/1.
+
+holding(nothing).
+
+:- dynamic on/2.
+
+on(a, table).
+on(b, table).
+on(c, table).
+on(d, table).
+on(e, table).
+on(f, table).
+on(g, table).
+on(h, b).
+on(i, h).
+on(j, i).
+on(k, c).
+on(l, k).
+on(m, f).
+on(n, m).
+
+:- dynamic left/2.
+
+left(a, b).
+left(b, c).
+left(c, d).
+left(d, e).
+left(e, f).
+left(f, g).
+
+--<<Empty
+
+
+      (J)                          
+      [I]  /L\            (N)      
+      [H]  [K]            [M]      
+ [A]  [B]  [C]  /D\  /E\  [F]  [G] 
+_____________________________________
+   | |                      | |      
+   | |                      | |      
+   | |                      | |      
+
+* * * * * * *  group 1 moves  * * * * * * * * *
+OK I did a pick up aOK I did a put down a on the tableOK I did a pick up eOK I did a put down e on the tableSORRY, I can't pick up robbieSORRY, I can't pick up tableSORRY I can't put down table
+SORRY, I can't pick up zOK I did a pick up jOK I did a put down j on the tableOK I did a pick up nOK I did a put down n on the tableOK I did a pick up jOK I did a put down j on the tableSORRY I can't put down robbie
+SORRY I can't put down z
+SORRY, I can't pick up bSORRY I can't put down i
+OK I did a pick up lSORRY, I can't pick up lSORRY, I can't pick up j--<< /L\ 
+
+
+ [I]                                         
+ [H]  [K]       [M]                          
+ [B]  [C]  /D\  [F]  [G]  [A]  /E\  (N)  (J) 
+_____________________________________
+   | |                      | |      
+   | |                      | |      
+   | |                      | |      
+
+* * * * * * *  group 2 moves  * * * * * * * * *
+SORRY, I can't pick up nOK, I did a put down on left lOK I did a pick up nOK, I did a put down on left nSorry I can't put down right nSORRY, I can't pick up tableSorry I can't put down right tableSORRY, I cant't put down on left tableSORRY, I can't pick up robbieSorry I can't put down right robbieSORRY, I cant't put down on left robbieSORRY, I can't pick up floorSorry I can't put down right floorSORRY, I cant't put down on left floorSORRY, I can't pick up bOK I did a pick up aOK, I did a put down on left aOK I did a pick up j--<< (J) 
+
+
+                [I]                          
+                [H]  [K]       [M]           
+ [A]  (N)  /L\  [B]  [C]  /D\  [F]  [G]  /E\ 
+_____________________________________
+   | |                      | |      
+   | |                      | |      
+   | |                      | |      
+
+* * * * * * *  group 3 moves  * * * * * * * * *
+Sorry I cant't put one on table
+Sorry I cant't put onz on table
+OK, I did a put down on left jSorry I cant't put oni on h
+Sorry I cant't put onb on g
+Sorry I cant't put onl on c
+Sorry I cant't put ontable on d
+OK, I did a put on j on aOK, I did a put on g on iSorry I cant't put ong on i
+Sorry I cant't put oni on g
+Sorry I cant't put onb on table
+Sorry I cant't put oni on h
+OK, I did a put on g on mOK, I did a put on g on iSorry I cant't put onl on d
+Sorry I cant't put onl on e
+Sorry I cant't put onl on l
+OK, I did a put on l on gSorry I cant't put onm on f
+Sorry I cant't put onf on table
+Sorry I cant't put onz on floor
+Sorry I cant't put onrobbie on table
+OK, I did a put on right j
+OK, I did a put on right k
+OK, I did a put on left c
+OK, I did a put on left k
+OK, I did a put on a on mOK, I did a put on j on aSorry I cant't put onk on d
+OK, I did a put on k on c--<<Empty
+
+
+           /L\                
+           [G]       (J)      
+           [I]       [A]      
+ [K]       [H]       [M]      
+ [C]  (N)  [B]  /D\  [F]  /E\ 
+_____________________________________
+   | |                      | |      
+   | |                      | |      
+   | |                      | |      
+
+* * * * * * *  group 4 moves  * * * * * * * * *
+SORRY I can't put carefully on c on n
+SORRY I can't put carefully on robbie on table
+SORRY I can't put carefully on z on table
+SORRY I can't put carefully on k on z
+SORRY I can't put carefully on c on z
+OK, I did a put carefully on e on the table
+OK, I did a carefully put on n on d
+SORRY I can't put carefully on d on e
+SORRY I can't put carefully on e on d
+OK, I did a put carefully on k on the table
+OK, I did a carefully put on c on j
+OK, I did a put on left e
+OK I did a pick up lSORRY I can't put carefully on k on n
+OK, I did a carefully put on l on c
+OK I did a pick up g--<< [G] 
+
+
+                /L\      
+                [C]      
+                (J)      
+      [I]       [A]      
+      [H]  (N)  [M]      
+ /E\  [B]  /D\  [F]  [K] 
+_____________________________________
+   | |                      | |      
+   | |                      | |      
+   | |                      | |      
+:- dynamic holding/1.
+
+holding(g).
+
+:- dynamic on/2.
+
+on(e, table).
+on(b, table).
+on(d, table).
+on(f, table).
+on(h, b).
+on(i, h).
+on(m, f).
+on(a, m).
+on(j, a).
+on(n, d).
+on(k, table).
+on(c, j).
+on(l, c).
+
+:- dynamic left/2.
+
+left(e, b).
+left(k, c).
+left(c, a).
+left(j, a).
+left(a, n).
+left(n, l).
+left(l, b).
+left(b, c).
+left(c, d).
+left(f, g).
+left(d, f).
+left(a, e).
+left(e, j).
+left(g, b).
+left(e, j).
+left(j, k).
+left(e, e).
+left(e, k).
+
