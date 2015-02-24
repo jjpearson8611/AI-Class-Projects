@@ -6,7 +6,6 @@ go :-
 	consult('showWorld.pl'),
 	consult('staticDatabase.pl'),
 	consult('moves.pl'),
-	consult('initialState.pl'),
 	consult('stateStuff.pl'),
 	determineMode(X).
 
@@ -27,6 +26,7 @@ handleMode(X) :-
 	
 handleMode(X) :-
 	X == 'i',
+	getCorrectState,
 	write('You are in charge of robbie now!'),nl,
 	legend,
 	read(X),

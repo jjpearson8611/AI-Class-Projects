@@ -1,0 +1,9 @@
+C:\Users\BuckDich\Documents\GitHub\AI-Class-Projects\FinalProject\FinalProject\bin\Debug\FinalProject.exe.config
+C:\Users\BuckDich\Documents\GitHub\AI-Class-Projects\FinalProject\FinalProject\bin\Debug\FinalProject.exe
+C:\Users\BuckDich\Documents\GitHub\AI-Class-Projects\FinalProject\FinalProject\bin\Debug\FinalProject.pdb
+C:\Users\BuckDich\Documents\GitHub\AI-Class-Projects\FinalProject\FinalProject\obj\Debug\FinalProject.csprojResolveAssemblyReference.cache
+C:\Users\BuckDich\Documents\GitHub\AI-Class-Projects\FinalProject\FinalProject\obj\Debug\FinalProject.Form1.resources
+C:\Users\BuckDich\Documents\GitHub\AI-Class-Projects\FinalProject\FinalProject\obj\Debug\FinalProject.Properties.Resources.resources
+C:\Users\BuckDich\Documents\GitHub\AI-Class-Projects\FinalProject\FinalProject\obj\Debug\FinalProject.csproj.GenerateResource.Cache
+C:\Users\BuckDich\Documents\GitHub\AI-Class-Projects\FinalProject\FinalProject\obj\Debug\FinalProject.exe
+C:\Users\BuckDich\Documents\GitHub\AI-Class-Projects\FinalProject\FinalProject\obj\Debug\FinalProject.pdb

@@ -5,17 +5,18 @@ slideLeft.
 
 pickUp(Block) :- % completed
 	validBlock(Block),
-	objectClear(Block),
+	clearedOff(Block),
 	on(Block,'table'),
 	holdingNothing,
 	handleLeftRule(Block),
 	pickupBlock(Block),
 	write('OK I did a pick up '),
-	write(Block).
+	write(Block),
+	slideLeft.
 	
 pickUp(Block) :- % completed
 	validBlock(Block),
-	objectClear(Block),
+	clearedOff(Block),
 	holdingNothing,
 	pickupBlock(Block),
 	write('OK I did a pick up '),
@@ -53,6 +54,7 @@ putDownOnRight(Block) :-  % here to keep the plan going
 	write(Block).
 
 putDownOnLeft(Block) :- % completed
+	slideRight,
 	\+ holdingNothing,
 	holdingBlockRequested(Block),
 	handleOnLeft(Block),
@@ -67,7 +69,7 @@ putOn(Block,Object) :- % completed for on Table
 	Object == 'table', 
 	holdingNothing,
 	validBlock(Block),
-	objectClear(Block),
+	clearedOff(Block),
 	allOnTable(X),
 	findRightMost(X,Y),
 	pickupBlock(Block),
@@ -79,8 +81,8 @@ putOn(Block,Object) :- % completed for on Table
 putOn(Block,Object) :- % completed for an object
 	holdingNothing,
 	validBlock(Block),
-	objectClear(Block),
-	objectClear(Object),
+	clearedOff(Block),
+	clearedOff(Object),
 	isCube(Object),
 	pickupBlock(Block),	
 	handlePuttingOn(Block,Object), 
@@ -99,7 +101,7 @@ putOnCarefully(Block,Object) :- %  completed for on Table
 	Object == 'table', 
 	holdingNothing,
 	validBlock(Block),
-	objectClear(Block),
+	clearedOff(Block),
 	allOnTable(X),
 	findRightMost(X,Y),
 	pickupBlock(Block),
@@ -112,8 +114,8 @@ putOnCarefully(Block,Object) :- % place anything on anything
 	holdingNothing,
 	validBlock(Block),
 	validBlock(Object),
-	objectClear(Block),
-	objectClear(Object),
+	clearedOff(Block),
+	clearedOff(Object),
 	pickupBlock(Block),	
 	handlePuttingOn(Block,Object),
 	write('OK, I did a carefully put on '),
@@ -125,7 +127,7 @@ putOnCarefully(Block,Object) :- %already holding the object we want to put down
 	holding(X),
 	Block == X,
 	validBlock(Object),
-	objectClear(Object),	
+	clearedOff(Object),	
 	handlePuttingOn(Block,Object),
 	write('OK, I did a carefully put on '),
 	write(Block),
@@ -142,7 +144,7 @@ putOnCarefully(X,Y) :- %here to keep the plan going
 putOnRight(Block) :- 
 	holdingNothing,
 	validBlock(Block),
-	objectClear(Block),
+	clearedOff(Block),
 	allOnTable(X),
 	findRightMost(X,Y),
 	pickupBlock(Block),
@@ -155,10 +157,11 @@ putOnRight(X) :- %here to keep the plan going
 	write(X),nl.
 	
 	
- putOnLeft(Block) :- %working maybe
+ putOnLeft(Block) :- 
+	slideRight,
 	holdingNothing,
 	validBlock(Block),
-	objectClear(Block),
+	clearedOff(Block),
 	pickupBlock(Block),
 	handleOnLeft(Block),
 	write('OK, I did a put on left '),
@@ -186,7 +189,7 @@ putOnLeft(X):- %here to keep the plan working
 	assertz(on(Block,'table')),
 	assertz(holding('nothing')).
  
- objectClear(X) :-
+ clearedOff(X) :-
 	\+ on(_,X).
  
  handlePuttingOn(Block,Object) :-
