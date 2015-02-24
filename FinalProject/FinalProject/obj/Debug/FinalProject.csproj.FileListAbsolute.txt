@@ -7,3 +7,6 @@ C:\Users\BuckDich\Documents\GitHub\AI-Class-Projects\FinalProject\FinalProject\o
 C:\Users\BuckDich\Documents\GitHub\AI-Class-Projects\FinalProject\FinalProject\obj\Debug\FinalProject.csproj.GenerateResource.Cache
 C:\Users\BuckDich\Documents\GitHub\AI-Class-Projects\FinalProject\FinalProject\obj\Debug\FinalProject.exe
 C:\Users\BuckDich\Documents\GitHub\AI-Class-Projects\FinalProject\FinalProject\obj\Debug\FinalProject.pdb
+D:\Programming\GitDumpsHere\AI-Class-Projects\FinalProject\FinalProject\bin\Debug\FinalProject.exe.config
+D:\Programming\GitDumpsHere\AI-Class-Projects\FinalProject\FinalProject\obj\Debug\FinalProject.exe
+D:\Programming\GitDumpsHere\AI-Class-Projects\FinalProject\FinalProject\obj\Debug\FinalProject.pdb
