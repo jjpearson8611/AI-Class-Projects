@@ -7,18 +7,21 @@ getCorrectState :- %this loads in the current state file
 	
 handleInput(X) :-
 	X == 'i',
+	assert(state(initial)),
 	consult('initialState.pl').
 	
 handleInput(X) :-
 	X == 'c',
 	exists_file('currentState.pl'),
 	consult('currentState.pl'),
-	write('Current State Loaded').
+	assert(state(current)),
+	write('Current State Loaded'),nl.
 	
 handleInput(X) :-
 	X == 'c',
 	write('The current state does not exsist we will be using the initial state'),nl,
-	consult('initialState.pl').
+	consult('initialState.pl'),
+	assert(state(initial)).
 	
 handleInput(_) :-
 	write('Please use i or c for initial or current state'),nl,
@@ -28,4 +31,4 @@ saveState :-
 	tell('currentState.pl'),
 	csw,
 	told,
-	write('Current State Saved').
+	write('Current State Saved'),nl.

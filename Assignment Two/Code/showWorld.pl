@@ -9,9 +9,13 @@ cheapShowWorld :-
 
 showWorld :-
 	showRobbie,
+	!,
 	showBlockRobbieIsHolding,
+	!,
 	showAllOtherBlocks,
-	showTable.
+	!,
+	showTable,
+	!.
 
 showRobbie :-			% finish this rule
 	write('--<<').

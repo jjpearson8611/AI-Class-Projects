@@ -12,7 +12,7 @@ pickUp(Block) :- % completed
 	pickupBlock(Block),
 	write('OK I did a pick up '),
 	write(Block),
-	slideLeft.
+	slideLeft, nl.
 	
 pickUp(Block) :- % completed
 	validBlock(Block),
@@ -20,11 +20,11 @@ pickUp(Block) :- % completed
 	holdingNothing,
 	pickupBlock(Block),
 	write('OK I did a pick up '),
-	write(Block).
+	write(Block), nl.
 	
 pickUp(X) :- % here to keep the plan going
 	write('SORRY, I can\'t pick up '),
-	write(X).
+	write(X), nl.
 
 putDown(Block) :- % completed
 	\+ holdingNothing,
@@ -34,7 +34,7 @@ putDown(Block) :- % completed
 	placeBlockOnTable(Block,Y),
 	write('OK I did a put down '),
 	write(Block),
-	write(' on the table').
+	write(' on the table'), nl.
 	
 putDown(X) :- % here to keep the plan going
 	write('SORRY I can\'t put down '),
@@ -47,11 +47,11 @@ putDownOnRight(Block) :-
 	placeBlockOnTable(Block,Y),
 	write('OK I did a put down on right '),
 	write(Block),
-	write(' on the table').
+	write(' on the table'), nl.
 	
 putDownOnRight(Block) :-  % here to keep the plan going
 	write('Sorry I can\'t put down right '),
-	write(Block).
+	write(Block), nl.
 
 putDownOnLeft(Block) :- % completed
 	slideRight,
@@ -59,11 +59,11 @@ putDownOnLeft(Block) :- % completed
 	holdingBlockRequested(Block),
 	handleOnLeft(Block),
 	write('OK, I did a put down on left '),
-	write(Block).
+	write(Block), nl.
 	
 putDownOnLeft(Block):-  % here to keep the plan going
 	write('SORRY, I cant\'t put down on left '),
-	write(Block).
+	write(Block), nl.
 
 putOn(Block,Object) :- % completed for on Table
 	Object == 'table', 
@@ -76,7 +76,7 @@ putOn(Block,Object) :- % completed for on Table
 	placeBlockOnTable(Block,Y),
 	write('OK, I did a put on '),
 	write(Block),
-	write(' on the table').
+	write(' on the table'), nl.
 	
 putOn(Block,Object) :- % completed for an object
 	holdingNothing,
@@ -89,10 +89,10 @@ putOn(Block,Object) :- % completed for an object
 	write('OK, I did a put on '),
 	write(Block),
 	write(' on '),
-	write(Object).
+	write(Object), nl.
 	
 putOn(Block, Object) :-  % here to keep the plan going
-	write('Sorry I cant\'t put on'),
+	write('Sorry I cant\'t put on '),
 	write(Block),
 	write(' on '),
 	write(Object),nl.

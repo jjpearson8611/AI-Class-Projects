@@ -17,22 +17,24 @@ determineMode(X) :-  %this is used for determining which mode
 
 handleMode(X) :-
 	X == 'b',
-	consult('thePlan.pl'),
+	assert(mode(batch)),
+	getCorrectState,
+	consult('thePlan3.pl'),
 	tell('A2LogFile.txt'),
 	thePlan,
 	told,
 	saveState,
-	write('The plan has been ran and saved to currentState.pl').
+	write('The plan has been ran and saved to currentState.pl'),nl.
 	
 handleMode(X) :-
 	X == 'i',
+	assert(mode(interactive)),
 	getCorrectState,
 	write('You are in charge of robbie now!'),nl,
-	legend,
-	read(X),
-	enterInteractive(X),
+	!,
+	enterInteractive('legend'),
 	saveState,
-	write('Current state written to currentState.pl').
+	write('Current state written to currentState.pl'), nl.
 	
 handleMode(X) :-
 	X \= 'i',
@@ -40,13 +42,17 @@ handleMode(X) :-
 	write('please use i or b to denote interactive or batch'),
 	determineMode(X).
 	
+
+	
 enterInteractive(X) :-
 	X == 'quit'.
 	
 enterInteractive(X) :-
-	once(X),
-	read(X),
-	enterInteractive(X).
+	call(X),
+	read(Y),
+	enterInteractive(Y).
+	
+
 	
 	
 legend :-
@@ -60,8 +66,7 @@ legend :-
 	write('por(Block) attempts to pick up block and place it on the right.'),nl,
 	write('pol(Block) attempts to pick up block and place it on the left.'),nl,
 	write('sw shows a picture of the world.'),nl,
-	write('csw writes out the facts for the world.'),nl,
-	write('legend will show this legend again.'),nl.
+	write('csw writes out the facts for the world.'),nl.
 
 
 :- go.
