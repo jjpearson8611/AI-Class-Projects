@@ -1,0 +1,8 @@
+D:\Programming\GitDumpsHere\AI-Class-Projects\FinalProject\FinalProject\obj\Debug\Fakes\spc\b\SwiPlCs.Fakes.xml
+D:\Programming\GitDumpsHere\AI-Class-Projects\FinalProject\FinalProject\obj\Debug\Fakes\spc\b\SwiPlCs.Fakes.dll
+D:\Programming\GitDumpsHere\AI-Class-Projects\FinalProject\FinalProject\obj\Debug\Fakes\spc\b\SwiPlCs.Fakes.pdb
+D:\Programming\GitDumpsHere\AI-Class-Projects\FinalProject\FinalProject\obj\Debug\Fakes\spc\b\Microsoft.QualityTools.Testing.Fakes.dll
+D:\Programming\GitDumpsHere\AI-Class-Projects\FinalProject\FinalProject\obj\Debug\Fakes\spc\b\SwiPlCs64.dll
+D:\Programming\GitDumpsHere\AI-Class-Projects\FinalProject\FinalProject\obj\Debug\Fakes\spc\o\f.csprojResolveAssemblyReference.cache
+D:\Programming\GitDumpsHere\AI-Class-Projects\FinalProject\FinalProject\obj\Debug\Fakes\spc\o\SwiPlCs.Fakes.dll
+D:\Programming\GitDumpsHere\AI-Class-Projects\FinalProject\FinalProject\obj\Debug\Fakes\spc\o\SwiPlCs.Fakes.pdb

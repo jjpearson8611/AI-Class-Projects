@@ -1,0 +1,7 @@
+D:\Programming\GitDumpsHere\AI-Class-Projects\FinalProject\FinalProjectUnitTests\obj\Debug\FinalProjectUnitTests.csprojResolveAssemblyReference.cache
+D:\Programming\GitDumpsHere\AI-Class-Projects\FinalProject\FinalProjectUnitTests\bin\Debug\FinalProjectUnitTests.dll
+D:\Programming\GitDumpsHere\AI-Class-Projects\FinalProject\FinalProjectUnitTests\bin\Debug\FinalProjectUnitTests.pdb
+D:\Programming\GitDumpsHere\AI-Class-Projects\FinalProject\FinalProjectUnitTests\bin\Debug\FinalProject.exe
+D:\Programming\GitDumpsHere\AI-Class-Projects\FinalProject\FinalProjectUnitTests\bin\Debug\FinalProject.pdb
+D:\Programming\GitDumpsHere\AI-Class-Projects\FinalProject\FinalProjectUnitTests\obj\Debug\FinalProjectUnitTests.dll
+D:\Programming\GitDumpsHere\AI-Class-Projects\FinalProject\FinalProjectUnitTests\obj\Debug\FinalProjectUnitTests.pdb

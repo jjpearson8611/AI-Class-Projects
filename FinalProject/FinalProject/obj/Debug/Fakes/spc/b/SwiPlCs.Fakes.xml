@@ -1,0 +1,1910 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SwiPlCs.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:SbsSW.DesignByContract.Fakes.ShimAssertionException">
+            <summary>Shim type of SbsSW.DesignByContract.AssertionException</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.ShimAssertionException.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.ShimAssertionException.#ctor(SbsSW.DesignByContract.AssertionException)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.ShimAssertionException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.ShimAssertionException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.ShimAssertionException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimAssertionException.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimAssertionException.Constructor">
+            <summary>Sets the shim of AssertionException.AssertionException()</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimAssertionException.ConstructorSerializationInfoStreamingContext">
+            <summary>Sets the shim of AssertionException.AssertionException(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimAssertionException.ConstructorString">
+            <summary>Sets the shim of AssertionException.AssertionException(String message)</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimAssertionException.ConstructorStringException">
+            <summary>Sets the shim of AssertionException.AssertionException(String message, Exception inner)</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimAssertionException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the shim of AssertionException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="T:SbsSW.DesignByContract.Fakes.ShimAssertionException.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimAssertionException.AllInstances.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the shim of AssertionException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="T:SbsSW.DesignByContract.Fakes.ShimCheck">
+            <summary>Shim type of SbsSW.DesignByContract.Check</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.ShimCheck.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.ShimCheck.#ctor(SbsSW.DesignByContract.Check)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.ShimCheck.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.ShimCheck.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimCheck.AssertBoolean">
+            <summary>Sets the shim of Check.Assert(Boolean assertion)</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimCheck.AssertBooleanString">
+            <summary>Sets the shim of Check.Assert(Boolean assertion, String message)</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimCheck.AssertBooleanStringException">
+            <summary>Sets the shim of Check.Assert(Boolean assertion, String message, Exception inner)</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimCheck.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimCheck.Constructor">
+            <summary>Sets the shim of Check.Check()</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimCheck.EnsureBoolean">
+            <summary>Sets the shim of Check.Ensure(Boolean assertion)</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimCheck.EnsureBooleanString">
+            <summary>Sets the shim of Check.Ensure(Boolean assertion, String message)</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimCheck.EnsureBooleanStringException">
+            <summary>Sets the shim of Check.Ensure(Boolean assertion, String message, Exception inner)</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimCheck.InvariantBoolean">
+            <summary>Sets the shim of Check.Invariant(Boolean assertion)</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimCheck.InvariantBooleanString">
+            <summary>Sets the shim of Check.Invariant(Boolean assertion, String message)</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimCheck.InvariantBooleanStringException">
+            <summary>Sets the shim of Check.Invariant(Boolean assertion, String message, Exception inner)</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimCheck.RequireBoolean">
+            <summary>Sets the shim of Check.Require(Boolean assertion)</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimCheck.RequireBooleanString">
+            <summary>Sets the shim of Check.Require(Boolean assertion, String message)</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimCheck.RequireBooleanStringException">
+            <summary>Sets the shim of Check.Require(Boolean assertion, String message, Exception inner)</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimCheck.UseAssertionsGet">
+            <summary>Sets the shim of Check.get_UseAssertions()</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimCheck.UseAssertionsSetBoolean">
+            <summary>Sets the shim of Check.set_UseAssertions(Boolean value)</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimCheck.UseExceptionsGet">
+            <summary>Sets the shim of Check.get_UseExceptions()</summary>
+        </member>
+        <member name="T:SbsSW.DesignByContract.Fakes.ShimCheck.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:SbsSW.DesignByContract.Fakes.ShimDesignByContractException">
+            <summary>Shim type of SbsSW.DesignByContract.DesignByContractException</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.ShimDesignByContractException.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.ShimDesignByContractException.#ctor(SbsSW.DesignByContract.DesignByContractException)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.ShimDesignByContractException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.ShimDesignByContractException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.ShimDesignByContractException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimDesignByContractException.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimDesignByContractException.Constructor">
+            <summary>Sets the shim of DesignByContractException.DesignByContractException()</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimDesignByContractException.ConstructorSerializationInfoStreamingContext">
+            <summary>Sets the shim of DesignByContractException.DesignByContractException(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimDesignByContractException.ConstructorString">
+            <summary>Sets the shim of DesignByContractException.DesignByContractException(String message)</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimDesignByContractException.ConstructorStringException">
+            <summary>Sets the shim of DesignByContractException.DesignByContractException(String message, Exception inner)</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimDesignByContractException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the shim of DesignByContractException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="T:SbsSW.DesignByContract.Fakes.ShimDesignByContractException.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimDesignByContractException.AllInstances.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the shim of DesignByContractException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="T:SbsSW.DesignByContract.Fakes.ShimInvariantException">
+            <summary>Shim type of SbsSW.DesignByContract.InvariantException</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.ShimInvariantException.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.ShimInvariantException.#ctor(SbsSW.DesignByContract.InvariantException)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.ShimInvariantException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.ShimInvariantException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.ShimInvariantException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimInvariantException.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimInvariantException.Constructor">
+            <summary>Sets the shim of InvariantException.InvariantException()</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimInvariantException.ConstructorSerializationInfoStreamingContext">
+            <summary>Sets the shim of InvariantException.InvariantException(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimInvariantException.ConstructorString">
+            <summary>Sets the shim of InvariantException.InvariantException(String message)</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimInvariantException.ConstructorStringException">
+            <summary>Sets the shim of InvariantException.InvariantException(String message, Exception inner)</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimInvariantException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the shim of InvariantException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="T:SbsSW.DesignByContract.Fakes.ShimInvariantException.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimInvariantException.AllInstances.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the shim of InvariantException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="T:SbsSW.DesignByContract.Fakes.ShimPostConditionException">
+            <summary>Shim type of SbsSW.DesignByContract.PostConditionException</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.ShimPostConditionException.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.ShimPostConditionException.#ctor(SbsSW.DesignByContract.PostConditionException)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.ShimPostConditionException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.ShimPostConditionException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.ShimPostConditionException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimPostConditionException.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimPostConditionException.Constructor">
+            <summary>Sets the shim of PostConditionException.PostConditionException()</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimPostConditionException.ConstructorSerializationInfoStreamingContext">
+            <summary>Sets the shim of PostConditionException.PostConditionException(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimPostConditionException.ConstructorString">
+            <summary>Sets the shim of PostConditionException.PostConditionException(String message)</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimPostConditionException.ConstructorStringException">
+            <summary>Sets the shim of PostConditionException.PostConditionException(String message, Exception inner)</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimPostConditionException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the shim of PostConditionException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="T:SbsSW.DesignByContract.Fakes.ShimPostConditionException.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimPostConditionException.AllInstances.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the shim of PostConditionException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="T:SbsSW.DesignByContract.Fakes.ShimPreconditionException">
+            <summary>Shim type of SbsSW.DesignByContract.PreconditionException</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.ShimPreconditionException.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.ShimPreconditionException.#ctor(SbsSW.DesignByContract.PreconditionException)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.ShimPreconditionException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.ShimPreconditionException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.ShimPreconditionException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimPreconditionException.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimPreconditionException.Constructor">
+            <summary>Sets the shim of PreconditionException.PreconditionException()</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimPreconditionException.ConstructorSerializationInfoStreamingContext">
+            <summary>Sets the shim of PreconditionException.PreconditionException(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimPreconditionException.ConstructorString">
+            <summary>Sets the shim of PreconditionException.PreconditionException(String message)</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimPreconditionException.ConstructorStringException">
+            <summary>Sets the shim of PreconditionException.PreconditionException(String message, Exception inner)</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimPreconditionException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the shim of PreconditionException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="T:SbsSW.DesignByContract.Fakes.ShimPreconditionException.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.ShimPreconditionException.AllInstances.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the shim of PreconditionException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="T:SbsSW.DesignByContract.Fakes.StubAssertionException">
+            <summary>Stub type of SbsSW.DesignByContract.AssertionException</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.StubAssertionException.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.StubAssertionException.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.StubAssertionException.#ctor(System.String,System.Exception)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.StubAssertionException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.StubAssertionException.AttachBackingFieldToHelpLink">
+            <summary>Attaches delegates to emulate StubAssertionException.HelpLink as a property with a backing field.</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.StubAssertionException.AttachBackingFieldToSource">
+            <summary>Attaches delegates to emulate StubAssertionException.Source as a property with a backing field.</summary>
+        </member>
+        <member name="F:SbsSW.DesignByContract.Fakes.StubAssertionException.DataGet">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.StubAssertionException.GetBaseException">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="F:SbsSW.DesignByContract.Fakes.StubAssertionException.GetBaseException01">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.StubAssertionException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Sets the stub of AssertionException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:SbsSW.DesignByContract.Fakes.StubAssertionException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the stub of AssertionException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:SbsSW.DesignByContract.Fakes.StubAssertionException.HelpLinkGet">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="F:SbsSW.DesignByContract.Fakes.StubAssertionException.HelpLinkSetString">
+            <summary>Sets the stub of Exception.set_HelpLink(String value)</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.StubAssertionException.InitializeStub">
+            <summary>Initializes a new instance of type StubAssertionException</summary>
+        </member>
+        <member name="F:SbsSW.DesignByContract.Fakes.StubAssertionException.MessageGet">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="F:SbsSW.DesignByContract.Fakes.StubAssertionException.SourceGet">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="F:SbsSW.DesignByContract.Fakes.StubAssertionException.SourceSetString">
+            <summary>Sets the stub of Exception.set_Source(String value)</summary>
+        </member>
+        <member name="F:SbsSW.DesignByContract.Fakes.StubAssertionException.StackTraceGet">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.StubAssertionException.ToString">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="F:SbsSW.DesignByContract.Fakes.StubAssertionException.ToString01">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.StubAssertionException.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.StubAssertionException.Data">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.StubAssertionException.HelpLink">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.StubAssertionException.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.StubAssertionException.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.StubAssertionException.Message">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.StubAssertionException.Source">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.StubAssertionException.StackTrace">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="T:SbsSW.DesignByContract.Fakes.StubDesignByContractException">
+            <summary>Stub type of SbsSW.DesignByContract.DesignByContractException</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.StubDesignByContractException.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.StubDesignByContractException.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.StubDesignByContractException.#ctor(System.String,System.Exception)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.StubDesignByContractException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.StubDesignByContractException.AttachBackingFieldToHelpLink">
+            <summary>Attaches delegates to emulate StubDesignByContractException.HelpLink as a property with a backing field.</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.StubDesignByContractException.AttachBackingFieldToSource">
+            <summary>Attaches delegates to emulate StubDesignByContractException.Source as a property with a backing field.</summary>
+        </member>
+        <member name="F:SbsSW.DesignByContract.Fakes.StubDesignByContractException.DataGet">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.StubDesignByContractException.GetBaseException">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="F:SbsSW.DesignByContract.Fakes.StubDesignByContractException.GetBaseException01">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.StubDesignByContractException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Sets the stub of DesignByContractException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:SbsSW.DesignByContract.Fakes.StubDesignByContractException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the stub of DesignByContractException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:SbsSW.DesignByContract.Fakes.StubDesignByContractException.HelpLinkGet">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="F:SbsSW.DesignByContract.Fakes.StubDesignByContractException.HelpLinkSetString">
+            <summary>Sets the stub of Exception.set_HelpLink(String value)</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.StubDesignByContractException.InitializeStub">
+            <summary>Initializes a new instance of type StubDesignByContractException</summary>
+        </member>
+        <member name="F:SbsSW.DesignByContract.Fakes.StubDesignByContractException.MessageGet">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="F:SbsSW.DesignByContract.Fakes.StubDesignByContractException.SourceGet">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="F:SbsSW.DesignByContract.Fakes.StubDesignByContractException.SourceSetString">
+            <summary>Sets the stub of Exception.set_Source(String value)</summary>
+        </member>
+        <member name="F:SbsSW.DesignByContract.Fakes.StubDesignByContractException.StackTraceGet">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.StubDesignByContractException.ToString">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="F:SbsSW.DesignByContract.Fakes.StubDesignByContractException.ToString01">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.StubDesignByContractException.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.StubDesignByContractException.Data">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.StubDesignByContractException.HelpLink">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.StubDesignByContractException.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.StubDesignByContractException.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.StubDesignByContractException.Message">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.StubDesignByContractException.Source">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.StubDesignByContractException.StackTrace">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="T:SbsSW.DesignByContract.Fakes.StubInvariantException">
+            <summary>Stub type of SbsSW.DesignByContract.InvariantException</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.StubInvariantException.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.StubInvariantException.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.StubInvariantException.#ctor(System.String,System.Exception)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.StubInvariantException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.StubInvariantException.AttachBackingFieldToHelpLink">
+            <summary>Attaches delegates to emulate StubInvariantException.HelpLink as a property with a backing field.</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.StubInvariantException.AttachBackingFieldToSource">
+            <summary>Attaches delegates to emulate StubInvariantException.Source as a property with a backing field.</summary>
+        </member>
+        <member name="F:SbsSW.DesignByContract.Fakes.StubInvariantException.DataGet">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.StubInvariantException.GetBaseException">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="F:SbsSW.DesignByContract.Fakes.StubInvariantException.GetBaseException01">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.StubInvariantException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Sets the stub of InvariantException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:SbsSW.DesignByContract.Fakes.StubInvariantException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the stub of InvariantException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:SbsSW.DesignByContract.Fakes.StubInvariantException.HelpLinkGet">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="F:SbsSW.DesignByContract.Fakes.StubInvariantException.HelpLinkSetString">
+            <summary>Sets the stub of Exception.set_HelpLink(String value)</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.StubInvariantException.InitializeStub">
+            <summary>Initializes a new instance of type StubInvariantException</summary>
+        </member>
+        <member name="F:SbsSW.DesignByContract.Fakes.StubInvariantException.MessageGet">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="F:SbsSW.DesignByContract.Fakes.StubInvariantException.SourceGet">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="F:SbsSW.DesignByContract.Fakes.StubInvariantException.SourceSetString">
+            <summary>Sets the stub of Exception.set_Source(String value)</summary>
+        </member>
+        <member name="F:SbsSW.DesignByContract.Fakes.StubInvariantException.StackTraceGet">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.StubInvariantException.ToString">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="F:SbsSW.DesignByContract.Fakes.StubInvariantException.ToString01">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.StubInvariantException.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.StubInvariantException.Data">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.StubInvariantException.HelpLink">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.StubInvariantException.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.StubInvariantException.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.StubInvariantException.Message">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.StubInvariantException.Source">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.StubInvariantException.StackTrace">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="T:SbsSW.DesignByContract.Fakes.StubPostConditionException">
+            <summary>Stub type of SbsSW.DesignByContract.PostConditionException</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.StubPostConditionException.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.StubPostConditionException.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.StubPostConditionException.#ctor(System.String,System.Exception)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.StubPostConditionException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.StubPostConditionException.AttachBackingFieldToHelpLink">
+            <summary>Attaches delegates to emulate StubPostConditionException.HelpLink as a property with a backing field.</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.StubPostConditionException.AttachBackingFieldToSource">
+            <summary>Attaches delegates to emulate StubPostConditionException.Source as a property with a backing field.</summary>
+        </member>
+        <member name="F:SbsSW.DesignByContract.Fakes.StubPostConditionException.DataGet">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.StubPostConditionException.GetBaseException">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="F:SbsSW.DesignByContract.Fakes.StubPostConditionException.GetBaseException01">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.StubPostConditionException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Sets the stub of PostConditionException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:SbsSW.DesignByContract.Fakes.StubPostConditionException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the stub of PostConditionException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:SbsSW.DesignByContract.Fakes.StubPostConditionException.HelpLinkGet">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="F:SbsSW.DesignByContract.Fakes.StubPostConditionException.HelpLinkSetString">
+            <summary>Sets the stub of Exception.set_HelpLink(String value)</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.StubPostConditionException.InitializeStub">
+            <summary>Initializes a new instance of type StubPostConditionException</summary>
+        </member>
+        <member name="F:SbsSW.DesignByContract.Fakes.StubPostConditionException.MessageGet">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="F:SbsSW.DesignByContract.Fakes.StubPostConditionException.SourceGet">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="F:SbsSW.DesignByContract.Fakes.StubPostConditionException.SourceSetString">
+            <summary>Sets the stub of Exception.set_Source(String value)</summary>
+        </member>
+        <member name="F:SbsSW.DesignByContract.Fakes.StubPostConditionException.StackTraceGet">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.StubPostConditionException.ToString">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="F:SbsSW.DesignByContract.Fakes.StubPostConditionException.ToString01">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.StubPostConditionException.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.StubPostConditionException.Data">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.StubPostConditionException.HelpLink">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.StubPostConditionException.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.StubPostConditionException.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.StubPostConditionException.Message">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.StubPostConditionException.Source">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.StubPostConditionException.StackTrace">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="T:SbsSW.DesignByContract.Fakes.StubPreconditionException">
+            <summary>Stub type of SbsSW.DesignByContract.PreconditionException</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.StubPreconditionException.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.StubPreconditionException.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.StubPreconditionException.#ctor(System.String,System.Exception)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.StubPreconditionException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.StubPreconditionException.AttachBackingFieldToHelpLink">
+            <summary>Attaches delegates to emulate StubPreconditionException.HelpLink as a property with a backing field.</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.StubPreconditionException.AttachBackingFieldToSource">
+            <summary>Attaches delegates to emulate StubPreconditionException.Source as a property with a backing field.</summary>
+        </member>
+        <member name="F:SbsSW.DesignByContract.Fakes.StubPreconditionException.DataGet">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.StubPreconditionException.GetBaseException">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="F:SbsSW.DesignByContract.Fakes.StubPreconditionException.GetBaseException01">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.StubPreconditionException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Sets the stub of PreconditionException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:SbsSW.DesignByContract.Fakes.StubPreconditionException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the stub of PreconditionException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:SbsSW.DesignByContract.Fakes.StubPreconditionException.HelpLinkGet">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="F:SbsSW.DesignByContract.Fakes.StubPreconditionException.HelpLinkSetString">
+            <summary>Sets the stub of Exception.set_HelpLink(String value)</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.StubPreconditionException.InitializeStub">
+            <summary>Initializes a new instance of type StubPreconditionException</summary>
+        </member>
+        <member name="F:SbsSW.DesignByContract.Fakes.StubPreconditionException.MessageGet">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="F:SbsSW.DesignByContract.Fakes.StubPreconditionException.SourceGet">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="F:SbsSW.DesignByContract.Fakes.StubPreconditionException.SourceSetString">
+            <summary>Sets the stub of Exception.set_Source(String value)</summary>
+        </member>
+        <member name="F:SbsSW.DesignByContract.Fakes.StubPreconditionException.StackTraceGet">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="M:SbsSW.DesignByContract.Fakes.StubPreconditionException.ToString">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="F:SbsSW.DesignByContract.Fakes.StubPreconditionException.ToString01">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.StubPreconditionException.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.StubPreconditionException.Data">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.StubPreconditionException.HelpLink">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.StubPreconditionException.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.StubPreconditionException.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.StubPreconditionException.Message">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.StubPreconditionException.Source">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="P:SbsSW.DesignByContract.Fakes.StubPreconditionException.StackTrace">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="T:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlDomainException">
+            <summary>Shim type of SbsSW.SwiPlCs.Exceptions.PlDomainException</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlDomainException.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlDomainException.#ctor(SbsSW.SwiPlCs.Exceptions.PlDomainException)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlDomainException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlDomainException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlDomainException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlDomainException.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlDomainException.Constructor">
+            <summary>Sets the shim of PlDomainException.PlDomainException()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlDomainException.ConstructorPlTerm">
+            <summary>Sets the shim of PlDomainException.PlDomainException(PlTerm term)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlDomainException.ConstructorSerializationInfoStreamingContext">
+            <summary>Sets the shim of PlDomainException.PlDomainException(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlDomainException.ConstructorString">
+            <summary>Sets the shim of PlDomainException.PlDomainException(String message)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlDomainException.ConstructorStringException">
+            <summary>Sets the shim of PlDomainException.PlDomainException(String message, Exception innerException)</summary>
+        </member>
+        <member name="T:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlDomainException.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlException">
+            <summary>Shim type of SbsSW.SwiPlCs.Exceptions.PlException</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlException.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlException.#ctor(SbsSW.SwiPlCs.Exceptions.PlException)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlException.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlException.Constructor">
+            <summary>Sets the shim of PlException.PlException()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlException.ConstructorPlTerm">
+            <summary>Sets the shim of PlException.PlException(PlTerm term)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlException.ConstructorSerializationInfoStreamingContext">
+            <summary>Sets the shim of PlException.PlException(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlException.ConstructorString">
+            <summary>Sets the shim of PlException.PlException(String message)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlException.ConstructorStringException">
+            <summary>Sets the shim of PlException.PlException(String message, Exception innerException)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the shim of PlException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlException.MessageGet">
+            <summary>Sets the shim of PlException.get_Message()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlException.MessagePlGet">
+            <summary>Sets the shim of PlException.get_MessagePl()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlException.PlThrow">
+            <summary>Sets the shim of PlException.PlThrow()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlException.TermGet">
+            <summary>Sets the shim of PlException.get_Term()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlException.Throw">
+            <summary>Sets the shim of PlException.Throw()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlException.ToString">
+            <summary>Sets the shim of PlException.ToString()</summary>
+        </member>
+        <member name="T:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlException.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlException.AllInstances.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the shim of PlException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlException.AllInstances.MessageGet">
+            <summary>Sets the shim of PlException.get_Message()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlException.AllInstances.MessagePlGet">
+            <summary>Sets the shim of PlException.get_MessagePl()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlException.AllInstances.PlThrow">
+            <summary>Sets the shim of PlException.PlThrow()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlException.AllInstances.TermGet">
+            <summary>Sets the shim of PlException.get_Term()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlException.AllInstances.Throw">
+            <summary>Sets the shim of PlException.Throw()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlException.AllInstances.ToString01">
+            <summary>Sets the shim of PlException.ToString()</summary>
+        </member>
+        <member name="T:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlLibException">
+            <summary>Shim type of SbsSW.SwiPlCs.Exceptions.PlLibException</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlLibException.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlLibException.#ctor(SbsSW.SwiPlCs.Exceptions.PlLibException)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlLibException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlLibException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlLibException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlLibException.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlLibException.Constructor">
+            <summary>Sets the shim of PlLibException.PlLibException()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlLibException.ConstructorSerializationInfoStreamingContext">
+            <summary>Sets the shim of PlLibException.PlLibException(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlLibException.ConstructorString">
+            <summary>Sets the shim of PlLibException.PlLibException(String message)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlLibException.ConstructorStringException">
+            <summary>Sets the shim of PlLibException.PlLibException(String message, Exception innerException)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlLibException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the shim of PlLibException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="T:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlLibException.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlLibException.AllInstances.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the shim of PlLibException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="T:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlTypeException">
+            <summary>Shim type of SbsSW.SwiPlCs.Exceptions.PlTypeException</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlTypeException.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlTypeException.#ctor(SbsSW.SwiPlCs.Exceptions.PlTypeException)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlTypeException.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlTypeException.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlTypeException.Bind(System.Runtime.Serialization.ISerializable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlTypeException.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlTypeException.Constructor">
+            <summary>Sets the shim of PlTypeException.PlTypeException()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlTypeException.ConstructorPlTerm">
+            <summary>Sets the shim of PlTypeException.PlTypeException(PlTerm term)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlTypeException.ConstructorSerializationInfoStreamingContext">
+            <summary>Sets the shim of PlTypeException.PlTypeException(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlTypeException.ConstructorString">
+            <summary>Sets the shim of PlTypeException.PlTypeException(String message)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlTypeException.ConstructorStringException">
+            <summary>Sets the shim of PlTypeException.PlTypeException(String message, Exception innerException)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlTypeException.ConstructorStringPlTerm">
+            <summary>Sets the shim of PlTypeException.PlTypeException(String expected, PlTerm actual)</summary>
+        </member>
+        <member name="T:SbsSW.SwiPlCs.Exceptions.Fakes.ShimPlTypeException.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlDomainException">
+            <summary>Stub type of SbsSW.SwiPlCs.Exceptions.PlDomainException</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlDomainException.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlDomainException.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlDomainException.#ctor(SbsSW.SwiPlCs.PlTerm)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlDomainException.#ctor(System.String,System.Exception)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlDomainException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlDomainException.AttachBackingFieldToHelpLink">
+            <summary>Attaches delegates to emulate StubPlDomainException.HelpLink as a property with a backing field.</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlDomainException.AttachBackingFieldToSource">
+            <summary>Attaches delegates to emulate StubPlDomainException.Source as a property with a backing field.</summary>
+        </member>
+        <member name="F:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlDomainException.DataGet">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlDomainException.GetBaseException">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="F:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlDomainException.GetBaseException01">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlDomainException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Sets the stub of PlException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlDomainException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the stub of PlException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlDomainException.HelpLinkGet">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="F:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlDomainException.HelpLinkSetString">
+            <summary>Sets the stub of Exception.set_HelpLink(String value)</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlDomainException.InitializeStub">
+            <summary>Initializes a new instance of type StubPlDomainException</summary>
+        </member>
+        <member name="F:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlDomainException.MessageGet">
+            <summary>Sets the stub of PlException.get_Message()</summary>
+        </member>
+        <member name="F:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlDomainException.SourceGet">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="F:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlDomainException.SourceSetString">
+            <summary>Sets the stub of Exception.set_Source(String value)</summary>
+        </member>
+        <member name="F:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlDomainException.StackTraceGet">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlDomainException.ToString">
+            <summary>Sets the stub of PlException.ToString()</summary>
+        </member>
+        <member name="F:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlDomainException.ToString01">
+            <summary>Sets the stub of PlException.ToString()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlDomainException.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlDomainException.Data">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlDomainException.HelpLink">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlDomainException.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlDomainException.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlDomainException.Message">
+            <summary>Sets the stub of PlException.get_Message()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlDomainException.Source">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlDomainException.StackTrace">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="T:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlException">
+            <summary>Stub type of SbsSW.SwiPlCs.Exceptions.PlException</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlException.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlException.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlException.#ctor(SbsSW.SwiPlCs.PlTerm)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlException.#ctor(System.String,System.Exception)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlException.AttachBackingFieldToHelpLink">
+            <summary>Attaches delegates to emulate StubPlException.HelpLink as a property with a backing field.</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlException.AttachBackingFieldToSource">
+            <summary>Attaches delegates to emulate StubPlException.Source as a property with a backing field.</summary>
+        </member>
+        <member name="F:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlException.DataGet">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlException.GetBaseException">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="F:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlException.GetBaseException01">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Sets the stub of PlException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the stub of PlException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlException.HelpLinkGet">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="F:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlException.HelpLinkSetString">
+            <summary>Sets the stub of Exception.set_HelpLink(String value)</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlException.InitializeStub">
+            <summary>Initializes a new instance of type StubPlException</summary>
+        </member>
+        <member name="F:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlException.MessageGet">
+            <summary>Sets the stub of PlException.get_Message()</summary>
+        </member>
+        <member name="F:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlException.SourceGet">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="F:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlException.SourceSetString">
+            <summary>Sets the stub of Exception.set_Source(String value)</summary>
+        </member>
+        <member name="F:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlException.StackTraceGet">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlException.ToString">
+            <summary>Sets the stub of PlException.ToString()</summary>
+        </member>
+        <member name="F:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlException.ToString01">
+            <summary>Sets the stub of PlException.ToString()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlException.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlException.Data">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlException.HelpLink">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlException.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlException.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlException.Message">
+            <summary>Sets the stub of PlException.get_Message()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlException.Source">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlException.StackTrace">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="T:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlLibException">
+            <summary>Stub type of SbsSW.SwiPlCs.Exceptions.PlLibException</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlLibException.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlLibException.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlLibException.#ctor(System.String,System.Exception)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlLibException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlLibException.AttachBackingFieldToHelpLink">
+            <summary>Attaches delegates to emulate StubPlLibException.HelpLink as a property with a backing field.</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlLibException.AttachBackingFieldToSource">
+            <summary>Attaches delegates to emulate StubPlLibException.Source as a property with a backing field.</summary>
+        </member>
+        <member name="F:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlLibException.DataGet">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlLibException.GetBaseException">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="F:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlLibException.GetBaseException01">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlLibException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Sets the stub of PlLibException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlLibException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the stub of PlLibException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlLibException.HelpLinkGet">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="F:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlLibException.HelpLinkSetString">
+            <summary>Sets the stub of Exception.set_HelpLink(String value)</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlLibException.InitializeStub">
+            <summary>Initializes a new instance of type StubPlLibException</summary>
+        </member>
+        <member name="F:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlLibException.MessageGet">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="F:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlLibException.SourceGet">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="F:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlLibException.SourceSetString">
+            <summary>Sets the stub of Exception.set_Source(String value)</summary>
+        </member>
+        <member name="F:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlLibException.StackTraceGet">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlLibException.ToString">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="F:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlLibException.ToString01">
+            <summary>Sets the stub of Exception.ToString()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlLibException.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlLibException.Data">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlLibException.HelpLink">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlLibException.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlLibException.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlLibException.Message">
+            <summary>Sets the stub of Exception.get_Message()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlLibException.Source">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlLibException.StackTrace">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="T:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlTypeException">
+            <summary>Stub type of SbsSW.SwiPlCs.Exceptions.PlTypeException</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlTypeException.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlTypeException.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlTypeException.#ctor(SbsSW.SwiPlCs.PlTerm)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlTypeException.#ctor(System.String,System.Exception)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlTypeException.#ctor(System.String,SbsSW.SwiPlCs.PlTerm)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlTypeException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlTypeException.AttachBackingFieldToHelpLink">
+            <summary>Attaches delegates to emulate StubPlTypeException.HelpLink as a property with a backing field.</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlTypeException.AttachBackingFieldToSource">
+            <summary>Attaches delegates to emulate StubPlTypeException.Source as a property with a backing field.</summary>
+        </member>
+        <member name="F:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlTypeException.DataGet">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlTypeException.GetBaseException">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="F:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlTypeException.GetBaseException01">
+            <summary>Sets the stub of Exception.GetBaseException()</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlTypeException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>Sets the stub of PlException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlTypeException.GetObjectDataSerializationInfoStreamingContext">
+            <summary>Sets the stub of PlException.GetObjectData(SerializationInfo info, StreamingContext context)</summary>
+        </member>
+        <member name="F:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlTypeException.HelpLinkGet">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="F:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlTypeException.HelpLinkSetString">
+            <summary>Sets the stub of Exception.set_HelpLink(String value)</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlTypeException.InitializeStub">
+            <summary>Initializes a new instance of type StubPlTypeException</summary>
+        </member>
+        <member name="F:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlTypeException.MessageGet">
+            <summary>Sets the stub of PlException.get_Message()</summary>
+        </member>
+        <member name="F:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlTypeException.SourceGet">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="F:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlTypeException.SourceSetString">
+            <summary>Sets the stub of Exception.set_Source(String value)</summary>
+        </member>
+        <member name="F:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlTypeException.StackTraceGet">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlTypeException.ToString">
+            <summary>Sets the stub of PlException.ToString()</summary>
+        </member>
+        <member name="F:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlTypeException.ToString01">
+            <summary>Sets the stub of PlException.ToString()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlTypeException.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlTypeException.Data">
+            <summary>Sets the stub of Exception.get_Data()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlTypeException.HelpLink">
+            <summary>Sets the stub of Exception.get_HelpLink()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlTypeException.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlTypeException.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlTypeException.Message">
+            <summary>Sets the stub of PlException.get_Message()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlTypeException.Source">
+            <summary>Sets the stub of Exception.get_Source()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Exceptions.Fakes.StubPlTypeException.StackTrace">
+            <summary>Sets the stub of Exception.get_StackTrace()</summary>
+        </member>
+        <member name="T:SbsSW.SwiPlCs.Fakes.ShimPlEngine">
+            <summary>Shim type of SbsSW.SwiPlCs.PlEngine</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Fakes.ShimPlEngine.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Fakes.ShimPlEngine.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Fakes.ShimPlEngine.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlEngine.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlEngine.InitializeStringArray">
+            <summary>Sets the shim of PlEngine.Initialize(String[] argv)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlEngine.IsInitializedGet">
+            <summary>Sets the shim of PlEngine.get_IsInitialized()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlEngine.PlCleanup">
+            <summary>Sets the shim of PlEngine.PlCleanup()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlEngine.PlHalt">
+            <summary>Sets the shim of PlEngine.PlHalt()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlEngine.PlThreadAttachEngine">
+            <summary>Sets the shim of PlEngine.PlThreadAttachEngine()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlEngine.PlThreadDestroyEngine">
+            <summary>Sets the shim of PlEngine.PlThreadDestroyEngine()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlEngine.PlThreadSelf">
+            <summary>Sets the shim of PlEngine.PlThreadSelf()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlEngine.RegisterForeignDelegate">
+            <summary>Sets the shim of PlEngine.RegisterForeign(Delegate method)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlEngine.RegisterForeignStringDelegate">
+            <summary>Sets the shim of PlEngine.RegisterForeign(String module, Delegate method)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlEngine.RegisterForeignStringDelegatePlForeignSwitches">
+            <summary>Sets the shim of PlEngine.RegisterForeign(String module, Delegate method, PlForeignSwitches plForeign)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlEngine.RegisterForeignStringInt32Delegate">
+            <summary>Sets the shim of PlEngine.RegisterForeign(String name, Int32 arity, Delegate method)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlEngine.RegisterForeignStringStringInt32Delegate">
+            <summary>Sets the shim of PlEngine.RegisterForeign(String module, String name, Int32 arity, Delegate method)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlEngine.RegisterForeignStringStringInt32DelegatePlForeignSwitches">
+            <summary>Sets the shim of PlEngine.RegisterForeign(String module, String name, Int32 arity, Delegate method, PlForeignSwitches plForeign)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlEngine.SetStreamFunctionReadPlStreamTypeDelegateStreamReadFunction">
+            <summary>Sets the shim of PlEngine.SetStreamFunctionRead(PlStreamType streamType, DelegateStreamReadFunction function)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlEngine.SetStreamFunctionWritePlStreamTypeDelegateStreamWriteFunction">
+            <summary>Sets the shim of PlEngine.SetStreamFunctionWrite(PlStreamType streamType, DelegateStreamWriteFunction function)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlEngine.Sread_functionIntPtrIntPtrInt64">
+            <summary>Sets the shim of PlEngine.Sread_function(IntPtr handle, IntPtr buf, Int64 bufsize)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlEngine.Swrite_functionIntPtrStringInt64">
+            <summary>Sets the shim of PlEngine.Swrite_function(IntPtr handle, String buf, Int64 bufsize)</summary>
+        </member>
+        <member name="T:SbsSW.SwiPlCs.Fakes.ShimPlFrame">
+            <summary>Shim type of SbsSW.SwiPlCs.PlFrame</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Fakes.ShimPlFrame.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Fakes.ShimPlFrame.#ctor(SbsSW.SwiPlCs.PlFrame)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Fakes.ShimPlFrame.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Fakes.ShimPlFrame.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Fakes.ShimPlFrame.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlFrame.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlFrame.Constructor">
+            <summary>Sets the shim of PlFrame.PlFrame()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlFrame.Dispose">
+            <summary>Sets the shim of PlFrame.Dispose()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlFrame.DisposeBoolean">
+            <summary>Sets the shim of PlFrame.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlFrame.Free">
+            <summary>Sets the shim of PlFrame.Free()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlFrame.Rewind">
+            <summary>Sets the shim of PlFrame.Rewind()</summary>
+        </member>
+        <member name="T:SbsSW.SwiPlCs.Fakes.ShimPlFrame.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlFrame.AllInstances.Dispose">
+            <summary>Sets the shim of PlFrame.Dispose()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlFrame.AllInstances.DisposeBoolean">
+            <summary>Sets the shim of PlFrame.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlFrame.AllInstances.Free">
+            <summary>Sets the shim of PlFrame.Free()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlFrame.AllInstances.Rewind">
+            <summary>Sets the shim of PlFrame.Rewind()</summary>
+        </member>
+        <member name="T:SbsSW.SwiPlCs.Fakes.ShimPlMtEngine">
+            <summary>Shim type of SbsSW.SwiPlCs.PlMtEngine</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Fakes.ShimPlMtEngine.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Fakes.ShimPlMtEngine.#ctor(SbsSW.SwiPlCs.PlMtEngine)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Fakes.ShimPlMtEngine.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Fakes.ShimPlMtEngine.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Fakes.ShimPlMtEngine.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlMtEngine.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlMtEngine.Constructor">
+            <summary>Sets the shim of PlMtEngine.PlMtEngine()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlMtEngine.Dispose">
+            <summary>Sets the shim of PlMtEngine.Dispose()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlMtEngine.DisposeBoolean">
+            <summary>Sets the shim of PlMtEngine.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlMtEngine.Free">
+            <summary>Sets the shim of PlMtEngine.Free()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlMtEngine.PlDetachEngine">
+            <summary>Sets the shim of PlMtEngine.PlDetachEngine()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlMtEngine.PlSetEngine">
+            <summary>Sets the shim of PlMtEngine.PlSetEngine()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlMtEngine.ToString">
+            <summary>Sets the shim of PlMtEngine.ToString()</summary>
+        </member>
+        <member name="T:SbsSW.SwiPlCs.Fakes.ShimPlMtEngine.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlMtEngine.AllInstances.Dispose">
+            <summary>Sets the shim of PlMtEngine.Dispose()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlMtEngine.AllInstances.DisposeBoolean">
+            <summary>Sets the shim of PlMtEngine.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlMtEngine.AllInstances.Free">
+            <summary>Sets the shim of PlMtEngine.Free()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlMtEngine.AllInstances.PlDetachEngine">
+            <summary>Sets the shim of PlMtEngine.PlDetachEngine()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlMtEngine.AllInstances.PlSetEngine">
+            <summary>Sets the shim of PlMtEngine.PlSetEngine()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlMtEngine.AllInstances.ToString01">
+            <summary>Sets the shim of PlMtEngine.ToString()</summary>
+        </member>
+        <member name="T:SbsSW.SwiPlCs.Fakes.ShimPlQuery">
+            <summary>Shim type of SbsSW.SwiPlCs.PlQuery</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Fakes.ShimPlQuery.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Fakes.ShimPlQuery.#ctor(SbsSW.SwiPlCs.PlQuery)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Fakes.ShimPlQuery.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Fakes.ShimPlQuery.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Fakes.ShimPlQuery.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQuery.ArgsGet">
+            <summary>Sets the shim of PlQuery.get_Args()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQuery.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQuery.ConstructorString">
+            <summary>Sets the shim of PlQuery.PlQuery(String goal)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQuery.ConstructorStringPlTermV">
+            <summary>Sets the shim of PlQuery.PlQuery(String name, PlTermV termV)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQuery.ConstructorStringString">
+            <summary>Sets the shim of PlQuery.PlQuery(String module, String goal)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQuery.ConstructorStringStringPlTermV">
+            <summary>Sets the shim of PlQuery.PlQuery(String module, String name, PlTermV termV)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQuery.Dispose">
+            <summary>Sets the shim of PlQuery.Dispose()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQuery.DisposeBoolean">
+            <summary>Sets the shim of PlQuery.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQuery.EraseRecords">
+            <summary>Sets the shim of PlQuery.EraseRecords()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQuery.FreeBoolean">
+            <summary>Sets the shim of PlQuery.Free(Boolean discardData)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQuery.NextSolution">
+            <summary>Sets the shim of PlQuery.NextSolution()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQuery.PlCallQueryString">
+            <summary>Sets the shim of PlQuery.PlCallQuery(String goal)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQuery.PlCallQueryStringString">
+            <summary>Sets the shim of PlQuery.PlCallQuery(String module, String goal)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQuery.PlCallString">
+            <summary>Sets the shim of PlQuery.PlCall(String goal)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQuery.PlCallStringPlTermV">
+            <summary>Sets the shim of PlQuery.PlCall(String predicate, PlTermV args)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQuery.PlCallStringStringPlTermV">
+            <summary>Sets the shim of PlQuery.PlCall(String module, String predicate, PlTermV args)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQuery.QueryPlQuerySwitch">
+            <summary>Sets the shim of PlQuery.Query(PlQuerySwitch queryType)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQuery.SolutionVariablesGet">
+            <summary>Sets the shim of PlQuery.get_SolutionVariables()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQuery.SolutionsGet">
+            <summary>Sets the shim of PlQuery.get_Solutions()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQuery.ToList">
+            <summary>Sets the shim of PlQuery.ToList()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQuery.TraceAccessViolationExceptionAccessViolationException">
+            <summary>Sets the shim of PlQuery.TraceAccessViolationException(AccessViolationException ex)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQuery.VariableNamesGet">
+            <summary>Sets the shim of PlQuery.get_VariableNames()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQuery.VariablesGet">
+            <summary>Sets the shim of PlQuery.get_Variables()</summary>
+        </member>
+        <member name="T:SbsSW.SwiPlCs.Fakes.ShimPlQuery.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQuery.AllInstances.ArgsGet">
+            <summary>Sets the shim of PlQuery.get_Args()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQuery.AllInstances.Dispose">
+            <summary>Sets the shim of PlQuery.Dispose()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQuery.AllInstances.DisposeBoolean">
+            <summary>Sets the shim of PlQuery.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQuery.AllInstances.EraseRecords">
+            <summary>Sets the shim of PlQuery.EraseRecords()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQuery.AllInstances.FreeBoolean">
+            <summary>Sets the shim of PlQuery.Free(Boolean discardData)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQuery.AllInstances.NextSolution">
+            <summary>Sets the shim of PlQuery.NextSolution()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQuery.AllInstances.SolutionVariablesGet">
+            <summary>Sets the shim of PlQuery.get_SolutionVariables()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQuery.AllInstances.SolutionsGet">
+            <summary>Sets the shim of PlQuery.get_Solutions()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQuery.AllInstances.ToList">
+            <summary>Sets the shim of PlQuery.ToList()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQuery.AllInstances.VariableNamesGet">
+            <summary>Sets the shim of PlQuery.get_VariableNames()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQuery.AllInstances.VariablesGet">
+            <summary>Sets the shim of PlQuery.get_Variables()</summary>
+        </member>
+        <member name="T:SbsSW.SwiPlCs.Fakes.ShimPlQueryVar">
+            <summary>Shim type of SbsSW.SwiPlCs.PlQueryVar</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Fakes.ShimPlQueryVar.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Fakes.ShimPlQueryVar.#ctor(SbsSW.SwiPlCs.PlQueryVar)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Fakes.ShimPlQueryVar.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Fakes.ShimPlQueryVar.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQueryVar.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQueryVar.ConstructorStringPlTerm">
+            <summary>Sets the shim of PlQueryVar.PlQueryVar(String name, PlTerm val)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQueryVar.NameGet">
+            <summary>Sets the shim of PlQueryVar.get_Name()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQueryVar.NameSetString">
+            <summary>Sets the shim of PlQueryVar.set_Name(String value)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQueryVar.ValueGet">
+            <summary>Sets the shim of PlQueryVar.get_Value()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQueryVar.ValueSetPlTerm">
+            <summary>Sets the shim of PlQueryVar.set_Value(PlTerm value)</summary>
+        </member>
+        <member name="T:SbsSW.SwiPlCs.Fakes.ShimPlQueryVar.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQueryVar.AllInstances.NameGet">
+            <summary>Sets the shim of PlQueryVar.get_Name()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQueryVar.AllInstances.NameSetString">
+            <summary>Sets the shim of PlQueryVar.set_Name(String value)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQueryVar.AllInstances.ValueGet">
+            <summary>Sets the shim of PlQueryVar.get_Value()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQueryVar.AllInstances.ValueSetPlTerm">
+            <summary>Sets the shim of PlQueryVar.set_Value(PlTerm value)</summary>
+        </member>
+        <member name="T:SbsSW.SwiPlCs.Fakes.ShimPlQueryVariables">
+            <summary>Shim type of SbsSW.SwiPlCs.PlQueryVariables</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Fakes.ShimPlQueryVariables.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Fakes.ShimPlQueryVariables.#ctor(SbsSW.SwiPlCs.PlQueryVariables)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Fakes.ShimPlQueryVariables.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Fakes.ShimPlQueryVariables.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQueryVariables.AddPlQueryVar">
+            <summary>Sets the shim of PlQueryVariables.Add(PlQueryVar var)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQueryVariables.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQueryVariables.Constructor">
+            <summary>Sets the shim of PlQueryVariables.PlQueryVariables()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQueryVariables.CountGet">
+            <summary>Sets the shim of PlQueryVariables.get_Count()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQueryVariables.ItemGetInt32">
+            <summary>Sets the shim of PlQueryVariables.get_Item(Int32 idx)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQueryVariables.ItemGetString">
+            <summary>Sets the shim of PlQueryVariables.get_Item(String name)</summary>
+        </member>
+        <member name="T:SbsSW.SwiPlCs.Fakes.ShimPlQueryVariables.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQueryVariables.AllInstances.AddPlQueryVar">
+            <summary>Sets the shim of PlQueryVariables.Add(PlQueryVar var)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQueryVariables.AllInstances.CountGet">
+            <summary>Sets the shim of PlQueryVariables.get_Count()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQueryVariables.AllInstances.ItemGetInt32">
+            <summary>Sets the shim of PlQueryVariables.get_Item(Int32 idx)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlQueryVariables.AllInstances.ItemGetString">
+            <summary>Sets the shim of PlQueryVariables.get_Item(String name)</summary>
+        </member>
+        <member name="T:SbsSW.SwiPlCs.Fakes.ShimPlTerm">
+            <summary>Shim type of SbsSW.SwiPlCs.PlTerm</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Fakes.ShimPlTerm.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Fakes.ShimPlTerm.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Fakes.ShimPlTerm.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlTerm.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlTerm.EqualityOpInt32PlTerm">
+            <summary>Sets the shim of PlTerm.op_Equality(Int32 value, PlTerm term)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlTerm.EqualityOpPlTermInt32">
+            <summary>Sets the shim of PlTerm.op_Equality(PlTerm term, Int32 value)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlTerm.EqualityOpPlTermPlTerm">
+            <summary>Sets the shim of PlTerm.op_Equality(PlTerm term1, PlTerm term2)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlTerm.EqualityOpPlTermString">
+            <summary>Sets the shim of PlTerm.op_Equality(PlTerm term, String value)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlTerm.EqualityOpStringPlTerm">
+            <summary>Sets the shim of PlTerm.op_Equality(String value, PlTerm term)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlTerm.ExplicitOpPlTermDouble">
+            <summary>Sets the shim of PlTerm.op_Explicit(PlTerm term)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlTerm.ExplicitOpPlTermInt32">
+            <summary>Sets the shim of PlTerm.op_Explicit(PlTerm term)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlTerm.ExplicitOpPlTermString">
+            <summary>Sets the shim of PlTerm.op_Explicit(PlTerm term)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlTerm.GreaterThanOpPlTermPlTerm">
+            <summary>Sets the shim of PlTerm.op_GreaterThan(PlTerm term1, PlTerm term2)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlTerm.GreaterThanOrEqualOpPlTermPlTerm">
+            <summary>Sets the shim of PlTerm.op_GreaterThanOrEqual(PlTerm term1, PlTerm term2)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlTerm.InequalityOpInt32PlTerm">
+            <summary>Sets the shim of PlTerm.op_Inequality(Int32 value, PlTerm term)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlTerm.InequalityOpPlTermInt32">
+            <summary>Sets the shim of PlTerm.op_Inequality(PlTerm term, Int32 value)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlTerm.InequalityOpPlTermPlTerm">
+            <summary>Sets the shim of PlTerm.op_Inequality(PlTerm term1, PlTerm term2)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlTerm.InequalityOpPlTermString">
+            <summary>Sets the shim of PlTerm.op_Inequality(PlTerm term, String value)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlTerm.InequalityOpStringPlTerm">
+            <summary>Sets the shim of PlTerm.op_Inequality(String value, PlTerm term)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlTerm.LessThanOpPlTermPlTerm">
+            <summary>Sets the shim of PlTerm.op_LessThan(PlTerm term1, PlTerm term2)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlTerm.LessThanOrEqualOpPlTermPlTerm">
+            <summary>Sets the shim of PlTerm.op_LessThanOrEqual(PlTerm term1, PlTerm term2)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlTerm.PlCharListString">
+            <summary>Sets the shim of PlTerm.PlCharList(String text)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlTerm.PlCodeListString">
+            <summary>Sets the shim of PlTerm.PlCodeList(String text)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlTerm.PlCompoundString">
+            <summary>Sets the shim of PlTerm.PlCompound(String text)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlTerm.PlCompoundStringPlTerm">
+            <summary>Sets the shim of PlTerm.PlCompound(String functor, PlTerm arg1)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlTerm.PlCompoundStringPlTermPlTerm">
+            <summary>Sets the shim of PlTerm.PlCompound(String functor, PlTerm arg1, PlTerm arg2)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlTerm.PlCompoundStringPlTermPlTermPlTerm">
+            <summary>Sets the shim of PlTerm.PlCompound(String functor, PlTerm arg1, PlTerm arg2, PlTerm arg3)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlTerm.PlCompoundStringPlTermV">
+            <summary>Sets the shim of PlTerm.PlCompound(String functor, PlTermV args)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlTerm.PlStringString">
+            <summary>Sets the shim of PlTerm.PlString(String text)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlTerm.PlStringStringInt32">
+            <summary>Sets the shim of PlTerm.PlString(String text, Int32 len)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlTerm.PlTailPlTerm">
+            <summary>Sets the shim of PlTerm.PlTail(PlTerm list)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlTerm.PlVar">
+            <summary>Sets the shim of PlTerm.PlVar()</summary>
+        </member>
+        <member name="T:SbsSW.SwiPlCs.Fakes.ShimPlTerm.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:SbsSW.SwiPlCs.Fakes.ShimPlTermV">
+            <summary>Shim type of SbsSW.SwiPlCs.PlTermV</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Fakes.ShimPlTermV.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Fakes.ShimPlTermV.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Fakes.ShimPlTermV.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlTermV.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlTermV.EqualityOpPlTermVPlTermV">
+            <summary>Sets the shim of PlTermV.op_Equality(PlTermV termVector1, PlTermV termVector2)</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.ShimPlTermV.InequalityOpPlTermVPlTermV">
+            <summary>Sets the shim of PlTermV.op_Inequality(PlTermV termVector1, PlTermV termVector2)</summary>
+        </member>
+        <member name="T:SbsSW.SwiPlCs.Fakes.ShimPlTermV.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:SbsSW.SwiPlCs.Fakes.StubPlFrame">
+            <summary>Stub type of SbsSW.SwiPlCs.PlFrame</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Fakes.StubPlFrame.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Fakes.StubPlFrame.InitializeStub">
+            <summary>Initializes a new instance of type StubPlFrame</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.StubPlFrame.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.StubPlFrame.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.StubPlFrame.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:SbsSW.SwiPlCs.Fakes.StubPlMtEngine">
+            <summary>Stub type of SbsSW.SwiPlCs.PlMtEngine</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Fakes.StubPlMtEngine.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Fakes.StubPlMtEngine.Dispose(System.Boolean)">
+            <summary>Sets the stub of PlMtEngine.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="F:SbsSW.SwiPlCs.Fakes.StubPlMtEngine.DisposeBoolean">
+            <summary>Sets the stub of PlMtEngine.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Fakes.StubPlMtEngine.InitializeStub">
+            <summary>Initializes a new instance of type StubPlMtEngine</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Fakes.StubPlMtEngine.ToString">
+            <summary>Sets the stub of PlMtEngine.ToString()</summary>
+        </member>
+        <member name="F:SbsSW.SwiPlCs.Fakes.StubPlMtEngine.ToString01">
+            <summary>Sets the stub of PlMtEngine.ToString()</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.StubPlMtEngine.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.StubPlMtEngine.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.StubPlMtEngine.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:SbsSW.SwiPlCs.Fakes.StubPlQuery">
+            <summary>Stub type of SbsSW.SwiPlCs.PlQuery</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Fakes.StubPlQuery.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Fakes.StubPlQuery.#ctor(System.String,System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Fakes.StubPlQuery.#ctor(System.String,SbsSW.SwiPlCs.PlTermV)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Fakes.StubPlQuery.#ctor(System.String,System.String,SbsSW.SwiPlCs.PlTermV)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Fakes.StubPlQuery.Dispose(System.Boolean)">
+            <summary>Sets the stub of PlQuery.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="F:SbsSW.SwiPlCs.Fakes.StubPlQuery.DisposeBoolean">
+            <summary>Sets the stub of PlQuery.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Fakes.StubPlQuery.InitializeStub">
+            <summary>Initializes a new instance of type StubPlQuery</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.StubPlQuery.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.StubPlQuery.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.StubPlQuery.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:SbsSW.SwiPlCs.Fakes.StubPlQueryVariables">
+            <summary>Stub type of SbsSW.SwiPlCs.PlQueryVariables</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Fakes.StubPlQueryVariables.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:SbsSW.SwiPlCs.Fakes.StubPlQueryVariables.InitializeStub">
+            <summary>Initializes a new instance of type StubPlQueryVariables</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.StubPlQueryVariables.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.StubPlQueryVariables.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:SbsSW.SwiPlCs.Fakes.StubPlQueryVariables.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>

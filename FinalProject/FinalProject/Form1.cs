@@ -21,9 +21,15 @@ namespace FinalProject
             ourBoard = new GameBoard(6, 7);
             ourBoard.initializeBoard();
             CreateGuiBoard();
+            ComputerBrains = new AI();
         }
 
         #region properties
+        public AI ComputerBrains
+        {
+            get;
+            set;
+        }
         public int PlayerTurn
         {
             get;
@@ -70,11 +76,7 @@ namespace FinalProject
                     {
                         PlayerTurn = 2;
                         TurnLabel = "Player Two";
-                    }
-                    else
-                    {
-                        PlayerTurn = 1;
-                        TurnLabel = "Player One";
+                        ToggleButtons(false);
                     }
                 }
             }
@@ -84,7 +86,30 @@ namespace FinalProject
             }
 
             UpdateGui();
+
+            //this means that it is player two's turn
+            if (PlayerTurn == 2)
+            {
+                ourBoard.HandleButtonPush(ComputerBrains.DetermineNextMove(ourBoard), PlayerTurn);
+                ToggleButtons(true);
+                PlayerTurn = 1;
+                TurnLabel = "Player One";
+            }
+
+            UpdateGui();
         }
+
+        public void ToggleButtons(bool toggle)
+        {
+            this.column1.Enabled = toggle;
+            this.column2.Enabled = toggle;
+            this.column3.Enabled = toggle;
+            this.column4.Enabled = toggle;
+            this.column5.Enabled = toggle;
+            this.column6.Enabled = toggle;
+            this.column7.Enabled = toggle;
+        }
+
 
         public void UpdateGui()
         {
