@@ -35,3 +35,4 @@ D:\Programming\GitDumpsHere\AI-Class-Projects\FinalProject\FinalProject\obj\Debu
 D:\Programming\GitDumpsHere\AI-Class-Projects\FinalProject\FinalProject\obj\Debug\Fakes\spc\o\f.csprojResolveAssemblyReference.cache
 D:\Programming\GitDumpsHere\AI-Class-Projects\FinalProject\FinalProject\obj\Debug\Fakes\spc\o\SwiPlCs.Fakes.dll
 D:\Programming\GitDumpsHere\AI-Class-Projects\FinalProject\FinalProject\obj\Debug\Fakes\spc\o\SwiPlCs.Fakes.pdb
+C:\Users\BuckDich\Documents\GitHub\AI-Class-Projects\FinalProject\FinalProject\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll

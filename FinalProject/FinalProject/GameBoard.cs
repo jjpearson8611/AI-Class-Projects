@@ -15,9 +15,23 @@ namespace FinalProject
             this.rows = rowsParm;
             this.columns = columnsParm;
             this.Board = new int[this.rows, this.columns];
+            this.WinningColSpots = new List<int>();
+            this.WinningRowSpots = new List<int>();
         }
 
         #region Properties
+        public List<int> WinningRowSpots
+        {
+            set;
+            get;
+        }
+
+        public List<int> WinningColSpots
+        {
+            set;
+            get;
+        }
+
         public int[,] Board
         {
             get;
@@ -63,9 +77,32 @@ namespace FinalProject
             }
         }
 
-        public bool IsWinner()
+        public int IsWinner()
         {
-            return false;
+            for (int i = 0; i < this.rows; i++)
+            {
+                for (int j = 0; j < this.columns; j++)
+                {
+                    if (FindDiagonalLeft(i, j) != -1)
+                    {
+                        return FindDiagonalLeft(i,j);
+                    }
+                    if (FindDiagonalRight(i, j) != -1)
+                    {
+                        return FindDiagonalRight(i,j);
+                    }
+                    if (FindVertical(i, j) != -1)
+                    {
+                        return FindVertical(i,j);
+                    }
+                    if (FindHorizontal(i, j) != -1)
+                    {
+                        return FindHorizontal(i,j);
+                    }
+                }
+            }
+            
+            return -1;
         }
 
         public int NextAvail(int column)
@@ -78,6 +115,137 @@ namespace FinalProject
                 }
             }
 
+            return -1;
+        }
+
+        public int FindDiagonalRight(int row, int col)
+        {
+            int ourPlayer = Board[row, col];
+            if (ourPlayer != 0)
+            {
+                if (ourPlayer == NorthEast(row, col))
+                {
+                    row++;
+                    col++;
+
+                    if (ourPlayer == NorthEast(row, col))
+                    {
+                        row++;
+                        col++;
+                        if (ourPlayer == NorthEast(row, col))
+                        {
+                            this.WinningColSpots.Add(col + 1);
+                            this.WinningColSpots.Add(col - 1);
+                            this.WinningColSpots.Add(col - 2);
+                            this.WinningColSpots.Add(col);
+
+                            this.WinningRowSpots.Add(row - 1);
+                            this.WinningRowSpots.Add(row - 2);
+                            this.WinningRowSpots.Add(row + 1);
+                            this.WinningRowSpots.Add(row);
+
+
+                            return ourPlayer;
+                        }
+                    }
+                }
+            }
+            return -1;
+        }
+
+        public int FindDiagonalLeft(int row, int col)
+        {
+            int ourPlayer = Board[row, col];
+            if (ourPlayer != 0)
+            {
+                if (ourPlayer == NorthWest(row, col))
+                {
+                    row++;
+                    col--;
+
+                    if (ourPlayer == NorthWest(row, col))
+                    {
+                        row++;
+                        col--;
+                        if (ourPlayer == NorthWest(row, col))
+                        {
+                            this.WinningColSpots.Add(col + 1);
+                            this.WinningColSpots.Add(col - 1);
+                            this.WinningColSpots.Add(col + 2);
+                            this.WinningColSpots.Add(col);
+
+                            this.WinningRowSpots.Add(row - 1);
+                            this.WinningRowSpots.Add(row - 2);
+                            this.WinningRowSpots.Add(row + 1);
+                            this.WinningRowSpots.Add(row);
+
+                            return ourPlayer;
+                        }
+                    }
+                }
+            }
+            return -1;
+        }
+
+        public int FindHorizontal(int row, int col)
+        {
+            int ourPlayer = Board[row, col];
+            if (ourPlayer != 0)
+            {
+                if (ourPlayer == East(row, col))
+                {
+                    col++;
+                    if (ourPlayer == East(row, col))
+                    {
+                        col++;
+                        if (ourPlayer == East(row, col))
+                        {
+                            this.WinningColSpots.Add(col + 1);
+                            this.WinningColSpots.Add(col - 1);
+                            this.WinningColSpots.Add(col - 2);
+                            this.WinningColSpots.Add(col );
+
+                            this.WinningRowSpots.Add(row);
+                            this.WinningRowSpots.Add(row);
+                            this.WinningRowSpots.Add(row);
+                            this.WinningRowSpots.Add(row);
+
+                            return ourPlayer;
+                        }
+                    }
+                }
+            }
+            return -1;
+        }
+
+        public int FindVertical(int row, int col)
+        {
+            int ourPlayer = Board[row, col];
+            if (ourPlayer != 0)
+            {
+                if (ourPlayer == North(row, col))
+                {
+                    row++;
+                    if (ourPlayer == North(row, col))
+                    {
+                        row++;
+                        if (ourPlayer == North(row, col))
+                        {
+                            this.WinningColSpots.Add(col);
+                            this.WinningColSpots.Add(col);
+                            this.WinningColSpots.Add(col);
+                            this.WinningColSpots.Add(col);
+
+                            this.WinningRowSpots.Add(row);
+                            this.WinningRowSpots.Add(row - 1);
+                            this.WinningRowSpots.Add(row - 2);
+                            this.WinningRowSpots.Add(row + 1);
+
+                            return ourPlayer;
+                        }
+                    }
+                }
+            }
             return -1;
         }
 

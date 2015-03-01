@@ -5,3 +5,10 @@ D:\Programming\GitDumpsHere\AI-Class-Projects\FinalProject\FinalProjectUnitTests
 D:\Programming\GitDumpsHere\AI-Class-Projects\FinalProject\FinalProjectUnitTests\bin\Debug\FinalProject.pdb
 D:\Programming\GitDumpsHere\AI-Class-Projects\FinalProject\FinalProjectUnitTests\obj\Debug\FinalProjectUnitTests.dll
 D:\Programming\GitDumpsHere\AI-Class-Projects\FinalProject\FinalProjectUnitTests\obj\Debug\FinalProjectUnitTests.pdb
+C:\Users\BuckDich\Documents\GitHub\AI-Class-Projects\FinalProject\FinalProjectUnitTests\bin\Debug\FinalProjectUnitTests.dll
+C:\Users\BuckDich\Documents\GitHub\AI-Class-Projects\FinalProject\FinalProjectUnitTests\bin\Debug\FinalProjectUnitTests.pdb
+C:\Users\BuckDich\Documents\GitHub\AI-Class-Projects\FinalProject\FinalProjectUnitTests\bin\Debug\FinalProject.exe
+C:\Users\BuckDich\Documents\GitHub\AI-Class-Projects\FinalProject\FinalProjectUnitTests\bin\Debug\FinalProject.pdb
+C:\Users\BuckDich\Documents\GitHub\AI-Class-Projects\FinalProject\FinalProjectUnitTests\obj\Debug\FinalProjectUnitTests.csprojResolveAssemblyReference.cache
+C:\Users\BuckDich\Documents\GitHub\AI-Class-Projects\FinalProject\FinalProjectUnitTests\obj\Debug\FinalProjectUnitTests.dll
+C:\Users\BuckDich\Documents\GitHub\AI-Class-Projects\FinalProject\FinalProjectUnitTests\obj\Debug\FinalProjectUnitTests.pdb

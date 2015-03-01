@@ -64,11 +64,16 @@ namespace FinalProject
         public void ButtonClicked(object sender, EventArgs e)
         {
             int buttonNumber = int.Parse(sender.ToString().Substring(sender.ToString().Length -1)) - 1;
+            int winner;
+
             if (ourBoard.HandleButtonPush(buttonNumber, this.PlayerTurn))
             {
-                if (ourBoard.IsWinner())
+                winner = ourBoard.IsWinner();
+                if (winner != -1)
                 {
-                    MessageBox.Show("We Have a Winner");
+                    UpdateGui();
+                    LightUpWinningSpots(winner);
+                    ToggleButtons(false);
                 }
                 else
                 {
@@ -77,6 +82,11 @@ namespace FinalProject
                         PlayerTurn = 2;
                         TurnLabel = "Player Two";
                         ToggleButtons(false);
+                        ourBoard.HandleButtonPush(ComputerBrains.DetermineNextMove(ourBoard), PlayerTurn);
+                        ToggleButtons(true);
+                        PlayerTurn = 1;
+                        TurnLabel = "Player One";
+                        UpdateGui();
                     }
                 }
             }
@@ -84,19 +94,30 @@ namespace FinalProject
             {
                 MessageBox.Show("Please select one that hasn't been filled");
             }
+            
 
-            UpdateGui();
+        }
 
-            //this means that it is player two's turn
-            if (PlayerTurn == 2)
+        public void LightUpWinningSpots(int player)
+        {
+            Color winner = new Color();
+
+            if (player == 1)
             {
-                ourBoard.HandleButtonPush(ComputerBrains.DetermineNextMove(ourBoard), PlayerTurn);
-                ToggleButtons(true);
-                PlayerTurn = 1;
-                TurnLabel = "Player One";
+                winner = Color.LightGreen;
+            }
+            else
+            {
+                winner = Color.Pink;
             }
 
-            UpdateGui();
+            for(int i = 0; i < 4; i++)
+            {
+                int row = this.ourBoard.WinningRowSpots[i];
+                int col = this.ourBoard.WinningColSpots[i];
+
+                this.guiBoard[(row * ourBoard.columns + col)].FillColor = winner;
+            }
         }
 
         public void ToggleButtons(bool toggle)

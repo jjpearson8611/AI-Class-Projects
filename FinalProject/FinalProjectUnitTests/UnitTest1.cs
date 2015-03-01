@@ -500,6 +500,105 @@ namespace FinalProjectUnitTests
 
         #endregion
 
+        //Board photo
+        // 0000000
+        // 0000000
+        // 0000000
+        // 0000000
+        // 0000000
+        // 1111222
 
+        [TestMethod]
+        public void TestWinnerHorizontal()
+        {
+            GameBoard temp = new GameBoard(6, 7);
+            temp.Board = new int[6, 7] { { 1, 1, 1, 1, 2, 2, 2 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 } };
+
+            int isWinner =  temp.IsWinner();
+
+            Assert.AreEqual(isWinner, 1, "Horizontal Winner Failed");
+        }
+
+
+        //Board photo
+        // 0000000
+        // 0000000
+        // 1000000
+        // 1000000
+        // 1000000
+        // 1000222
+
+        [TestMethod]
+        public void TestWinnerVertical()
+        {
+            GameBoard temp = new GameBoard(6, 7);
+            temp.Board = new int[6, 7] { { 1, 0, 0, 0, 2, 2, 2 }, { 1, 0, 0, 0, 0, 0, 0 }, { 1, 0, 0, 0, 0, 0, 0 }, { 1, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 } };
+
+            int isWinner = temp.IsWinner();
+
+            Assert.AreEqual(isWinner, 1, "Vertical Winner Failed");
+        }
+
+
+        //Board photo
+        // 0000000
+        // 0000000
+        // 1000000
+        // 0100000
+        // 0010000
+        // 0001222
+
+        [TestMethod]
+        public void TestWinnerLeftDiag()
+        {
+            GameBoard temp = new GameBoard(6, 7);
+            temp.Board = new int[6, 7] { { 0, 0, 0, 1, 2, 2, 2 }, { 0, 0, 1, 0, 0, 0, 0 }, { 0, 1, 0, 0, 0, 0, 0 }, { 1, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 } };
+
+            int isWinner = temp.IsWinner();
+
+            Assert.AreEqual(isWinner, 1, "Left Diagonal Winner Failed");
+        }
+
+
+
+        //Board photo
+        // 0000000
+        // 0000000
+        // 0001000
+        // 0010000
+        // 0100000
+        // 1000222
+
+        [TestMethod]
+        public void TestWinnerRightDiag()
+        {
+            GameBoard temp = new GameBoard(6, 7);
+            temp.Board = new int[6, 7] { { 1, 0, 0, 0, 2, 2, 2 }, { 0, 1, 0, 0, 0, 0, 0 }, { 0, 0, 1, 0, 0, 0, 0 }, { 0, 0, 0, 1, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 } };
+
+            int isWinner = temp.IsWinner();
+
+            Assert.AreEqual(isWinner, 1, "Left Diagonal Winner Failed");
+        }
+
+
+
+        //Board photo
+        // 0000000
+        // 0000000
+        // 0000000
+        // 0000000
+        // 0000000
+        // 0000000
+
+        [TestMethod]
+        public void TestWinnerNoWinner()
+        {
+            GameBoard temp = new GameBoard(6, 7);
+            temp.Board = new int[6, 7] { { 0, 0, 0, 0, 0, 0, 0}, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 } };
+
+            int isWinner = temp.IsWinner();
+
+            Assert.AreEqual(isWinner, -1, "Blank board Winner Failed");
+        }
     }
 }
