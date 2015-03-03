@@ -500,6 +500,7 @@ namespace FinalProjectUnitTests
 
         #endregion
 
+        #region IsWinner
         //Board photo
         // 0000000
         // 0000000
@@ -599,6 +600,201 @@ namespace FinalProjectUnitTests
             int isWinner = temp.IsWinner();
 
             Assert.AreEqual(isWinner, -1, "Blank board Winner Failed");
+        }
+
+        #endregion
+
+
+        //Board photo
+        // 0000000
+        // 0000000
+        // 0000000
+        // 0000000
+        // 0000000
+        // 0000000
+
+        [TestMethod]
+        public void TestAIFirstMove()
+        {
+            GameBoard temp = new GameBoard(6, 7);
+            temp.Board = new int[6, 7] { { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 } };
+
+            AI ComputerBrains = new AI();
+
+            int spot = ComputerBrains.DetermineNextMove(temp);
+
+            Assert.AreEqual(spot, 3, "Didn't place first spot in middle");
+        }
+
+        //Board photo
+        // 0000000
+        // 0000000
+        // 0000000
+        // 1200000
+        // 1120000
+        // 1112000
+
+        [TestMethod]
+        public void TestDiagonalWinningMove()
+        {
+            GameBoard temp = new GameBoard(6, 7);
+            temp.Board = new int[6, 7] { { 1, 1, 1, 2, 0, 0, 0 }, { 1, 1, 2, 0, 0, 0, 0 }, { 1, 2, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 } };
+
+            AI ComputerBrains = new AI();
+
+            int spot = ComputerBrains.DetermineNextMove(temp);
+
+            Assert.AreEqual(spot, 0, "Didn't Make Winning Move");
+        }
+
+        //Board photo
+        // 0000000
+        // 0000000
+        // 0000000
+        // 2100000
+        // 2210002
+        // 1121202
+
+        [TestMethod]
+        public void TestDiagonalBlockingMove()
+        {
+            GameBoard temp = new GameBoard(6, 7);
+            temp.Board = new int[6, 7] { { 1, 1, 2, 1, 2, 0,  2}, { 2, 2, 1, 0, 0, 0, 2}, { 2, 1, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 } };
+
+            AI ComputerBrains = new AI();
+
+            int spot = ComputerBrains.DetermineNextMove(temp);
+
+            Assert.AreEqual(spot, 0, "You Have Lost");
+        }
+
+
+        //Board photo
+        // 0000000
+        // 0000000
+        // 0000000
+        // 0021000
+        // 1221000
+        // 2112000
+
+        [TestMethod]
+        public void TestDiagonalWinningMove2()
+        {
+            GameBoard temp = new GameBoard(6, 7);
+            temp.Board = new int[6, 7] { { 2, 1, 1, 2, 0, 0, 0 }, { 1, 2, 2, 1, 0, 0, 0 }, { 0, 0, 2, 1, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 } };
+
+            AI ComputerBrains = new AI();
+
+            int spot = ComputerBrains.DetermineNextMove(temp);
+
+            Assert.AreEqual(spot, 3, "Didn't Make Winning Move");
+        }
+
+        //Board photo
+        // 0000000
+        // 0000000
+        // 0000000
+        // 0012000
+        // 0112000
+        // 1121200
+
+        [TestMethod]
+        public void TestDiagonalBlockingMove2()
+        {
+            GameBoard temp = new GameBoard(6, 7);
+            temp.Board = new int[6, 7] { { 1, 1, 2, 1, 2, 0, 0 }, { 0, 1, 1, 2, 0, 0, 0 }, { 0, 0, 1, 2, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 } };
+
+            AI ComputerBrains = new AI();
+
+            int spot = ComputerBrains.DetermineNextMove(temp);
+
+            Assert.AreEqual(spot, 3, "You Have Lost");
+        }
+
+        //Board photo
+        // 0000000
+        // 0000000
+        // 0000000
+        // 0000000
+        // 0000000
+        // 1112220
+
+        [TestMethod]
+        public void TestHorizontalMove()
+        {
+            GameBoard temp = new GameBoard(6, 7);
+            temp.Board = new int[6, 7] { { 1, 1, 1, 2, 2, 2, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 } };
+
+            AI ComputerBrains = new AI();
+
+            int spot = ComputerBrains.DetermineNextMove(temp);
+
+            Assert.AreEqual(spot, 6, "You missed a horizontal win");
+        }
+
+
+        //Board photo
+        // 0000000
+        // 0000000
+        // 0000000
+        // 0000000
+        // 0000000
+        // 1110220
+
+        [TestMethod]
+        public void TestHorizontalBlock()
+        {
+            GameBoard temp = new GameBoard(6, 7);
+            temp.Board = new int[6, 7] { { 1, 1, 1, 0, 2, 2, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 } };
+
+            AI ComputerBrains = new AI();
+
+            int spot = ComputerBrains.DetermineNextMove(temp);
+
+            Assert.AreEqual(spot, 3, "You Lose");
+        }
+
+
+        //Board photo
+        // 0000000
+        // 0000000
+        // 0000000
+        // 1000000
+        // 1000000
+        // 1000000
+
+        [TestMethod]
+        public void TestVerticalBlock()
+        {
+            GameBoard temp = new GameBoard(6, 7);
+            temp.Board = new int[6, 7] { { 1, 0, 0, 0, 0, 0, 0 }, { 1, 0, 0, 0, 0, 0, 0 }, { 1, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 } };
+
+            AI ComputerBrains = new AI();
+
+            int spot = ComputerBrains.DetermineNextMove(temp);
+
+            Assert.AreEqual(spot, 0, "You Lose");
+        }
+
+        //Board photo
+        // 0000000
+        // 0000000
+        // 0000000
+        // 2000000
+        // 2000000
+        // 2000000
+
+        [TestMethod]
+        public void TestVerticalMove()
+        {
+            GameBoard temp = new GameBoard(6, 7);
+            temp.Board = new int[6, 7] { { 2, 0, 0, 0, 0, 0, 0 }, { 2, 0, 0, 0, 0, 0, 0 }, { 2, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 } };
+
+            AI ComputerBrains = new AI();
+
+            int spot = ComputerBrains.DetermineNextMove(temp);
+
+            Assert.AreEqual(spot, 0, "You missed a winning move");
         }
     }
 }

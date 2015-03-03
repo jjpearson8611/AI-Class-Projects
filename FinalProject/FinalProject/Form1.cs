@@ -22,6 +22,8 @@ namespace FinalProject
             ourBoard.initializeBoard();
             CreateGuiBoard();
             ComputerBrains = new AI();
+            HandleComputer();
+            UpdateGui();
         }
 
         #region properties
@@ -79,14 +81,15 @@ namespace FinalProject
                 {
                     if (PlayerTurn == 1)
                     {
-                        PlayerTurn = 2;
-                        TurnLabel = "Player Two";
-                        ToggleButtons(false);
-                        ourBoard.HandleButtonPush(ComputerBrains.DetermineNextMove(ourBoard), PlayerTurn);
-                        ToggleButtons(true);
-                        PlayerTurn = 1;
-                        TurnLabel = "Player One";
                         UpdateGui();
+                        HandleComputer();
+                        winner = ourBoard.IsWinner();
+                        UpdateGui();
+                        if (winner != -1)
+                        {
+                            LightUpWinningSpots(winner);
+                            ToggleButtons(false);
+                        }
                     }
                 }
             }
@@ -96,6 +99,17 @@ namespace FinalProject
             }
             
 
+        }
+
+        public void HandleComputer()
+        {
+            PlayerTurn = 2;
+            TurnLabel = "Player Two";
+            ToggleButtons(false);
+            ourBoard.HandleButtonPush(ComputerBrains.DetermineNextMove(ourBoard), PlayerTurn);
+            ToggleButtons(true);
+            PlayerTurn = 1;
+            TurnLabel = "Player One";
         }
 
         public void LightUpWinningSpots(int player)
@@ -208,6 +222,94 @@ namespace FinalProject
             this.guiBoard.Insert(0, zeroone);
             this.guiBoard.Insert(0, zerozero);
 
+        }
+
+        private void gamesbar_Scroll(object sender, EventArgs e)
+        {
+            this.gamesLabel.Text = "Games: " + gamesbar.Value.ToString();
+        }
+
+        private void gobutton_Click(object sender, EventArgs e)
+        {
+            GameBoard quickGame = new GameBoard(6, 7);
+            Random rand = new Random();
+            int botwins = 0;
+            int randowins = 0;
+            int winner = -1;
+
+            AI OtherComputerBrain = new AI();
+
+            double update = this.gamesbar.Value / 100;
+            int updateCount = 1;
+
+            for (int i = 0; i < this.gamesbar.Value; i++)
+            {
+                if (comboBox1.SelectedIndex == 0)
+                {
+                    while (winner == -1)
+                    {
+                        if (!quickGame.HandleButtonPush(ComputerBrains.DetermineNextMove(quickGame), 2))
+                        {
+                            break;
+                        }
+                        if (!quickGame.HandleButtonPush(rand.Next(0, 7), 1))
+                        {
+                            break;
+                        }
+                        winner = quickGame.IsWinner();
+                    }
+                }
+                else
+                {
+                    while (winner == -1)
+                    {
+                        if (!quickGame.HandleButtonPush(ComputerBrains.DetermineNextMove(quickGame), 2))
+                        {
+                            break;
+                        }
+                        if (!quickGame.HandleButtonPush(OtherComputerBrain.DetermineNextMove(quickGame),1))
+                        {
+                            break;
+                        }
+                        
+                        winner = quickGame.IsWinner();
+                    }
+                }
+                if (winner == 2)
+                {
+                    botwins++;
+                }
+                if(winner == 1)
+                {
+                    randowins++;
+                }
+                quickGame.initializeBoard();
+                winner = -1;
+
+                if (i > (int)(update + 1) * updateCount)
+                {
+                    updateCount++;
+                    gamesprogressbar.Value++;
+                }
+
+                ComputerBrains.ResetComputerBrain();
+                OtherComputerBrain.ResetComputerBrain();
+
+            }
+
+            botwinslabel.Text = botwins.ToString();
+            randomwinslabel.Text = randowins.ToString();
+            winpercentagebot.Text = "%" + 100 * ((double)botwins / (double)gamesbar.Value);
+            winpercentagerandom.Text = "%" + 100 * ((double)randowins / (double)gamesbar.Value);
+            gamesprogressbar.Value = 0;
+        }
+
+        private void clearButton_Click(object sender, EventArgs e)
+        {
+            botwinslabel.Text = "";
+            randomwinslabel.Text = "";
+            winpercentagebot.Text = "";
+            winpercentagerandom.Text = "";
         }
     }
 }

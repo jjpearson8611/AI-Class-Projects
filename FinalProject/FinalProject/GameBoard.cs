@@ -12,14 +12,23 @@ namespace FinalProject
         //default constructor
         public GameBoard(int rowsParm, int columnsParm)
         {
-            this.rows = rowsParm;
-            this.columns = columnsParm;
-            this.Board = new int[this.rows, this.columns];
-            this.WinningColSpots = new List<int>();
-            this.WinningRowSpots = new List<int>();
+            Initialize(rowsParm, columnsParm);
+        }
+
+        public GameBoard(GameBoard temp)
+        {
+            Initialize(temp.rows, temp.columns);
+            CopyBoard(temp.Board);
+            this.WinningColSpots = temp.WinningColSpots;
+            this.WinningRowSpots = temp.WinningRowSpots;
         }
 
         #region Properties
+        public int turnCount
+        {
+            get;
+            set;
+        }
         public List<int> WinningRowSpots
         {
             set;
@@ -51,6 +60,16 @@ namespace FinalProject
         }
         #endregion
 
+        public void Initialize(int rowsParm, int columnsParm)
+        {
+            this.rows = rowsParm;
+            this.columns = columnsParm;
+            this.Board = new int[this.rows, this.columns];
+            this.WinningColSpots = new List<int>();
+            this.WinningRowSpots = new List<int>();
+            this.turnCount = 0;
+        }
+
         //Set all the board values to zero
         public void initializeBoard()
         {
@@ -61,15 +80,28 @@ namespace FinalProject
                     Board[i, j] = 0;
                 }
             }
+
+            this.WinningColSpots = new List<int>();
+            this.WinningRowSpots = new List<int>();
+            this.turnCount = 0;
         }
 
         public bool HandleButtonPush(int column, int player)
         {
-            int spot = NextAvail(column);
-            if (spot != -1)
+            turnCount++;
+
+            if (turnCount != (7 * 6 + 1))
             {
-                this.Board[spot, column] = player;
-                return true;
+                int spot = NextAvail(column);
+                if (spot != -1)
+                {
+                    this.Board[spot, column] = player;
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
             else
             {
@@ -107,15 +139,29 @@ namespace FinalProject
 
         public int NextAvail(int column)
         {
-            for (int j = 0; j < this.rows; j++)
+            if (column != -1)
             {
-                if(this.Board[j,column] == 0)
+                for (int j = 0; j < this.rows; j++)
                 {
-                    return j;
+                    if (this.Board[j, column] == 0)
+                    {
+                        return j;
+                    }
                 }
             }
 
             return -1;
+        }
+
+        public void CopyBoard(int[,] temp)
+        {
+            for (int i = 0; i < this.rows; i++)
+            {
+                for (int j = 0; j < this.columns; j++)
+                {
+                    Board[i, j] = temp[i,j];
+                }
+            }
         }
 
         public int FindDiagonalRight(int row, int col)
@@ -134,9 +180,9 @@ namespace FinalProject
                         col++;
                         if (ourPlayer == NorthEast(row, col))
                         {
-                            this.WinningColSpots.Add(col + 1);
                             this.WinningColSpots.Add(col - 1);
                             this.WinningColSpots.Add(col - 2);
+                            this.WinningColSpots.Add(col + 1);
                             this.WinningColSpots.Add(col);
 
                             this.WinningRowSpots.Add(row - 1);
@@ -175,8 +221,8 @@ namespace FinalProject
                             this.WinningColSpots.Add(col);
 
                             this.WinningRowSpots.Add(row - 1);
-                            this.WinningRowSpots.Add(row - 2);
                             this.WinningRowSpots.Add(row + 1);
+                            this.WinningRowSpots.Add(row - 2);
                             this.WinningRowSpots.Add(row);
 
                             return ourPlayer;
@@ -392,6 +438,21 @@ namespace FinalProject
         }
         #endregion
 
+        public override string ToString()
+        {
+            string builder = string.Empty;
+
+            for (int i = this.rows - 1; i >= 0; i--)
+            {
+                builder += '\n';
+                for (int j = 0; j < this.columns; j++)
+                {
+                    builder += Board[i, j];
+                }
+            }
+
+            return builder;
+        }
 
     }
 }
