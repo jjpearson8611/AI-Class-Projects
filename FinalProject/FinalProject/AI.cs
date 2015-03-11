@@ -46,8 +46,6 @@ namespace FinalProject
 
         public override int DetermineNextMove(GameBoard CurrentBoard)
         {
-            if (rand.Random() <= 19)
-            {
                 this.CurBoard = CurrentBoard;
                 int spot = -1;
                 int bestScore = int.MinValue;
@@ -79,15 +77,22 @@ namespace FinalProject
 
                 if (CurBoard.Board[0, 3] == 0)
                 {
-                    return 3;
+                    spot = 3;
                 }
 
-                return spot;
-            }
-            else
-            {
-                return rand.DetermineNextMove(CurrentBoard);    
-            }
+                if (bestScore > 100 || bestScore < -100)
+                {
+                    return spot;
+                }
+
+                if (rand.Random() > 19)
+                {
+                    return spot;
+                }
+                else
+                {
+                    return rand.DetermineNextMove(CurrentBoard);
+                }
         }
 
 

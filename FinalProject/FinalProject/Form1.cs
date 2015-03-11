@@ -357,7 +357,7 @@ namespace FinalProject
 
             float tieCount = gamesbar.Value - (float.Parse(randomwinslabel.Text) + float.Parse(botwinslabel.Text));
 
-            histlabel.Text += Environment.NewLine + String.Format("{0,-8}{1,-10}{2,-10}{3,-10:N}{4,-8:N}{5,-8:P1}{6,-6:P1}{7,-7:N}{8,-10:P1}",
+            histlabel.Text += Environment.NewLine + String.Format("{0,-8}{1,-10}{2,-10}{3,-10:N}{4,-8:N}{5,-8:P1}{6,-6:P1}{7,-7:N0}{8,-10:P1}",
                 gamesbar.Value.ToString(), topCombo.Text, bottomCombo.Text, botwinslabel.Text, randomwinslabel.Text,
                 float.Parse(winpercentagebot.Text.Substring(1)) / 100, float.Parse(winpercentagerandom.Text.Substring(1)) / 100,
                 tieCount, ((float)tieCount) / ((float)gamesbar.Value));

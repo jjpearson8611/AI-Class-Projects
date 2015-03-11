@@ -723,7 +723,7 @@ namespace FinalProjectUnitTests
         public void TestHorizontalMove()
         {
             GameBoard temp = new GameBoard(6, 7);
-            temp.Board = new int[6, 7] { { 1, 1, 1, 2, 2, 2, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 } };
+            temp.Board = new int[6, 7] { { 1, 1, 1, 0, 2, 2, 2}, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 } };
 
             AI ComputerBrains = new AI(2);
 
