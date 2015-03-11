@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace FinalProject
 {
-    public class AI : Brain
+    public class LesserAI : Brain
     {
-        public AI(int us)
+        public LesserAI(int us)
         {
             OurPlayer = us;
             CurPlayer = us;
@@ -48,41 +48,42 @@ namespace FinalProject
         {
             if (rand.Random() <= 19)
             {
-                this.CurBoard = CurrentBoard;
-                int spot = -1;
-                int bestScore = int.MinValue;
-                int row = 0;
-                int score = 0;
+            this.CurBoard = CurrentBoard;
+            int spot = -1;
+            int bestScore = int.MinValue;
+            int row = 0;
+            int score = 0;
 
-                for (int i = 0; i < this.CurBoard.columns; i++)
+            for (int i = 0; i < this.CurBoard.columns; i++)
+            {
+                score = 0;
+                row = this.CurBoard.NextAvail(i);
+                if (row != -1)
                 {
-                    score = 0;
-                    row = this.CurBoard.NextAvail(i);
-                    if (row != -1)
-                    {
-                        score = DetermineMoveScore(i, row);
-                    }
-                    else
-                    {
-                        score = int.MinValue;
-                    }
-                    if (score == int.MaxValue)
-                    {
-                        return i;
-                    }
-                    if (score > bestScore)
-                    {
-                        bestScore = score;
-                        spot = i;
-                    }
+                    score = DetermineMoveScore(i, row);
                 }
-
-                if (CurBoard.Board[0, 3] == 0)
+                else
                 {
-                    return 3;
+                    score = int.MinValue;
                 }
+                if (score == int.MaxValue)
+                {
+                    return i;
+                }
+                if (score > bestScore)
+                {
+                    bestScore = score;
+                    spot = i;
+                }
+            }
 
-                return spot;
+            if (CurBoard.Board[0,3] == 0)
+            {
+                return 3;
+            }
+
+            return spot;
+            
             }
             else
             {
@@ -113,13 +114,6 @@ namespace FinalProject
             else
             {
                 score = SurroundingScores(col, row, nextState);
-            }
-
-            if (OurPlayer == CurPlayer)
-            {
-                CurPlayer = OtherPlayer(CurPlayer);
-                score = score - DetermineNextMove(nextState);
-                CurPlayer = OurPlayer;
             }
 
             return score;

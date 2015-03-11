@@ -619,7 +619,7 @@ namespace FinalProjectUnitTests
             GameBoard temp = new GameBoard(6, 7);
             temp.Board = new int[6, 7] { { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 } };
 
-            AI ComputerBrains = new AI();
+            AI ComputerBrains = new AI(2);
 
             int spot = ComputerBrains.DetermineNextMove(temp);
 
@@ -640,7 +640,7 @@ namespace FinalProjectUnitTests
             GameBoard temp = new GameBoard(6, 7);
             temp.Board = new int[6, 7] { { 1, 1, 1, 2, 0, 0, 0 }, { 1, 1, 2, 0, 0, 0, 0 }, { 1, 2, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 } };
 
-            AI ComputerBrains = new AI();
+            AI ComputerBrains = new AI(2);
 
             int spot = ComputerBrains.DetermineNextMove(temp);
 
@@ -661,7 +661,7 @@ namespace FinalProjectUnitTests
             GameBoard temp = new GameBoard(6, 7);
             temp.Board = new int[6, 7] { { 1, 1, 2, 1, 2, 0,  2}, { 2, 2, 1, 0, 0, 0, 2}, { 2, 1, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 } };
 
-            AI ComputerBrains = new AI();
+            AI ComputerBrains = new AI(2);
 
             int spot = ComputerBrains.DetermineNextMove(temp);
 
@@ -683,7 +683,7 @@ namespace FinalProjectUnitTests
             GameBoard temp = new GameBoard(6, 7);
             temp.Board = new int[6, 7] { { 2, 1, 1, 2, 0, 0, 0 }, { 1, 2, 2, 1, 0, 0, 0 }, { 0, 0, 2, 1, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 } };
 
-            AI ComputerBrains = new AI();
+            AI ComputerBrains = new AI(2);
 
             int spot = ComputerBrains.DetermineNextMove(temp);
 
@@ -704,11 +704,11 @@ namespace FinalProjectUnitTests
             GameBoard temp = new GameBoard(6, 7);
             temp.Board = new int[6, 7] { { 1, 1, 2, 1, 2, 0, 0 }, { 0, 1, 1, 2, 0, 0, 0 }, { 0, 0, 1, 2, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 } };
 
-            AI ComputerBrains = new AI();
+            AI ComputerBrains = new AI(2);
 
             int spot = ComputerBrains.DetermineNextMove(temp);
 
-            Assert.AreEqual(spot, 3, "You Have Lost");
+            Assert.AreEqual(3, spot, "You Have Lost");
         }
 
         //Board photo
@@ -725,11 +725,11 @@ namespace FinalProjectUnitTests
             GameBoard temp = new GameBoard(6, 7);
             temp.Board = new int[6, 7] { { 1, 1, 1, 2, 2, 2, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 } };
 
-            AI ComputerBrains = new AI();
+            AI ComputerBrains = new AI(2);
 
             int spot = ComputerBrains.DetermineNextMove(temp);
 
-            Assert.AreEqual(spot, 6, "You missed a horizontal win");
+            Assert.AreEqual(6, spot, "You missed a horizontal win");
         }
 
 
@@ -747,11 +747,11 @@ namespace FinalProjectUnitTests
             GameBoard temp = new GameBoard(6, 7);
             temp.Board = new int[6, 7] { { 1, 1, 1, 0, 2, 2, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 } };
 
-            AI ComputerBrains = new AI();
+            AI ComputerBrains = new AI(2);
 
             int spot = ComputerBrains.DetermineNextMove(temp);
 
-            Assert.AreEqual(spot, 3, "You Lose");
+            Assert.AreEqual(3, spot, "You Lose");
         }
 
 
@@ -769,7 +769,7 @@ namespace FinalProjectUnitTests
             GameBoard temp = new GameBoard(6, 7);
             temp.Board = new int[6, 7] { { 1, 0, 0, 0, 0, 0, 0 }, { 1, 0, 0, 0, 0, 0, 0 }, { 1, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 } };
 
-            AI ComputerBrains = new AI();
+            AI ComputerBrains = new AI(2);
 
             int spot = ComputerBrains.DetermineNextMove(temp);
 
@@ -790,7 +790,7 @@ namespace FinalProjectUnitTests
             GameBoard temp = new GameBoard(6, 7);
             temp.Board = new int[6, 7] { { 2, 0, 0, 0, 0, 0, 0 }, { 2, 0, 0, 0, 0, 0, 0 }, { 2, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 } };
 
-            AI ComputerBrains = new AI();
+            AI ComputerBrains = new AI(2);
 
             int spot = ComputerBrains.DetermineNextMove(temp);
 

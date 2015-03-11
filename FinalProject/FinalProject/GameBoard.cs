@@ -19,23 +19,15 @@ namespace FinalProject
         {
             Initialize(temp.rows, temp.columns);
             CopyBoard(temp.Board);
-            this.WinningColSpots = temp.WinningColSpots;
-            this.WinningRowSpots = temp.WinningRowSpots;
+            this.WinningSpots = temp.WinningSpots;
         }
 
         #region Properties
-        public int turnCount
-        {
-            get;
-            set;
-        }
-        public List<int> WinningRowSpots
-        {
-            set;
-            get;
-        }
 
-        public List<int> WinningColSpots
+        /// <summary>
+        /// column,row
+        /// </summary>
+        public List<Tuple<int,int>> WinningSpots
         {
             set;
             get;
@@ -65,9 +57,8 @@ namespace FinalProject
             this.rows = rowsParm;
             this.columns = columnsParm;
             this.Board = new int[this.rows, this.columns];
-            this.WinningColSpots = new List<int>();
-            this.WinningRowSpots = new List<int>();
-            this.turnCount = 0;
+            this.WinningSpots = new List<Tuple<int,int>>();
+            initializeBoard();
         }
 
         //Set all the board values to zero
@@ -80,18 +71,12 @@ namespace FinalProject
                     Board[i, j] = 0;
                 }
             }
-
-            this.WinningColSpots = new List<int>();
-            this.WinningRowSpots = new List<int>();
-            this.turnCount = 0;
+            
+            this.WinningSpots = new List<Tuple<int,int>>();
         }
 
         public bool HandleButtonPush(int column, int player)
         {
-            turnCount++;
-
-            if (turnCount != (7 * 6 + 1))
-            {
                 int spot = NextAvail(column);
                 if (spot != -1)
                 {
@@ -102,15 +87,11 @@ namespace FinalProject
                 {
                     return false;
                 }
-            }
-            else
-            {
-                return false;
-            }
         }
 
         public int IsWinner()
         {
+            this.WinningSpots = new List<Tuple<int,int>>();
             for (int i = 0; i < this.rows; i++)
             {
                 for (int j = 0; j < this.columns; j++)
@@ -139,7 +120,7 @@ namespace FinalProject
 
         public int NextAvail(int column)
         {
-            if (column != -1)
+            if (column > -1 && column < 7)
             {
                 for (int j = 0; j < this.rows; j++)
                 {
@@ -164,6 +145,7 @@ namespace FinalProject
             }
         }
 
+        #region WinningDirectionFinders
         public int FindDiagonalRight(int row, int col)
         {
             int ourPlayer = Board[row, col];
@@ -180,16 +162,10 @@ namespace FinalProject
                         col++;
                         if (ourPlayer == NorthEast(row, col))
                         {
-                            this.WinningColSpots.Add(col - 1);
-                            this.WinningColSpots.Add(col - 2);
-                            this.WinningColSpots.Add(col + 1);
-                            this.WinningColSpots.Add(col);
-
-                            this.WinningRowSpots.Add(row - 1);
-                            this.WinningRowSpots.Add(row - 2);
-                            this.WinningRowSpots.Add(row + 1);
-                            this.WinningRowSpots.Add(row);
-
+                            this.WinningSpots.Add(new Tuple<int,int>(col,row));
+                            this.WinningSpots.Add(new Tuple<int,int>(col + 1,row + 1));
+                            this.WinningSpots.Add(new Tuple<int,int>(col - 1,row - 1));
+                            this.WinningSpots.Add(new Tuple<int,int>(col - 2,row - 2));
 
                             return ourPlayer;
                         }
@@ -215,15 +191,10 @@ namespace FinalProject
                         col--;
                         if (ourPlayer == NorthWest(row, col))
                         {
-                            this.WinningColSpots.Add(col + 1);
-                            this.WinningColSpots.Add(col - 1);
-                            this.WinningColSpots.Add(col + 2);
-                            this.WinningColSpots.Add(col);
-
-                            this.WinningRowSpots.Add(row - 1);
-                            this.WinningRowSpots.Add(row + 1);
-                            this.WinningRowSpots.Add(row - 2);
-                            this.WinningRowSpots.Add(row);
+                            this.WinningSpots.Add(new Tuple<int,int>(col,row));
+                            this.WinningSpots.Add(new Tuple<int,int>(col - 1,row + 1));
+                            this.WinningSpots.Add(new Tuple<int,int>(col + 1,row - 1));
+                            this.WinningSpots.Add(new Tuple<int,int>(col + 2,row - 2));
 
                             return ourPlayer;
                         }
@@ -246,15 +217,10 @@ namespace FinalProject
                         col++;
                         if (ourPlayer == East(row, col))
                         {
-                            this.WinningColSpots.Add(col + 1);
-                            this.WinningColSpots.Add(col - 1);
-                            this.WinningColSpots.Add(col - 2);
-                            this.WinningColSpots.Add(col );
-
-                            this.WinningRowSpots.Add(row);
-                            this.WinningRowSpots.Add(row);
-                            this.WinningRowSpots.Add(row);
-                            this.WinningRowSpots.Add(row);
+                            this.WinningSpots.Add(new Tuple<int,int>(col,row));
+                            this.WinningSpots.Add(new Tuple<int,int>(col + 1,row));
+                            this.WinningSpots.Add(new Tuple<int,int>(col - 1,row));
+                            this.WinningSpots.Add(new Tuple<int,int>(col - 2,row));
 
                             return ourPlayer;
                         }
@@ -277,15 +243,10 @@ namespace FinalProject
                         row++;
                         if (ourPlayer == North(row, col))
                         {
-                            this.WinningColSpots.Add(col);
-                            this.WinningColSpots.Add(col);
-                            this.WinningColSpots.Add(col);
-                            this.WinningColSpots.Add(col);
-
-                            this.WinningRowSpots.Add(row);
-                            this.WinningRowSpots.Add(row - 1);
-                            this.WinningRowSpots.Add(row - 2);
-                            this.WinningRowSpots.Add(row + 1);
+                            this.WinningSpots.Add(new Tuple<int,int>(col,row));
+                            this.WinningSpots.Add(new Tuple<int,int>(col,row + 1));
+                            this.WinningSpots.Add(new Tuple<int,int>(col,row - 1));
+                            this.WinningSpots.Add(new Tuple<int,int>(col,row - 2));
 
                             return ourPlayer;
                         }
@@ -294,6 +255,7 @@ namespace FinalProject
             }
             return -1;
         }
+        #endregion
 
 
         #region Directions

@@ -30,6 +30,7 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.restartButton = new System.Windows.Forms.Button();
             this.turnLabel = new System.Windows.Forms.Label();
             this.column7 = new System.Windows.Forms.Button();
             this.column6 = new System.Windows.Forms.Button();
@@ -82,6 +83,10 @@
             this.fiveone = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.twoone = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.histlabel = new System.Windows.Forms.Label();
+            this.topCombo = new System.Windows.Forms.ComboBox();
+            this.bottomCombo = new System.Windows.Forms.ComboBox();
+            this.gamesprogressbar = new System.Windows.Forms.ProgressBar();
             this.winpercentagerandom = new System.Windows.Forms.Label();
             this.winpercentagebot = new System.Windows.Forms.Label();
             this.gamesLabel = new System.Windows.Forms.Label();
@@ -91,9 +96,6 @@
             this.botwinslabel = new System.Windows.Forms.Label();
             this.randomwinslabel = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.gamesprogressbar = new System.Windows.Forms.ProgressBar();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -112,6 +114,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.restartButton);
             this.tabPage1.Controls.Add(this.turnLabel);
             this.tabPage1.Controls.Add(this.column7);
             this.tabPage1.Controls.Add(this.column6);
@@ -128,6 +131,16 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = " Game";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // restartButton
+            // 
+            this.restartButton.Location = new System.Drawing.Point(401, 29);
+            this.restartButton.Name = "restartButton";
+            this.restartButton.Size = new System.Drawing.Size(75, 23);
+            this.restartButton.TabIndex = 11;
+            this.restartButton.Text = "Restart";
+            this.restartButton.UseVisualStyleBackColor = true;
+            this.restartButton.Click += new System.EventHandler(this.restartButton_Click);
             // 
             // turnLabel
             // 
@@ -598,7 +611,9 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.comboBox1);
+            this.tabPage2.Controls.Add(this.histlabel);
+            this.tabPage2.Controls.Add(this.topCombo);
+            this.tabPage2.Controls.Add(this.bottomCombo);
             this.tabPage2.Controls.Add(this.gamesprogressbar);
             this.tabPage2.Controls.Add(this.winpercentagerandom);
             this.tabPage2.Controls.Add(this.winpercentagebot);
@@ -609,7 +624,6 @@
             this.tabPage2.Controls.Add(this.botwinslabel);
             this.tabPage2.Controls.Add(this.randomwinslabel);
             this.tabPage2.Controls.Add(this.label4);
-            this.tabPage2.Controls.Add(this.label1);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -617,6 +631,49 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Bulk Runs";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // histlabel
+            // 
+            this.histlabel.AutoSize = true;
+            this.histlabel.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.histlabel.Location = new System.Drawing.Point(10, 158);
+            this.histlabel.Name = "histlabel";
+            this.histlabel.Size = new System.Drawing.Size(63, 14);
+            this.histlabel.TabIndex = 17;
+            this.histlabel.Text = "ChangeMe";
+            // 
+            // topCombo
+            // 
+            this.topCombo.FormattingEnabled = true;
+            this.topCombo.Items.AddRange(new object[] {
+            "Random",
+            "Lesser",
+            "Bot"});
+            this.topCombo.Location = new System.Drawing.Point(13, 45);
+            this.topCombo.Name = "topCombo";
+            this.topCombo.Size = new System.Drawing.Size(121, 21);
+            this.topCombo.TabIndex = 16;
+            this.topCombo.Text = "Bot";
+            // 
+            // bottomCombo
+            // 
+            this.bottomCombo.FormattingEnabled = true;
+            this.bottomCombo.Items.AddRange(new object[] {
+            "Random",
+            "Lesser",
+            "Bot"});
+            this.bottomCombo.Location = new System.Drawing.Point(13, 69);
+            this.bottomCombo.Name = "bottomCombo";
+            this.bottomCombo.Size = new System.Drawing.Size(121, 21);
+            this.bottomCombo.TabIndex = 15;
+            this.bottomCombo.Text = "Random";
+            // 
+            // gamesprogressbar
+            // 
+            this.gamesprogressbar.Location = new System.Drawing.Point(367, 38);
+            this.gamesprogressbar.Name = "gamesprogressbar";
+            this.gamesprogressbar.Size = new System.Drawing.Size(156, 23);
+            this.gamesprogressbar.TabIndex = 14;
             // 
             // winpercentagerandom
             // 
@@ -702,34 +759,6 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Wins";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(10, 40);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(23, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Bot";
-            // 
-            // gamesprogressbar
-            // 
-            this.gamesprogressbar.Location = new System.Drawing.Point(367, 38);
-            this.gamesprogressbar.Name = "gamesprogressbar";
-            this.gamesprogressbar.Size = new System.Drawing.Size(156, 23);
-            this.gamesprogressbar.TabIndex = 14;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Random",
-            "Bot"});
-            this.comboBox1.Location = new System.Drawing.Point(13, 69);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 15;
-            this.comboBox1.Text = "Random";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -810,12 +839,14 @@
         private System.Windows.Forms.Label botwinslabel;
         private System.Windows.Forms.Label randomwinslabel;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label gamesLabel;
         private System.Windows.Forms.Label winpercentagerandom;
         private System.Windows.Forms.Label winpercentagebot;
         private System.Windows.Forms.ProgressBar gamesprogressbar;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox bottomCombo;
+        private System.Windows.Forms.Button restartButton;
+        private System.Windows.Forms.ComboBox topCombo;
+        private System.Windows.Forms.Label histlabel;
 
     }
 }

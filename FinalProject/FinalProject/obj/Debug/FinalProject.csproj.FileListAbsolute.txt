@@ -1,12 +1,3 @@
-C:\Users\BuckDich\Documents\GitHub\AI-Class-Projects\FinalProject\FinalProject\bin\Debug\FinalProject.exe.config
-C:\Users\BuckDich\Documents\GitHub\AI-Class-Projects\FinalProject\FinalProject\bin\Debug\FinalProject.exe
-C:\Users\BuckDich\Documents\GitHub\AI-Class-Projects\FinalProject\FinalProject\bin\Debug\FinalProject.pdb
-C:\Users\BuckDich\Documents\GitHub\AI-Class-Projects\FinalProject\FinalProject\obj\Debug\FinalProject.csprojResolveAssemblyReference.cache
-C:\Users\BuckDich\Documents\GitHub\AI-Class-Projects\FinalProject\FinalProject\obj\Debug\FinalProject.Form1.resources
-C:\Users\BuckDich\Documents\GitHub\AI-Class-Projects\FinalProject\FinalProject\obj\Debug\FinalProject.Properties.Resources.resources
-C:\Users\BuckDich\Documents\GitHub\AI-Class-Projects\FinalProject\FinalProject\obj\Debug\FinalProject.csproj.GenerateResource.Cache
-C:\Users\BuckDich\Documents\GitHub\AI-Class-Projects\FinalProject\FinalProject\obj\Debug\FinalProject.exe
-C:\Users\BuckDich\Documents\GitHub\AI-Class-Projects\FinalProject\FinalProject\obj\Debug\FinalProject.pdb
 D:\Programming\GitDumpsHere\AI-Class-Projects\FinalProject\FinalProject\bin\Debug\FinalProject.exe.config
 D:\Programming\GitDumpsHere\AI-Class-Projects\FinalProject\FinalProject\obj\Debug\FinalProject.exe
 D:\Programming\GitDumpsHere\AI-Class-Projects\FinalProject\FinalProject\obj\Debug\FinalProject.pdb
@@ -17,4 +8,13 @@ D:\Programming\GitDumpsHere\AI-Class-Projects\FinalProject\FinalProject\obj\Debu
 D:\Programming\GitDumpsHere\AI-Class-Projects\FinalProject\FinalProject\obj\Debug\FinalProject.Properties.Resources.resources
 D:\Programming\GitDumpsHere\AI-Class-Projects\FinalProject\FinalProject\obj\Debug\FinalProject.csproj.GenerateResource.Cache
 D:\Programming\GitDumpsHere\AI-Class-Projects\FinalProject\FinalProject\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\BuckDich\Documents\GitHub\AI-Class-Projects\FinalProject\FinalProject\bin\Debug\FinalProject.exe.config
+C:\Users\BuckDich\Documents\GitHub\AI-Class-Projects\FinalProject\FinalProject\bin\Debug\FinalProject.exe
+C:\Users\BuckDich\Documents\GitHub\AI-Class-Projects\FinalProject\FinalProject\bin\Debug\FinalProject.pdb
 C:\Users\BuckDich\Documents\GitHub\AI-Class-Projects\FinalProject\FinalProject\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\BuckDich\Documents\GitHub\AI-Class-Projects\FinalProject\FinalProject\obj\Debug\FinalProject.Form1.resources
+C:\Users\BuckDich\Documents\GitHub\AI-Class-Projects\FinalProject\FinalProject\obj\Debug\FinalProject.Properties.Resources.resources
+C:\Users\BuckDich\Documents\GitHub\AI-Class-Projects\FinalProject\FinalProject\obj\Debug\FinalProject.csproj.GenerateResource.Cache
+C:\Users\BuckDich\Documents\GitHub\AI-Class-Projects\FinalProject\FinalProject\obj\Debug\FinalProject.exe
+C:\Users\BuckDich\Documents\GitHub\AI-Class-Projects\FinalProject\FinalProject\obj\Debug\FinalProject.pdb
+C:\Users\BuckDich\Documents\GitHub\AI-Class-Projects\FinalProject\FinalProject\obj\Debug\FinalProject.csprojResolveAssemblyReference.cache
