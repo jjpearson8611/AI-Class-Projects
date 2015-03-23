@@ -1,15 +1,16 @@
 %UserInterface.pl Assigment Three Jason Pearson
 
-go :-
-	consult('CityPairs.pl').
-	
-:- go.
+:- dynamic current/2.
 
-getStartCity(X) :-
-	startstop(X,_).
-	
-getStopCity(X,Y) :-
-	startstop(X,Y).
+initUI :-
+	consult('CityPairs.pl'),
+	assertz(current(none,none)).
+
+
+getNextPair :-
+	retract(current(_,_)),
+	startstop(X,Y),
+	assertz(current(X,Y)).
 	
 printReport(List, Distance) :-
 	write('One Line of Numbers'),
@@ -56,16 +57,21 @@ printNumberTwo(List) :-
 	print(Last),
 	nl.
 	
-getLastElement([X],Y):-
-	Y = X.
-	
+
 lengthOfList([],0).
-lengthOfList([H|T], Y) :-
+lengthOfList([_|T], Y) :-
 	lengthOfList(T,N),
 	Y is N + 1.
 	
-getLastElement([H|T],Y) :-
+getLastElement([_|T],Y) :-
 	getLastElement(T,Y).
 	
-getFirstElement([H|T], Y) :-
+getLastElement([X],Y):-
+	Y = X.
+	
+getFirstElement([H|_], Y) :-
 	Y = H.
+	
+append([],X,X).
+append([H1|T1], X, [H1|Z]) :-
+	append(T1, X, Z).

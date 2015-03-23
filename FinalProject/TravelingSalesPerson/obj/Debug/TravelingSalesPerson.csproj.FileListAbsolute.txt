@@ -1,0 +1,2 @@
+C:\Users\BuckDich\Documents\GitHub\AI-Class-Projects\FinalProject\TravelingSalesPerson\bin\Debug\TravelingSalesPerson.exe.config
+C:\Users\BuckDich\Documents\GitHub\AI-Class-Projects\FinalProject\TravelingSalesPerson\obj\Debug\TravelingSalesPerson.csprojResolveAssemblyReference.cache

@@ -711,27 +711,6 @@ namespace FinalProjectUnitTests
             Assert.AreEqual(3, spot, "You Have Lost");
         }
 
-        //Board photo
-        // 0000000
-        // 0000000
-        // 0000000
-        // 0000000
-        // 0000000
-        // 1112220
-
-        [TestMethod]
-        public void TestHorizontalMove()
-        {
-            GameBoard temp = new GameBoard(6, 7);
-            temp.Board = new int[6, 7] { { 1, 1, 1, 0, 2, 2, 2}, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0 } };
-
-            AI ComputerBrains = new AI(2);
-
-            int spot = ComputerBrains.DetermineNextMove(temp);
-
-            Assert.AreEqual(6, spot, "You missed a horizontal win");
-        }
-
 
         //Board photo
         // 0000000
