@@ -31,19 +31,34 @@ goal_reached( StateIn ) :-
 %	- (0 would be returned if this is not an intelligent search)
 %	- called by add_state #1 (& #3)
 
+find_hhat(StateIn,HHatOut) :-
+	state(djikstra),
+	HHatOut is 0.
+
 find_hhat( StateIn, HHatOut) :-
-	latlong(X,Y,StateIn),
 	current(_, GoalState),
-	latlong(A,B,GoalState),
-	Lat is 68.686 * (A - X),
-	Long is 69.171 * (B - Y) * cos(A - X),
-	ASquared is Lat * Lat,
-	BSquared is Long * Long,
-	HHatOut is sqrt(ASquared + BSquared).
+	airDistance(StateIn,GoalState, HHatOut).
 
-
-
-
+airDistance(A,B,Distance) :-
+	latlong(Lat1,Long1, A),
+	latlong(Lat2,Long2, B),
+	EarthRadius is 3963.1676,
+	Pi is 3.14159265,
+	D2R is Pi / 180,
+	AOB is acos(cos(Lat1 * D2R) * cos(Lat2 * D2R) * cos((Long1 - Long2) * D2R) + sin(Lat1 * D2R) * sin(Lat2 * D2R)),
+	Distance is EarthRadius * AOB.
+	
+differentPen(A,B) :-
+	up(Upper),
+	member(A, Upper),
+	\+ member(B, Upper).
+	
+differentPen(A,B) :-
+	up(Upper),
+	member(B, Upper),
+	\+ member(A, Upper).
+	
+	
 % find_cost_of_path( StateListIn, CostSumOut )                 % FUNCTION PRED
 %	- computes GPrime, i.e., the cost of path of states in the list, i.e.,
 %		[ThisState, Predecessor, ..., StartState]
@@ -51,13 +66,19 @@ find_hhat( StateIn, HHatOut) :-
 %	- called by add_state #1 calls this (& #2) (& fix_opened)]
 
 find_cost_of_path([_], Y) :-
-	Y is 42.
+	Y is 0.
 
-%find_cost_of_path([H1, H2 | Tail], Y) :-
-%	connected(H1, H2, X),
-%	NewDist is X + Y,
-%	append(H2,Tail),
-%	find_cost_of_path(Tail,NewDist).
+find_cost_of_path([H1, H2 | Tail], Y) :-
+	connected(H1, H2, X),
+	costFinder(H2, Tail, G),
+	find_cost_of_path(Tail,NewDist),
+	Y is NewDist + X + G.
 	
-find_cost_of_path([_, _|_],Y) :-
-	Y is 42.
+find_cost_of_path([H1, H2], Y) :-
+	connected(H1, H2, X),
+	find_cost_of_path(Tail,NewDist),
+	Y is NewDist + X.
+	
+costFinder(X, [H1 | _], Y) :-
+	connected(X,H1,G),
+	Y is G.

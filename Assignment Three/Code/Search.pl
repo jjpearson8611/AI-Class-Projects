@@ -63,36 +63,6 @@ repeat_if_still_some_opened :-
 
 initial_routines.
 
-final_routines(GoalState) :-
-     write('Goal State: '), write(GoalState), nl,
-     measure_effort,
-     cleanup.
-
-measure_effort :-
-     count_states( opened( _, _, _, _), N_Opened ),
-         write( N_Opened ),
-	 write( ' states still OPENED' ), nl,
-     count_states( closed( _, _ ),      N_Closed ),
-         write( N_Closed ),
-	 write( ' states CLOSED' ), nl,
-     !.
-
-count_states( Predicate, _ ) :-
-     asserta( counter( 0 )),
-     call( Predicate ),
-          retract( counter( I )),
-          NewI is I + 1,
-          asserta( counter( NewI )),
-     fail.
-count_states( _, N ) :-
-     retract( counter( N )),
-     !.
-
-cleanup :-
-     retractall( opened(_,_,_,_) ),
-     retractall( closed(_,_)      ),
-     retractall( tempBest(_)    ).
-
 check_opened( State, Gprime ) :-
      opened( State, _, G, _ ),
      Gprime < G,

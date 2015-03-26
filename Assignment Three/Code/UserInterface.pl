@@ -7,9 +7,8 @@ initUI :-
 	assertz(current(none,none)).
 
 
-getNextPair :-
+getNextPair(X,Y) :-
 	retract(current(_,_)),
-	startstop(X,Y),
 	assertz(current(X,Y)).
 	
 printReport(List, Distance) :-
@@ -21,22 +20,9 @@ printReport(List, Distance) :-
 	printListOfClosed,nl,
 	printListOfOpen,nl.
 	
+final_routines(X) :-
+	write('Search Done'),nl.
 	
-	
-printListOfOpen :-
-	bagof(X,open(X), List),
-	lengthOfList(List,Count),
-	write(Count), 
-	write(' '),
-	printBackwardsList(List).
-	
-
-printListOfClosed :-
-	bagof(X,closed(X), List),
-	lengthOfList(List,Count),
-	write(Count), 
-	write(' '),
-	printBackwardsList(List).
 	
 printBackwardsList([]).
 printBackwardsList([H|T]) :-
@@ -71,7 +57,3 @@ getLastElement([X],Y):-
 	
 getFirstElement([H|_], Y) :-
 	Y = H.
-	
-append([],X,X).
-append([H1|T1], X, [H1|Z]) :-
-	append(T1, X, Z).

@@ -135,7 +135,7 @@ up([ crystalFalls, copperHarbor, covington, escanaba,
 %   U.P. if it IS a member of the above list,
 %   L.P. if it's NOT a member of the above list.
 %  (member/2 is a built-in predicate in SWI-Prolog
-%      - for a Prolog without it built in, it`s:
+%      - for a Prolog without it built in, its:
 % member(X, [X|_]).
 % member(X, [_|T]) :-
 %	member(X,T).
