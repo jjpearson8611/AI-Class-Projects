@@ -12,17 +12,44 @@ getNextPair(X,Y) :-
 	assertz(current(X,Y)).
 	
 printReport(List, Distance) :-
-	write('One Line of Numbers'),
-	printNumberTwo(List),
-	printSearchName,
+	write('Distance '),
 	write(Distance),
-	printBackwardsList(List),nl,
-	printListOfClosed,nl,
-	printListOfOpen,nl.
+	write(' Open: '),
+	countOpen(OpenCount),
+	write(OpenCount),
+	!,
+	write(' Closed: '),
+	countClosed(ClosedCount),
+	write(ClosedCount),nl,
+	!,
+	printBackwardsList(List),nl.
+%	printSearchName,
+%	write(Distance),
+%	printBackwardsList(List),nl,
+%	printListOfClosed,nl,
+%	printListOfOpen,nl.
 	
-final_routines(X) :-
-	write('Search Done'),nl.
+final_routines(_) :-
+	nl.
 	
+newPair :-
+	write('#######################################'),nl,
+	current(X,Y),
+	write('Start City: '),
+	write(X),
+	write(' End City: '),
+	write(Y), nl.
+	
+handleOpen(X) :-
+	bagof(Y,opened(Y,_,_,_), List),
+	lengthOfList(List,X)
+
+handleClosed(X) :-
+	bagof(Y,closed(Y,_), List),
+	lengthOfList(List,X).
+	
+countClosed(X) :-
+	X is 0.
 	
 printBackwardsList([]).
 printBackwardsList([H|T]) :-
@@ -34,7 +61,7 @@ printSearchName :-
 	search(X),
 	write(X).
 	
-printNumberTwo(List) :-
+printFirstPortion(List) :-
 	getLastElement(List, First),
 	getFirstElement(List, Last),
 	print("First Location "),

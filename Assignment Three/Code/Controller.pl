@@ -10,11 +10,12 @@ go :-
 	consult('CityPairs.pl'),
 	consult('MichiganLocations.pl'),
 	initUI,
-	doSearches.	
+	doSearches.
 	
 doSearches :-
 		startstop(Start,Y),
 		once(getNextPair(Start,Y)),
+		newPair,
 		djikstra(Start),
 		aStarDirect(Start),
 		aStarBridge(Start),
@@ -25,6 +26,10 @@ doSearches :-
 	
 doSearches.
 
+handleFound(StartState, ReturnedList, Cost):-
+	printReport(ReturnedList,Cost),	
+	cleanUp.
+
 cleanUp :-
 	retractall(opened(_,_,_,_)),
 	retractall(closed(_,_)).
@@ -32,10 +37,7 @@ cleanUp :-
 djikstra(Start) :-
 	assertz(state(djikstra)),
 	search(Start,ReturnedList,Cost),
-	write(Start),nl,
-	write(Cost),nl,
-	write(ReturnedList),nl,
-	cleanUp,
+	handleFound(Start,ReturnedList,Cost),
 	retract(state(djikstra)).
 
 aStarDirect(Start) :-
