@@ -23,9 +23,12 @@ add_state( Newstate, Pathlist ) :-
      check_closed( Newstate, Pathlist, GPrime ),
      !,
      find_hhat( Newstate, HHat ),
-     FHat is GPrime + HHat,
+	 ((state(bestfirst),
+     FHat is 0 + HHat) ;
+	 (FHat is GPrime + HHat)),
      asserta( opened( Newstate, [Newstate | Pathlist], GPrime, FHat )),
      !.
+	 
 
 pick_best_state( _, _ ) :-
      asserta( tempBest( dummyState, [], dummy ) ),

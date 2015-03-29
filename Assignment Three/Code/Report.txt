@@ -1,36 +1,594 @@
-Search Done
-completeOne Line of Numbers
-Search Done
-completeOne Line of Numbers
-Search Done
-completeOne Line of Numbers
-Search Done
-completeOne Line of Numbers
-Search Done
-completeOne Line of Numbers
-Search Done
-completeOne Line of Numbers
-Search Done
-completeOne Line of Numbers
-Search Done
-completeOne Line of Numbers
-Search Done
-completeOne Line of Numbers
-Search Done
-completeOne Line of Numbers
-Search Done
-completeOne Line of Numbers
-Search Done
-completeOne Line of Numbers
-Search Done
-completeOne Line of Numbers
-Search Done
-completeOne Line of Numbers
-Search Done
-completeOne Line of Numbers
-Search Done
-completeOne Line of Numbers
-Search Done
-completeOne Line of Numbers
-Search Done
-completeOne Line of Numbers
+
+#############################################################################
+Start City: frankfort End City: marinette
+
+Search: djikstra Distance: 343
+Nodes: 10 [frankfort,traverseCity,charlevoix,mackinawCity,theBridge,stIgnace,manistique,rapidRiver,escanaba,marinette]
+Open: 3 [crystalFalls,covington,marinette]
+Closed: 46 [ironMountain,toledo,monroe,marquette,angola,escanaba,portHuron,rapidRiver,detroit,annArbor,michiganCity,brighton,southBend,portSanilac,imlayCity,jackson,manistique,battleCreek,seney,portAustin,flint,kalamazoo,bentonHarbor,lansing,saultSteMarie,alpena,saginaw,grandRapids,bayCity,holland,standish,stIgnace,alma,theBridge,mackinawCity,muskegon,gaylord,clare,reedCity,grayling,charlevoix,ludington,kalkaska,cadillac,traverseCity,frankfort]
+
+Search: astardirect Distance: 343
+Nodes: 10 [frankfort,traverseCity,charlevoix,mackinawCity,theBridge,stIgnace,manistique,rapidRiver,escanaba,marinette]
+Open: 11 [ironMountain,marinette,lansing,saginaw,kalamazoo,marquette,bentonHarbor,saultSteMarie,bayCity,alpena,standish]
+Closed: 21 [escanaba,rapidRiver,alma,grandRapids,seney,manistique,holland,stIgnace,theBridge,mackinawCity,clare,muskegon,gaylord,grayling,reedCity,charlevoix,kalkaska,cadillac,ludington,traverseCity,frankfort]
+
+Search: astarbridge Distance: 343
+Nodes: 10 [frankfort,traverseCity,charlevoix,mackinawCity,theBridge,stIgnace,manistique,rapidRiver,escanaba,marinette]
+Open: 9 [ironMountain,marinette,marquette,alpena,clare,reedCity,standish,saultSteMarie,ludington]
+Closed: 14 [escanaba,rapidRiver,seney,gaylord,manistique,cadillac,grayling,stIgnace,theBridge,mackinawCity,kalkaska,charlevoix,traverseCity,frankfort]
+
+Search: astarbridgeten Distance: 343
+Nodes: 10 [frankfort,traverseCity,charlevoix,mackinawCity,theBridge,stIgnace,manistique,rapidRiver,escanaba,marinette]
+Open: 9 [ironMountain,marinette,clare,reedCity,alpena,standish,marquette,saultSteMarie,ludington]
+Closed: 14 [escanaba,rapidRiver,cadillac,gaylord,grayling,seney,manistique,kalkaska,stIgnace,theBridge,mackinawCity,charlevoix,traverseCity,frankfort]
+
+Search: astarbridgefifty Distance: 343
+Nodes: 10 [frankfort,traverseCity,charlevoix,mackinawCity,theBridge,stIgnace,manistique,rapidRiver,escanaba,marinette]
+Open: 9 [ironMountain,marinette,marquette,saultSteMarie,alpena,gaylord,kalkaska,ludington,cadillac]
+Closed: 10 [escanaba,rapidRiver,seney,manistique,stIgnace,theBridge,mackinawCity,charlevoix,traverseCity,frankfort]
+
+Search: bestfirst Distance: 343
+Nodes: 10 [frankfort,traverseCity,charlevoix,mackinawCity,theBridge,stIgnace,manistique,rapidRiver,escanaba,marinette]
+Open: 10 [ironMountain,marinette,marquette,saultSteMarie,seney,alpena,gaylord,kalkaska,ludington,cadillac]
+Closed: 9 [escanaba,rapidRiver,manistique,stIgnace,theBridge,mackinawCity,charlevoix,traverseCity,frankfort]
+
+#############################################################################
+Start City: seney End City: imlayCity
+
+Search: djikstra Distance: 363
+Nodes: 11 [seney,stIgnace,theBridge,mackinawCity,gaylord,grayling,standish,bayCity,saginaw,flint,imlayCity]
+Open: 9 [bentonHarbor,battleCreek,jackson,angola,brighton,detroit,imlayCity,kalamazoo,portSanilac]
+Closed: 37 [holland,muskegon,portAustin,lansing,flint,grandRapids,saginaw,ludington,bayCity,alma,reedCity,standish,clare,copperHarbor,frankfort,ironwood,cadillac,traverseCity,houghton,kalkaska,alpena,grayling,crystalFalls,gaylord,marinette,charlevoix,ironMountain,covington,escanaba,mackinawCity,theBridge,stIgnace,saultSteMarie,rapidRiver,marquette,manistique,seney]
+
+Search: astardirect Distance: 363
+Nodes: 11 [seney,stIgnace,theBridge,mackinawCity,gaylord,grayling,standish,bayCity,saginaw,flint,imlayCity]
+Open: 12 [brighton,detroit,imlayCity,portSanilac,grandRapids,frankfort,ludington,muskegon,lansing,escanaba,portAustin,marquette]
+Closed: 21 [flint,saginaw,reedCity,cadillac,traverseCity,alma,rapidRiver,clare,kalkaska,bayCity,charlevoix,saultSteMarie,alpena,standish,grayling,gaylord,mackinawCity,theBridge,stIgnace,manistique,seney]
+
+Search: astarbridge Distance: 363
+Nodes: 11 [seney,stIgnace,theBridge,mackinawCity,gaylord,grayling,standish,bayCity,saginaw,flint,imlayCity]
+Open: 12 [brighton,detroit,imlayCity,portSanilac,grandRapids,frankfort,ludington,muskegon,lansing,portAustin,rapidRiver,marquette]
+Closed: 20 [flint,saginaw,reedCity,cadillac,traverseCity,alma,clare,kalkaska,bayCity,charlevoix,saultSteMarie,manistique,alpena,standish,grayling,gaylord,mackinawCity,theBridge,stIgnace,seney]
+
+Search: astarbridgeten Distance: 363
+Nodes: 11 [seney,stIgnace,theBridge,mackinawCity,gaylord,grayling,standish,bayCity,saginaw,flint,imlayCity]
+Open: 12 [brighton,detroit,imlayCity,portSanilac,reedCity,frankfort,ludington,muskegon,lansing,rapidRiver,portAustin,marquette]
+Closed: 19 [flint,saginaw,cadillac,traverseCity,alma,kalkaska,clare,manistique,saultSteMarie,charlevoix,bayCity,alpena,standish,grayling,gaylord,mackinawCity,theBridge,stIgnace,seney]
+
+Search: astarbridgefifty Distance: 363
+Nodes: 11 [seney,stIgnace,theBridge,mackinawCity,gaylord,grayling,standish,bayCity,saginaw,flint,imlayCity]
+Open: 13 [brighton,detroit,imlayCity,portSanilac,traverseCity,cadillac,muskegon,lansing,reedCity,portAustin,saultSteMarie,marquette,manistique]
+Closed: 15 [flint,saginaw,charlevoix,kalkaska,alma,clare,alpena,bayCity,standish,grayling,gaylord,mackinawCity,theBridge,stIgnace,seney]
+
+Search: bestfirst Distance: 454
+Nodes: 9 [seney,stIgnace,theBridge,mackinawCity,alpena,standish,bayCity,portAustin,imlayCity]
+Open: 11 [imlayCity,portSanilac,clare,saginaw,grayling,gaylord,kalkaska,charlevoix,saultSteMarie,marquette,manistique]
+Closed: 8 [portAustin,bayCity,standish,alpena,mackinawCity,theBridge,stIgnace,seney]
+
+#############################################################################
+Start City: manistique End City: portHuron
+
+Search: djikstra Distance: 401
+Nodes: 11 [manistique,stIgnace,theBridge,mackinawCity,gaylord,grayling,standish,bayCity,saginaw,portSanilac,portHuron]
+Open: 5 [monroe,toledo,portHuron,bentonHarbor,angola]
+Closed: 45 [detroit,annArbor,battleCreek,kalamazoo,brighton,jackson,portSanilac,imlayCity,holland,muskegon,portAustin,lansing,flint,grandRapids,saginaw,ludington,bayCity,alma,reedCity,copperHarbor,standish,clare,ironwood,frankfort,cadillac,houghton,traverseCity,kalkaska,alpena,grayling,covington,gaylord,charlevoix,crystalFalls,saultSteMarie,marinette,ironMountain,mackinawCity,marquette,theBridge,stIgnace,escanaba,rapidRiver,seney,manistique]
+
+Search: astardirect Distance: 401
+Nodes: 11 [manistique,stIgnace,theBridge,mackinawCity,gaylord,grayling,standish,bayCity,saginaw,portSanilac,portHuron]
+Open: 10 [portHuron,brighton,detroit,grandRapids,frankfort,ludington,muskegon,lansing,ironMountain,marquette]
+Closed: 26 [portSanilac,imlayCity,flint,saginaw,reedCity,portAustin,marinette,cadillac,traverseCity,alma,escanaba,saultSteMarie,clare,kalkaska,bayCity,seney,charlevoix,standish,grayling,alpena,rapidRiver,gaylord,mackinawCity,theBridge,stIgnace,manistique]
+
+Search: astarbridge Distance: 401
+Nodes: 11 [manistique,stIgnace,theBridge,mackinawCity,gaylord,grayling,standish,bayCity,saginaw,portSanilac,portHuron]
+Open: 10 [portHuron,brighton,detroit,grandRapids,frankfort,ludington,muskegon,lansing,marquette,escanaba]
+Closed: 24 [portSanilac,imlayCity,flint,saginaw,reedCity,portAustin,cadillac,traverseCity,alma,saultSteMarie,seney,clare,rapidRiver,kalkaska,bayCity,charlevoix,standish,grayling,alpena,gaylord,mackinawCity,theBridge,stIgnace,manistique]
+
+Search: astarbridgeten Distance: 431
+Nodes: 11 [manistique,stIgnace,theBridge,mackinawCity,gaylord,grayling,standish,bayCity,portAustin,portSanilac,portHuron]
+Open: 10 [portHuron,imlayCity,reedCity,frankfort,ludington,marquette,escanaba,muskegon,lansing,saginaw]
+Closed: 20 [portSanilac,portAustin,cadillac,saultSteMarie,seney,traverseCity,rapidRiver,alma,clare,kalkaska,charlevoix,bayCity,standish,grayling,alpena,gaylord,mackinawCity,theBridge,stIgnace,manistique]
+
+Search: astarbridgefifty Distance: 431
+Nodes: 11 [manistique,stIgnace,theBridge,mackinawCity,gaylord,grayling,standish,bayCity,portAustin,portSanilac,portHuron]
+Open: 12 [portHuron,imlayCity,traverseCity,cadillac,muskegon,lansing,reedCity,saginaw,charlevoix,saultSteMarie,seney,rapidRiver]
+Closed: 14 [portSanilac,portAustin,kalkaska,alma,clare,bayCity,standish,grayling,gaylord,alpena,mackinawCity,theBridge,stIgnace,manistique]
+
+Search: bestfirst Distance: 493
+Nodes: 10 [manistique,stIgnace,theBridge,mackinawCity,alpena,standish,bayCity,portAustin,imlayCity,portHuron]
+Open: 13 [flint,detroit,portHuron,portSanilac,clare,saginaw,grayling,gaylord,kalkaska,charlevoix,saultSteMarie,seney,rapidRiver]
+Closed: 9 [imlayCity,portAustin,bayCity,standish,alpena,mackinawCity,theBridge,stIgnace,manistique]
+
+#############################################################################
+Start City: gaylord End City: kalamazoo
+
+Search: djikstra Distance: 237
+Nodes: 7 [gaylord,grayling,kalkaska,cadillac,reedCity,grandRapids,kalamazoo]
+Open: 10 [covington,annArbor,toledo,portHuron,bentonHarbor,ironMountain,marinette,kalamazoo,angola,detroit]
+Closed: 35 [battleCreek,marquette,brighton,jackson,muskegon,portSanilac,imlayCity,holland,escanaba,rapidRiver,portAustin,grandRapids,lansing,flint,ludington,manistique,seney,saginaw,bayCity,alma,reedCity,saultSteMarie,frankfort,standish,clare,cadillac,traverseCity,alpena,stIgnace,theBridge,mackinawCity,kalkaska,charlevoix,grayling,gaylord]
+
+Search: astardirect Distance: 237
+Nodes: 7 [gaylord,grayling,kalkaska,cadillac,reedCity,grandRapids,kalamazoo]
+Open: 13 [kalamazoo,holland,ludington,frankfort,traverseCity,muskegon,lansing,saginaw,bayCity,standish,charlevoix,alpena,mackinawCity]
+Closed: 8 [grandRapids,reedCity,cadillac,kalkaska,alma,clare,grayling,gaylord]
+
+Search: astarbridge Distance: 237
+Nodes: 7 [gaylord,grayling,kalkaska,cadillac,reedCity,grandRapids,kalamazoo]
+Open: 13 [kalamazoo,holland,ludington,frankfort,traverseCity,muskegon,lansing,saginaw,bayCity,standish,charlevoix,alpena,mackinawCity]
+Closed: 8 [grandRapids,reedCity,cadillac,kalkaska,alma,clare,grayling,gaylord]
+
+Search: astarbridgeten Distance: 237
+Nodes: 7 [gaylord,grayling,kalkaska,cadillac,reedCity,grandRapids,kalamazoo]
+Open: 13 [kalamazoo,holland,ludington,frankfort,traverseCity,muskegon,lansing,saginaw,bayCity,standish,charlevoix,alpena,mackinawCity]
+Closed: 8 [grandRapids,reedCity,cadillac,kalkaska,alma,clare,grayling,gaylord]
+
+Search: astarbridgefifty Distance: 260
+Nodes: 7 [gaylord,grayling,clare,alma,lansing,battleCreek,kalamazoo]
+Open: 16 [kalamazoo,brighton,flint,grandRapids,jackson,angola,muskegon,saginaw,bayCity,reedCity,cadillac,kalkaska,standish,charlevoix,alpena,mackinawCity]
+Closed: 6 [battleCreek,lansing,alma,clare,grayling,gaylord]
+
+Search: bestfirst Distance: 260
+Nodes: 7 [gaylord,grayling,clare,alma,lansing,battleCreek,kalamazoo]
+Open: 16 [kalamazoo,brighton,flint,grandRapids,jackson,angola,muskegon,saginaw,bayCity,reedCity,cadillac,kalkaska,standish,charlevoix,alpena,mackinawCity]
+Closed: 6 [battleCreek,lansing,alma,clare,grayling,gaylord]
+
+#############################################################################
+Start City: toledo End City: traverseCity
+
+Search: djikstra Distance: 318
+Nodes: 10 [toledo,annArbor,brighton,flint,saginaw,bayCity,standish,grayling,kalkaska,traverseCity]
+Open: 4 [charlevoix,mackinawCity,traverseCity,frankfort]
+Closed: 33 [alpena,gaylord,kalkaska,ludington,grayling,cadillac,reedCity,muskegon,clare,holland,bentonHarbor,standish,michiganCity,grandRapids,portAustin,alma,bayCity,southBend,kalamazoo,saginaw,portSanilac,battleCreek,lansing,portHuron,flint,imlayCity,jackson,angola,brighton,detroit,annArbor,monroe,toledo]
+
+Search: astardirect Distance: 318
+Nodes: 10 [toledo,annArbor,brighton,flint,saginaw,bayCity,standish,grayling,kalkaska,traverseCity]
+Open: 12 [traverseCity,mackinawCity,gaylord,portSanilac,ludington,muskegon,holland,kalamazoo,alpena,southBend,frankfort,portAustin]
+Closed: 22 [kalkaska,grayling,portHuron,reedCity,grandRapids,battleCreek,standish,angola,cadillac,alma,clare,imlayCity,bayCity,jackson,detroit,lansing,saginaw,flint,brighton,annArbor,monroe,toledo]
+
+Search: astarbridge Distance: 318
+Nodes: 10 [toledo,annArbor,brighton,flint,saginaw,bayCity,standish,grayling,kalkaska,traverseCity]
+Open: 12 [traverseCity,mackinawCity,gaylord,portSanilac,ludington,muskegon,holland,kalamazoo,alpena,southBend,frankfort,portAustin]
+Closed: 22 [kalkaska,grayling,portHuron,reedCity,grandRapids,battleCreek,standish,angola,cadillac,alma,clare,imlayCity,bayCity,jackson,detroit,lansing,saginaw,flint,brighton,annArbor,monroe,toledo]
+
+Search: astarbridgeten Distance: 318
+Nodes: 10 [toledo,annArbor,brighton,flint,saginaw,bayCity,standish,grayling,kalkaska,traverseCity]
+Open: 13 [traverseCity,mackinawCity,gaylord,kalamazoo,ludington,muskegon,holland,southBend,alpena,portAustin,frankfort,portHuron,portSanilac]
+Closed: 21 [kalkaska,grayling,battleCreek,grandRapids,reedCity,angola,standish,imlayCity,alma,clare,cadillac,bayCity,detroit,jackson,lansing,saginaw,flint,brighton,annArbor,monroe,toledo]
+
+Search: astarbridgefifty Distance: 324
+Nodes: 9 [toledo,annArbor,brighton,lansing,alma,clare,cadillac,kalkaska,traverseCity]
+Open: 15 [traverseCity,mackinawCity,ludington,frankfort,grayling,bayCity,muskegon,saginaw,battleCreek,grandRapids,flint,detroit,monroe,jackson,angola]
+Closed: 9 [kalkaska,reedCity,cadillac,clare,alma,lansing,brighton,annArbor,toledo]
+
+Search: bestfirst Distance: 365
+Nodes: 8 [toledo,jackson,lansing,alma,clare,cadillac,frankfort,traverseCity]
+Open: 15 [ludington,traverseCity,kalkaska,grayling,bayCity,reedCity,muskegon,saginaw,brighton,flint,grandRapids,battleCreek,monroe,annArbor,angola]
+Closed: 7 [frankfort,cadillac,clare,alma,lansing,jackson,toledo]
+
+#############################################################################
+Start City: rapidRiver End City: detroit
+
+Search: djikstra Distance: 440
+Nodes: 12 [rapidRiver,manistique,stIgnace,theBridge,mackinawCity,gaylord,grayling,standish,bayCity,saginaw,flint,detroit]
+Open: 5 [toledo,portHuron,bentonHarbor,angola,detroit]
+Closed: 44 [annArbor,battleCreek,kalamazoo,brighton,jackson,portSanilac,imlayCity,holland,muskegon,portAustin,lansing,flint,grandRapids,saginaw,ludington,bayCity,alma,reedCity,standish,clare,frankfort,cadillac,traverseCity,kalkaska,alpena,grayling,copperHarbor,ironwood,gaylord,charlevoix,houghton,saultSteMarie,mackinawCity,theBridge,stIgnace,covington,crystalFalls,seney,marinette,ironMountain,marquette,manistique,escanaba,rapidRiver]
+
+Search: astardirect Distance: 440
+Nodes: 12 [rapidRiver,manistique,stIgnace,theBridge,mackinawCity,gaylord,grayling,standish,bayCity,saginaw,flint,detroit]
+Open: 15 [brighton,detroit,imlayCity,portSanilac,reedCity,battleCreek,grandRapids,jackson,angola,crystalFalls,frankfort,ludington,muskegon,portAustin,covington]
+Closed: 25 [flint,saginaw,saultSteMarie,cadillac,lansing,ironMountain,traverseCity,kalkaska,seney,alma,clare,bayCity,marquette,charlevoix,alpena,standish,grayling,gaylord,mackinawCity,theBridge,stIgnace,marinette,escanaba,manistique,rapidRiver]
+
+Search: astarbridge Distance: 440
+Nodes: 12 [rapidRiver,manistique,stIgnace,theBridge,mackinawCity,gaylord,grayling,standish,bayCity,saginaw,flint,detroit]
+Open: 18 [brighton,detroit,imlayCity,portSanilac,reedCity,battleCreek,grandRapids,jackson,angola,frankfort,ludington,ironMountain,marinette,muskegon,portAustin,saultSteMarie,seney,marquette]
+Closed: 20 [flint,saginaw,cadillac,lansing,traverseCity,kalkaska,escanaba,alma,clare,bayCity,charlevoix,alpena,standish,grayling,gaylord,mackinawCity,theBridge,stIgnace,manistique,rapidRiver]
+
+Search: astarbridgeten Distance: 440
+Nodes: 12 [rapidRiver,manistique,stIgnace,theBridge,mackinawCity,gaylord,grayling,standish,bayCity,saginaw,flint,detroit]
+Open: 18 [brighton,detroit,imlayCity,portSanilac,ironMountain,marinette,battleCreek,grandRapids,jackson,angola,cadillac,traverseCity,muskegon,reedCity,portAustin,saultSteMarie,seney,marquette]
+Closed: 18 [flint,saginaw,escanaba,lansing,kalkaska,charlevoix,alpena,alma,clare,bayCity,standish,grayling,gaylord,mackinawCity,theBridge,stIgnace,manistique,rapidRiver]
+
+Search: astarbridgefifty Distance: 465
+Nodes: 12 [rapidRiver,manistique,stIgnace,theBridge,mackinawCity,gaylord,grayling,clare,alma,lansing,brighton,detroit]
+Open: 19 [annArbor,detroit,battleCreek,flint,grandRapids,jackson,angola,muskegon,reedCity,cadillac,saginaw,portAustin,alpena,kalkaska,charlevoix,saultSteMarie,seney,marquette,escanaba]
+Closed: 13 [brighton,lansing,alma,clare,bayCity,standish,grayling,gaylord,mackinawCity,theBridge,stIgnace,manistique,rapidRiver]
+
+Search: bestfirst Distance: 480
+Nodes: 11 [rapidRiver,manistique,stIgnace,theBridge,mackinawCity,alpena,standish,bayCity,saginaw,flint,detroit]
+Open: 16 [lansing,brighton,detroit,imlayCity,portSanilac,alma,clare,portAustin,grayling,gaylord,kalkaska,charlevoix,saultSteMarie,seney,marquette,escanaba]
+Closed: 10 [flint,saginaw,bayCity,standish,alpena,mackinawCity,theBridge,stIgnace,manistique,rapidRiver]
+
+#############################################################################
+Start City: detroit End City: seney
+
+Search: djikstra Distance: 395
+Nodes: 11 [detroit,flint,saginaw,bayCity,standish,grayling,gaylord,mackinawCity,theBridge,stIgnace,seney]
+Open: 2 [seney,manistique]
+Closed: 40 [saultSteMarie,stIgnace,theBridge,mackinawCity,charlevoix,frankfort,traverseCity,ludington,alpena,gaylord,kalkaska,michiganCity,southBend,grayling,cadillac,reedCity,bentonHarbor,muskegon,holland,clare,grandRapids,standish,kalamazoo,angola,alma,portAustin,battleCreek,bayCity,saginaw,portSanilac,lansing,jackson,flint,toledo,portHuron,imlayCity,brighton,annArbor,monroe,detroit]
+
+Search: astardirect Distance: 395
+Nodes: 11 [detroit,flint,saginaw,bayCity,standish,grayling,gaylord,mackinawCity,theBridge,stIgnace,seney]
+Open: 9 [saultSteMarie,seney,manistique,kalamazoo,bentonHarbor,ludington,toledo,alpena,angola]
+Closed: 31 [stIgnace,battleCreek,theBridge,mackinawCity,holland,muskegon,frankfort,traverseCity,charlevoix,grandRapids,gaylord,reedCity,monroe,kalkaska,jackson,portSanilac,alma,grayling,portHuron,portAustin,cadillac,standish,lansing,clare,annArbor,bayCity,imlayCity,saginaw,flint,brighton,detroit]
+
+Search: astarbridge Distance: 395
+Nodes: 11 [detroit,flint,saginaw,bayCity,standish,grayling,gaylord,mackinawCity,theBridge,stIgnace,seney]
+Open: 15 [saultSteMarie,seney,manistique,battleCreek,grandRapids,angola,charlevoix,kalkaska,reedCity,cadillac,jackson,toledo,alpena,alma,monroe]
+Closed: 18 [stIgnace,theBridge,mackinawCity,lansing,gaylord,grayling,clare,annArbor,standish,portSanilac,portHuron,bayCity,portAustin,brighton,saginaw,flint,imlayCity,detroit]
+
+Search: astarbridgeten Distance: 395
+Nodes: 11 [detroit,flint,saginaw,bayCity,standish,grayling,gaylord,mackinawCity,theBridge,stIgnace,seney]
+Open: 11 [saultSteMarie,seney,manistique,charlevoix,kalkaska,alpena,lansing,clare,alma,annArbor,monroe]
+Closed: 15 [stIgnace,theBridge,mackinawCity,gaylord,grayling,portSanilac,portHuron,standish,brighton,bayCity,portAustin,saginaw,flint,imlayCity,detroit]
+
+Search: astarbridgefifty Distance: 395
+Nodes: 11 [detroit,flint,saginaw,bayCity,standish,grayling,gaylord,mackinawCity,theBridge,stIgnace,seney]
+Open: 14 [saultSteMarie,seney,manistique,charlevoix,kalkaska,alpena,clare,portSanilac,alma,lansing,portHuron,brighton,annArbor,monroe]
+Closed: 12 [stIgnace,theBridge,mackinawCity,gaylord,grayling,standish,bayCity,saginaw,flint,portAustin,imlayCity,detroit]
+
+Search: bestfirst Distance: 405
+Nodes: 11 [detroit,flint,saginaw,bayCity,clare,grayling,gaylord,mackinawCity,theBridge,stIgnace,seney]
+Open: 18 [saultSteMarie,seney,manistique,charlevoix,alpena,kalkaska,reedCity,cadillac,standish,portAustin,portSanilac,alma,lansing,portHuron,imlayCity,brighton,annArbor,monroe]
+Closed: 10 [stIgnace,theBridge,mackinawCity,gaylord,grayling,clare,bayCity,saginaw,flint,detroit]
+
+#############################################################################
+Start City: seney End City: detroit
+
+Search: djikstra Distance: 395
+Nodes: 11 [seney,stIgnace,theBridge,mackinawCity,gaylord,grayling,standish,bayCity,saginaw,flint,detroit]
+Open: 5 [toledo,portHuron,bentonHarbor,angola,detroit]
+Closed: 44 [annArbor,battleCreek,kalamazoo,brighton,jackson,portSanilac,imlayCity,holland,muskegon,portAustin,lansing,flint,grandRapids,saginaw,ludington,bayCity,alma,reedCity,standish,clare,copperHarbor,frankfort,ironwood,cadillac,traverseCity,houghton,kalkaska,alpena,grayling,crystalFalls,gaylord,marinette,charlevoix,ironMountain,covington,escanaba,mackinawCity,theBridge,stIgnace,saultSteMarie,rapidRiver,marquette,manistique,seney]
+
+Search: astardirect Distance: 395
+Nodes: 11 [seney,stIgnace,theBridge,mackinawCity,gaylord,grayling,standish,bayCity,saginaw,flint,detroit]
+Open: 15 [brighton,detroit,imlayCity,portSanilac,reedCity,battleCreek,grandRapids,jackson,angola,frankfort,ludington,escanaba,muskegon,portAustin,marquette]
+Closed: 21 [flint,saginaw,cadillac,lansing,traverseCity,rapidRiver,kalkaska,alma,clare,bayCity,charlevoix,alpena,saultSteMarie,standish,grayling,gaylord,mackinawCity,theBridge,stIgnace,manistique,seney]
+
+Search: astarbridge Distance: 395
+Nodes: 11 [seney,stIgnace,theBridge,mackinawCity,gaylord,grayling,standish,bayCity,saginaw,flint,detroit]
+Open: 15 [brighton,detroit,imlayCity,portSanilac,reedCity,battleCreek,grandRapids,jackson,angola,frankfort,ludington,muskegon,portAustin,rapidRiver,marquette]
+Closed: 20 [flint,saginaw,cadillac,lansing,traverseCity,kalkaska,alma,clare,bayCity,saultSteMarie,charlevoix,alpena,manistique,standish,grayling,gaylord,mackinawCity,theBridge,stIgnace,seney]
+
+Search: astarbridgeten Distance: 395
+Nodes: 11 [seney,stIgnace,theBridge,mackinawCity,gaylord,grayling,standish,bayCity,saginaw,flint,detroit]
+Open: 15 [brighton,detroit,imlayCity,portSanilac,battleCreek,grandRapids,jackson,angola,rapidRiver,cadillac,traverseCity,muskegon,reedCity,portAustin,marquette]
+Closed: 18 [flint,saginaw,lansing,manistique,saultSteMarie,kalkaska,charlevoix,alpena,alma,clare,bayCity,standish,grayling,gaylord,mackinawCity,theBridge,stIgnace,seney]
+
+Search: astarbridgefifty Distance: 420
+Nodes: 11 [seney,stIgnace,theBridge,mackinawCity,gaylord,grayling,clare,alma,lansing,brighton,detroit]
+Open: 18 [annArbor,detroit,battleCreek,flint,grandRapids,jackson,angola,muskegon,reedCity,cadillac,saginaw,portAustin,alpena,kalkaska,charlevoix,saultSteMarie,marquette,manistique]
+Closed: 12 [brighton,lansing,alma,clare,bayCity,standish,grayling,gaylord,mackinawCity,theBridge,stIgnace,seney]
+
+Search: bestfirst Distance: 435
+Nodes: 10 [seney,stIgnace,theBridge,mackinawCity,alpena,standish,bayCity,saginaw,flint,detroit]
+Open: 15 [lansing,brighton,detroit,imlayCity,portSanilac,alma,clare,portAustin,grayling,gaylord,kalkaska,charlevoix,saultSteMarie,marquette,manistique]
+Closed: 9 [flint,saginaw,bayCity,standish,alpena,mackinawCity,theBridge,stIgnace,seney]
+
+#############################################################################
+Start City: jackson End City: copperHarbor
+
+Search: djikstra Distance: 604
+Nodes: 14 [jackson,lansing,alma,clare,grayling,gaylord,mackinawCity,theBridge,stIgnace,seney,marquette,covington,houghton,copperHarbor]
+Open: 1 [copperHarbor]
+Closed: 51 [ironwood,houghton,crystalFalls,covington,marinette,ironMountain,marquette,escanaba,rapidRiver,manistique,seney,saultSteMarie,stIgnace,theBridge,alpena,mackinawCity,charlevoix,traverseCity,frankfort,gaylord,kalkaska,ludington,portAustin,grayling,cadillac,standish,reedCity,portSanilac,michiganCity,southBend,bayCity,muskegon,portHuron,clare,saginaw,holland,angola,imlayCity,bentonHarbor,monroe,grandRapids,alma,flint,toledo,detroit,kalamazoo,brighton,battleCreek,annArbor,lansing,jackson]
+
+Search: astardirect Distance: 604
+Nodes: 14 [jackson,lansing,alma,clare,grayling,gaylord,mackinawCity,theBridge,stIgnace,seney,marquette,covington,houghton,copperHarbor]
+Open: 3 [copperHarbor,ironwood,marinette]
+Closed: 49 [houghton,crystalFalls,ironMountain,covington,michiganCity,southBend,angola,monroe,escanaba,alpena,portSanilac,toledo,portHuron,rapidRiver,portAustin,marquette,imlayCity,saultSteMarie,detroit,manistique,bentonHarbor,standish,bayCity,seney,stIgnace,theBridge,mackinawCity,flint,saginaw,traverseCity,charlevoix,ludington,frankfort,muskegon,holland,kalkaska,gaylord,brighton,kalamazoo,annArbor,reedCity,grayling,grandRapids,battleCreek,cadillac,clare,alma,lansing,jackson]
+
+Search: astarbridge Distance: 604
+Nodes: 14 [jackson,lansing,alma,clare,grayling,gaylord,mackinawCity,theBridge,stIgnace,seney,marquette,covington,houghton,copperHarbor]
+Open: 5 [copperHarbor,ironwood,southBend,michiganCity,marinette]
+Closed: 47 [houghton,crystalFalls,ironMountain,angola,covington,monroe,bentonHarbor,toledo,portSanilac,escanaba,portHuron,alpena,ludington,portAustin,frankfort,rapidRiver,holland,muskegon,detroit,imlayCity,traverseCity,marquette,saultSteMarie,kalamazoo,standish,manistique,charlevoix,reedCity,grandRapids,bayCity,saginaw,kalkaska,flint,cadillac,battleCreek,brighton,annArbor,seney,stIgnace,theBridge,mackinawCity,gaylord,grayling,clare,alma,lansing,jackson]
+
+Search: astarbridgeten Distance: 604
+Nodes: 14 [jackson,lansing,alma,clare,grayling,gaylord,mackinawCity,theBridge,stIgnace,seney,marquette,covington,houghton,copperHarbor]
+Open: 7 [copperHarbor,southBend,michiganCity,crystalFalls,ironwood,marinette,angola]
+Closed: 45 [houghton,monroe,bentonHarbor,ironMountain,toledo,covington,portSanilac,portHuron,ludington,alpena,holland,detroit,portAustin,frankfort,muskegon,imlayCity,escanaba,kalamazoo,traverseCity,rapidRiver,standish,grandRapids,reedCity,bayCity,saultSteMarie,saginaw,flint,battleCreek,marquette,charlevoix,brighton,annArbor,manistique,kalkaska,cadillac,seney,stIgnace,theBridge,mackinawCity,gaylord,grayling,clare,alma,lansing,jackson]
+
+Search: astarbridgefifty Distance: 604
+Nodes: 14 [jackson,lansing,alma,clare,grayling,gaylord,mackinawCity,theBridge,stIgnace,seney,marquette,covington,houghton,copperHarbor]
+Open: 19 [copperHarbor,ludington,crystalFalls,ironwood,frankfort,ironMountain,marinette,alpena,standish,bayCity,muskegon,saginaw,brighton,flint,grandRapids,angola,annArbor,battleCreek,toledo]
+Closed: 22 [houghton,traverseCity,reedCity,covington,cadillac,kalkaska,charlevoix,escanaba,saultSteMarie,rapidRiver,manistique,marquette,seney,stIgnace,theBridge,mackinawCity,gaylord,grayling,clare,alma,lansing,jackson]
+
+Search: bestfirst Distance: 604
+Nodes: 14 [jackson,lansing,alma,clare,grayling,gaylord,mackinawCity,theBridge,stIgnace,seney,marquette,covington,houghton,copperHarbor]
+Open: 22 [copperHarbor,crystalFalls,ironwood,rapidRiver,saultSteMarie,manistique,charlevoix,alpena,kalkaska,standish,bayCity,reedCity,cadillac,muskegon,saginaw,brighton,flint,grandRapids,angola,annArbor,battleCreek,toledo]
+Closed: 13 [houghton,covington,marquette,seney,stIgnace,theBridge,mackinawCity,gaylord,grayling,clare,alma,lansing,jackson]
+
+#############################################################################
+Start City: ironwood End City: saultSteMarie
+
+Search: djikstra Distance: 309
+Nodes: 5 [ironwood,covington,marquette,seney,saultSteMarie]
+Open: 2 [saultSteMarie,stIgnace]
+Closed: 12 [manistique,seney,marinette,rapidRiver,escanaba,copperHarbor,marquette,ironMountain,houghton,crystalFalls,covington,ironwood]
+
+Search: astardirect Distance: 309
+Nodes: 5 [ironwood,covington,marquette,seney,saultSteMarie]
+Open: 3 [saultSteMarie,stIgnace,marinette]
+Closed: 11 [seney,escanaba,rapidRiver,ironMountain,manistique,copperHarbor,houghton,marquette,crystalFalls,covington,ironwood]
+
+Search: astarbridge Distance: 309
+Nodes: 5 [ironwood,covington,marquette,seney,saultSteMarie]
+Open: 3 [saultSteMarie,stIgnace,marinette]
+Closed: 11 [seney,escanaba,rapidRiver,ironMountain,manistique,copperHarbor,houghton,marquette,crystalFalls,covington,ironwood]
+
+Search: astarbridgeten Distance: 309
+Nodes: 5 [ironwood,covington,marquette,seney,saultSteMarie]
+Open: 4 [saultSteMarie,stIgnace,escanaba,ironMountain]
+Closed: 9 [seney,manistique,copperHarbor,houghton,rapidRiver,marquette,crystalFalls,covington,ironwood]
+
+Search: astarbridgefifty Distance: 377
+Nodes: 7 [ironwood,covington,marquette,rapidRiver,manistique,stIgnace,saultSteMarie]
+Open: 6 [ironMountain,saultSteMarie,theBridge,escanaba,seney,houghton]
+Closed: 7 [crystalFalls,stIgnace,manistique,rapidRiver,marquette,covington,ironwood]
+
+Search: bestfirst Distance: 377
+Nodes: 7 [ironwood,covington,marquette,rapidRiver,manistique,stIgnace,saultSteMarie]
+Open: 6 [saultSteMarie,theBridge,escanaba,seney,crystalFalls,houghton]
+Closed: 6 [stIgnace,manistique,rapidRiver,marquette,covington,ironwood]
+
+#############################################################################
+Start City: detroit End City: alpena
+
+Search: djikstra Distance: 251
+Nodes: 6 [detroit,flint,saginaw,bayCity,standish,alpena]
+Open: 6 [charlevoix,mackinawCity,traverseCity,frankfort,ludington,alpena]
+Closed: 31 [gaylord,kalkaska,michiganCity,southBend,grayling,cadillac,reedCity,bentonHarbor,muskegon,holland,clare,grandRapids,standish,kalamazoo,angola,alma,portAustin,battleCreek,bayCity,saginaw,portSanilac,lansing,jackson,flint,toledo,portHuron,imlayCity,brighton,annArbor,monroe,detroit]
+
+Search: astardirect Distance: 251
+Nodes: 6 [detroit,flint,saginaw,bayCity,standish,alpena]
+Open: 8 [grayling,alpena,clare,alma,jackson,toledo,lansing,monroe]
+Closed: 11 [standish,bayCity,saginaw,annArbor,brighton,flint,portSanilac,portHuron,portAustin,imlayCity,detroit]
+
+Search: astarbridge Distance: 251
+Nodes: 6 [detroit,flint,saginaw,bayCity,standish,alpena]
+Open: 8 [grayling,alpena,clare,alma,jackson,toledo,lansing,monroe]
+Closed: 11 [standish,bayCity,saginaw,annArbor,brighton,flint,portSanilac,portHuron,portAustin,imlayCity,detroit]
+
+Search: astarbridgeten Distance: 251
+Nodes: 6 [detroit,flint,saginaw,bayCity,standish,alpena]
+Open: 7 [grayling,alpena,clare,alma,lansing,annArbor,monroe]
+Closed: 10 [standish,bayCity,saginaw,brighton,flint,portSanilac,portHuron,portAustin,imlayCity,detroit]
+
+Search: astarbridgefifty Distance: 251
+Nodes: 6 [detroit,flint,saginaw,bayCity,standish,alpena]
+Open: 8 [grayling,alpena,clare,alma,lansing,brighton,annArbor,monroe]
+Closed: 9 [standish,bayCity,saginaw,portSanilac,portHuron,flint,portAustin,imlayCity,detroit]
+
+Search: bestfirst Distance: 323
+Nodes: 6 [detroit,imlayCity,portAustin,bayCity,standish,alpena]
+Open: 10 [grayling,alpena,clare,saginaw,portSanilac,portHuron,flint,brighton,annArbor,monroe]
+Closed: 5 [standish,bayCity,portAustin,imlayCity,detroit]
+
+#############################################################################
+Start City: copperHarbor End City: annArbor
+
+Search: djikstra Distance: 623
+Nodes: 16 [copperHarbor,houghton,covington,marquette,seney,stIgnace,theBridge,mackinawCity,gaylord,grayling,standish,bayCity,saginaw,flint,brighton,annArbor]
+Open: 6 [annArbor,toledo,portHuron,bentonHarbor,angola,detroit]
+Closed: 43 [battleCreek,kalamazoo,brighton,jackson,portSanilac,imlayCity,holland,muskegon,portAustin,lansing,flint,grandRapids,saginaw,ludington,bayCity,alma,reedCity,standish,clare,frankfort,cadillac,traverseCity,kalkaska,alpena,grayling,gaylord,charlevoix,mackinawCity,theBridge,stIgnace,saultSteMarie,manistique,seney,marinette,escanaba,rapidRiver,ironMountain,ironwood,marquette,crystalFalls,covington,houghton,copperHarbor]
+
+Search: astardirect Distance: 623
+Nodes: 16 [copperHarbor,houghton,covington,marquette,seney,stIgnace,theBridge,mackinawCity,gaylord,grayling,standish,bayCity,saginaw,flint,brighton,annArbor]
+Open: 13 [annArbor,detroit,imlayCity,portSanilac,reedCity,frankfort,ludington,battleCreek,grandRapids,jackson,angola,portAustin,muskegon]
+Closed: 31 [brighton,flint,saginaw,cadillac,traverseCity,lansing,alpena,bayCity,saultSteMarie,kalkaska,charlevoix,alma,clare,standish,ironwood,grayling,gaylord,mackinawCity,theBridge,stIgnace,seney,escanaba,manistique,marinette,ironMountain,rapidRiver,marquette,crystalFalls,covington,houghton,copperHarbor]
+
+Search: astarbridge Distance: 623
+Nodes: 16 [copperHarbor,houghton,covington,marquette,seney,stIgnace,theBridge,mackinawCity,gaylord,grayling,standish,bayCity,saginaw,flint,brighton,annArbor]
+Open: 15 [annArbor,detroit,imlayCity,portSanilac,reedCity,marinette,frankfort,ludington,battleCreek,grandRapids,jackson,angola,portAustin,muskegon,ironwood]
+Closed: 29 [brighton,flint,saginaw,cadillac,escanaba,ironMountain,traverseCity,lansing,alpena,bayCity,saultSteMarie,kalkaska,charlevoix,alma,clare,standish,seney,stIgnace,grayling,gaylord,mackinawCity,theBridge,manistique,rapidRiver,marquette,crystalFalls,covington,houghton,copperHarbor]
+
+Search: astarbridgeten Distance: 623
+Nodes: 16 [copperHarbor,houghton,covington,marquette,seney,stIgnace,theBridge,mackinawCity,gaylord,grayling,standish,bayCity,saginaw,flint,brighton,annArbor]
+Open: 17 [annArbor,detroit,imlayCity,portSanilac,saultSteMarie,reedCity,muskegon,portAustin,angola,jackson,grandRapids,battleCreek,cadillac,traverseCity,ironMountain,escanaba,ironwood]
+Closed: 24 [brighton,flint,saginaw,alpena,seney,stIgnace,charlevoix,kalkaska,lansing,bayCity,alma,clare,standish,grayling,gaylord,mackinawCity,theBridge,manistique,crystalFalls,rapidRiver,marquette,covington,houghton,copperHarbor]
+
+Search: astarbridgefifty Distance: 649
+Nodes: 16 [copperHarbor,houghton,covington,marquette,rapidRiver,manistique,stIgnace,theBridge,mackinawCity,gaylord,grayling,clare,alma,lansing,brighton,annArbor]
+Open: 20 [annArbor,detroit,battleCreek,flint,grandRapids,jackson,angola,muskegon,reedCity,cadillac,saginaw,portAustin,alpena,kalkaska,charlevoix,saultSteMarie,escanaba,seney,crystalFalls,ironwood]
+Closed: 17 [brighton,lansing,alma,clare,bayCity,standish,grayling,gaylord,mackinawCity,theBridge,stIgnace,manistique,rapidRiver,marquette,covington,houghton,copperHarbor]
+
+Search: bestfirst Distance: 683
+Nodes: 16 [copperHarbor,houghton,covington,marquette,rapidRiver,manistique,stIgnace,theBridge,mackinawCity,kalkaska,cadillac,clare,alma,lansing,brighton,annArbor]
+Open: 22 [annArbor,detroit,battleCreek,flint,grandRapids,jackson,angola,muskegon,saginaw,bayCity,frankfort,reedCity,traverseCity,grayling,alpena,gaylord,charlevoix,saultSteMarie,escanaba,seney,crystalFalls,ironwood]
+Closed: 15 [brighton,lansing,alma,clare,cadillac,kalkaska,mackinawCity,theBridge,stIgnace,manistique,rapidRiver,marquette,covington,houghton,copperHarbor]
+
+#############################################################################
+Start City: saultSteMarie End City: holland
+
+Search: djikstra Distance: 314
+Nodes: 9 [saultSteMarie,stIgnace,theBridge,mackinawCity,kalkaska,cadillac,reedCity,grandRapids,holland]
+Open: 10 [battleCreek,jackson,angola,brighton,detroit,imlayCity,kalamazoo,holland,copperHarbor,portSanilac]
+Closed: 35 [ironwood,muskegon,portAustin,lansing,flint,grandRapids,houghton,saginaw,crystalFalls,ludington,bayCity,alma,marinette,ironMountain,covington,reedCity,standish,clare,frankfort,cadillac,escanaba,rapidRiver,marquette,traverseCity,kalkaska,alpena,grayling,manistique,gaylord,charlevoix,seney,mackinawCity,theBridge,stIgnace,saultSteMarie]
+
+Search: astardirect Distance: 314
+Nodes: 9 [saultSteMarie,stIgnace,theBridge,mackinawCity,kalkaska,cadillac,reedCity,grandRapids,holland]
+Open: 9 [lansing,kalamazoo,holland,rapidRiver,marquette,bayCity,alma,standish,alpena]
+Closed: 18 [grandRapids,muskegon,manistique,seney,ludington,clare,frankfort,reedCity,grayling,cadillac,kalkaska,traverseCity,gaylord,charlevoix,mackinawCity,theBridge,stIgnace,saultSteMarie]
+
+Search: astarbridge Distance: 314
+Nodes: 9 [saultSteMarie,stIgnace,theBridge,mackinawCity,kalkaska,cadillac,reedCity,grandRapids,holland]
+Open: 9 [lansing,kalamazoo,holland,bayCity,alma,standish,alpena,manistique,seney]
+Closed: 16 [grandRapids,muskegon,ludington,clare,frankfort,reedCity,grayling,cadillac,kalkaska,traverseCity,gaylord,charlevoix,mackinawCity,theBridge,stIgnace,saultSteMarie]
+
+Search: astarbridgeten Distance: 314
+Nodes: 9 [saultSteMarie,stIgnace,theBridge,mackinawCity,kalkaska,cadillac,reedCity,grandRapids,holland]
+Open: 9 [lansing,kalamazoo,holland,bayCity,alma,standish,alpena,manistique,seney]
+Closed: 16 [grandRapids,muskegon,ludington,clare,frankfort,reedCity,grayling,cadillac,kalkaska,gaylord,traverseCity,charlevoix,mackinawCity,theBridge,stIgnace,saultSteMarie]
+
+Search: astarbridgefifty Distance: 314
+Nodes: 9 [saultSteMarie,stIgnace,theBridge,mackinawCity,kalkaska,cadillac,reedCity,grandRapids,holland]
+Open: 14 [lansing,kalamazoo,muskegon,holland,ludington,clare,frankfort,traverseCity,grayling,alpena,gaylord,charlevoix,manistique,seney]
+Closed: 8 [grandRapids,reedCity,cadillac,kalkaska,mackinawCity,theBridge,stIgnace,saultSteMarie]
+
+Search: bestfirst Distance: 314
+Nodes: 9 [saultSteMarie,stIgnace,theBridge,mackinawCity,kalkaska,cadillac,reedCity,grandRapids,holland]
+Open: 14 [lansing,kalamazoo,muskegon,holland,ludington,clare,frankfort,traverseCity,grayling,alpena,gaylord,charlevoix,manistique,seney]
+Closed: 8 [grandRapids,reedCity,cadillac,kalkaska,mackinawCity,theBridge,stIgnace,saultSteMarie]
+
+#############################################################################
+Start City: kalamazoo End City: battleCreek
+
+Search: djikstra Distance: 24
+Nodes: 2 [kalamazoo,battleCreek]
+Open: 3 [battleCreek,bentonHarbor,grandRapids]
+Closed: 1 [kalamazoo]
+
+Search: astardirect Distance: 24
+Nodes: 2 [kalamazoo,battleCreek]
+Open: 3 [battleCreek,bentonHarbor,grandRapids]
+Closed: 1 [kalamazoo]
+
+Search: astarbridge Distance: 24
+Nodes: 2 [kalamazoo,battleCreek]
+Open: 3 [battleCreek,bentonHarbor,grandRapids]
+Closed: 1 [kalamazoo]
+
+Search: astarbridgeten Distance: 24
+Nodes: 2 [kalamazoo,battleCreek]
+Open: 3 [battleCreek,bentonHarbor,grandRapids]
+Closed: 1 [kalamazoo]
+
+Search: astarbridgefifty Distance: 24
+Nodes: 2 [kalamazoo,battleCreek]
+Open: 3 [battleCreek,bentonHarbor,grandRapids]
+Closed: 1 [kalamazoo]
+
+Search: bestfirst Distance: 24
+Nodes: 2 [kalamazoo,battleCreek]
+Open: 3 [battleCreek,bentonHarbor,grandRapids]
+Closed: 1 [kalamazoo]
+
+#############################################################################
+Start City: mackinawCity End City: stIgnace
+
+Search: djikstra Distance: 9
+Nodes: 3 [mackinawCity,theBridge,stIgnace]
+Open: 5 [stIgnace,alpena,gaylord,kalkaska,charlevoix]
+Closed: 2 [theBridge,mackinawCity]
+
+Search: astardirect Distance: 9
+Nodes: 3 [mackinawCity,theBridge,stIgnace]
+Open: 5 [stIgnace,alpena,gaylord,kalkaska,charlevoix]
+Closed: 2 [theBridge,mackinawCity]
+
+Search: astarbridge Distance: 9
+Nodes: 3 [mackinawCity,theBridge,stIgnace]
+Open: 5 [stIgnace,alpena,gaylord,kalkaska,charlevoix]
+Closed: 2 [theBridge,mackinawCity]
+
+Search: astarbridgeten Distance: 9
+Nodes: 3 [mackinawCity,theBridge,stIgnace]
+Open: 5 [stIgnace,alpena,gaylord,kalkaska,charlevoix]
+Closed: 2 [theBridge,mackinawCity]
+
+Search: astarbridgefifty Distance: 9
+Nodes: 3 [mackinawCity,theBridge,stIgnace]
+Open: 5 [stIgnace,alpena,gaylord,kalkaska,charlevoix]
+Closed: 2 [theBridge,mackinawCity]
+
+Search: bestfirst Distance: 9
+Nodes: 3 [mackinawCity,theBridge,stIgnace]
+Open: 5 [stIgnace,alpena,gaylord,kalkaska,charlevoix]
+Closed: 2 [theBridge,mackinawCity]
+
+#############################################################################
+Start City: marquette End City: copperHarbor
+
+Search: djikstra Distance: 157
+Nodes: 4 [marquette,covington,houghton,copperHarbor]
+Open: 3 [copperHarbor,saultSteMarie,stIgnace]
+Closed: 11 [ironwood,marinette,ironMountain,houghton,manistique,crystalFalls,seney,escanaba,covington,rapidRiver,marquette]
+
+Search: astardirect Distance: 157
+Nodes: 4 [marquette,covington,houghton,copperHarbor]
+Open: 7 [copperHarbor,manistique,escanaba,saultSteMarie,stIgnace,crystalFalls,ironwood]
+Closed: 5 [houghton,rapidRiver,seney,covington,marquette]
+
+Search: astarbridge Distance: 157
+Nodes: 4 [marquette,covington,houghton,copperHarbor]
+Open: 7 [copperHarbor,manistique,escanaba,saultSteMarie,stIgnace,crystalFalls,ironwood]
+Closed: 5 [houghton,rapidRiver,seney,covington,marquette]
+
+Search: astarbridgeten Distance: 157
+Nodes: 4 [marquette,covington,houghton,copperHarbor]
+Open: 7 [copperHarbor,manistique,escanaba,saultSteMarie,stIgnace,crystalFalls,ironwood]
+Closed: 5 [houghton,rapidRiver,seney,covington,marquette]
+
+Search: astarbridgefifty Distance: 157
+Nodes: 4 [marquette,covington,houghton,copperHarbor]
+Open: 7 [copperHarbor,crystalFalls,ironwood,saultSteMarie,stIgnace,manistique,rapidRiver]
+Closed: 4 [houghton,covington,seney,marquette]
+
+Search: bestfirst Distance: 157
+Nodes: 4 [marquette,covington,houghton,copperHarbor]
+Open: 7 [copperHarbor,crystalFalls,ironwood,saultSteMarie,stIgnace,manistique,rapidRiver]
+Closed: 4 [houghton,covington,seney,marquette]
+
+#############################################################################
+Start City: michiganCity End City: marquette
+
+Search: djikstra Distance: 519
+Nodes: 12 [michiganCity,bentonHarbor,holland,grandRapids,reedCity,cadillac,kalkaska,mackinawCity,theBridge,stIgnace,seney,marquette]
+Open: 3 [ironMountain,marinette,marquette]
+Closed: 44 [escanaba,rapidRiver,manistique,seney,saultSteMarie,alpena,stIgnace,theBridge,mackinawCity,portAustin,portSanilac,charlevoix,standish,gaylord,portHuron,grayling,traverseCity,bayCity,imlayCity,saginaw,kalkaska,frankfort,detroit,flint,clare,alma,cadillac,monroe,brighton,annArbor,toledo,ludington,reedCity,lansing,jackson,muskegon,grandRapids,battleCreek,angola,kalamazoo,holland,bentonHarbor,southBend,michiganCity]
+
+Search: astardirect Distance: 519
+Nodes: 12 [michiganCity,bentonHarbor,holland,grandRapids,reedCity,cadillac,kalkaska,mackinawCity,theBridge,stIgnace,seney,marquette]
+Open: 11 [portSanilac,marquette,saultSteMarie,manistique,annArbor,alpena,brighton,flint,toledo,standish,bayCity]
+Closed: 27 [saginaw,seney,stIgnace,jackson,theBridge,mackinawCity,alma,gaylord,lansing,angola,grayling,charlevoix,clare,battleCreek,traverseCity,kalkaska,kalamazoo,cadillac,frankfort,reedCity,grandRapids,southBend,ludington,muskegon,holland,bentonHarbor,michiganCity]
+
+Search: astarbridge Distance: 519
+Nodes: 12 [michiganCity,bentonHarbor,holland,grandRapids,reedCity,cadillac,kalkaska,mackinawCity,theBridge,stIgnace,seney,marquette]
+Open: 12 [jackson,lansing,charlevoix,alpena,standish,marquette,saultSteMarie,manistique,bayCity,traverseCity,angola,alma]
+Closed: 20 [battleCreek,gaylord,frankfort,grayling,seney,stIgnace,theBridge,mackinawCity,clare,kalamazoo,ludington,kalkaska,southBend,cadillac,muskegon,reedCity,grandRapids,holland,bentonHarbor,michiganCity]
+
+Search: astarbridgeten Distance: 519
+Nodes: 12 [michiganCity,bentonHarbor,holland,grandRapids,reedCity,cadillac,kalkaska,mackinawCity,theBridge,stIgnace,seney,marquette]
+Open: 14 [marquette,saultSteMarie,manistique,alpena,gaylord,charlevoix,traverseCity,frankfort,alma,grayling,clare,lansing,kalamazoo,southBend]
+Closed: 13 [seney,stIgnace,theBridge,mackinawCity,ludington,muskegon,kalkaska,cadillac,reedCity,grandRapids,holland,bentonHarbor,michiganCity]
+
+Search: astarbridgefifty Distance: 549
+Nodes: 12 [michiganCity,bentonHarbor,holland,muskegon,ludington,traverseCity,charlevoix,mackinawCity,theBridge,stIgnace,seney,marquette]
+Open: 12 [marquette,saultSteMarie,manistique,alpena,gaylord,kalkaska,cadillac,reedCity,alma,grandRapids,kalamazoo,southBend]
+Closed: 12 [seney,stIgnace,theBridge,mackinawCity,charlevoix,traverseCity,frankfort,ludington,muskegon,holland,bentonHarbor,michiganCity]
+
+Search: bestfirst Distance: 549
+Nodes: 12 [michiganCity,bentonHarbor,holland,muskegon,ludington,traverseCity,charlevoix,mackinawCity,theBridge,stIgnace,seney,marquette]
+Open: 12 [marquette,saultSteMarie,manistique,alpena,gaylord,kalkaska,reedCity,frankfort,alma,grandRapids,kalamazoo,southBend]
+Closed: 11 [seney,stIgnace,theBridge,mackinawCity,charlevoix,traverseCity,ludington,muskegon,holland,bentonHarbor,michiganCity]
+
+#############################################################################
+Start City: kalamazoo End City: kalamazoo
+
+Search: djikstra Distance: 0
+Nodes: 1 [kalamazoo]
+Open: 1 [kalamazoo]
+Closed: 0 []
+
+Search: astardirect Distance: 0
+Nodes: 1 [kalamazoo]
+Open: 1 [kalamazoo]
+Closed: 0 []
+
+Search: astarbridge Distance: 0
+Nodes: 1 [kalamazoo]
+Open: 1 [kalamazoo]
+Closed: 0 []
+
+Search: astarbridgeten Distance: 0
+Nodes: 1 [kalamazoo]
+Open: 1 [kalamazoo]
+Closed: 0 []
+
+Search: astarbridgefifty Distance: 0
+Nodes: 1 [kalamazoo]
+Open: 1 [kalamazoo]
+Closed: 0 []
+
+Search: bestfirst Distance: 0
+Nodes: 1 [kalamazoo]
+Open: 1 [kalamazoo]
+Closed: 0 []

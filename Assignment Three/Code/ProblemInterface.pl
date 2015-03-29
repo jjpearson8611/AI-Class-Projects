@@ -31,13 +31,78 @@ goal_reached( StateIn ) :-
 %	- (0 would be returned if this is not an intelligent search)
 %	- called by add_state #1 (& #3)
 
-find_hhat(StateIn,HHatOut) :-
+find_hhat(_,HHatOut) :-
 	state(djikstra),
 	HHatOut is 0.
 
 find_hhat( StateIn, HHatOut) :-
-	current(_, GoalState),
-	airDistance(StateIn,GoalState, HHatOut).
+	state(astardirect),
+	norm_hhat(StateIn, HHatOut).
+	
+find_hhat(StateIn, HHatOut) :-
+	state(astarbridgeten),
+	current(_,GoalState),
+	differentPen(StateIn, GoalState),
+	airDistance(StateIn, theBridge, Dist1),
+	airDistance(theBridge, GoalState, Dist2),
+	X is Dist1 + Dist2,
+	HHatOut is X * 1.1.	
+	
+find_hhat( StateIn, HHatOut) :-
+	state(astarbridgeten),
+	current(_,GoalState),
+	\+ differentPen(StateIn, GoalState),
+	norm_hhat(StateIn, X),
+	HHatOut is X * 1.1.
+	
+find_hhat(StateIn, HHatOut) :-
+	state(astarbridgefifty),
+	current(_,GoalState),
+	differentPen(StateIn, GoalState),
+	airDistance(StateIn, theBridge, Dist1),
+	airDistance(theBridge, GoalState, Dist2),
+	X is Dist1 + Dist2,
+	HHatOut is X * 1.5.
+
+find_hhat( StateIn, HHatOut) :-
+	state(astarbridgefifty),
+	current(_,GoalState),
+	\+ differentPen(StateIn, GoalState),
+	norm_hhat(StateIn, X),
+	HHatOut is X * 1.5.
+	
+	
+find_hhat(StateIn, HHatOut) :-
+	state(astarbridge),
+	current(_,GoalState),
+	differentPen(StateIn, GoalState),
+	airDistance(StateIn, theBridge, Dist1),
+	airDistance(theBridge, GoalState, Dist2),
+	HHatOut is Dist1 + Dist2.
+
+find_hhat(StateIn, HHatOut) :-
+	state(astarbridge),
+	norm_hhat(StateIn, HHatOut).
+	
+find_hhat(StateIn, HHatOut) :-
+	state(bestfirst),
+	current(_,GoalState),
+	differentPen(StateIn, GoalState),
+	airDistance(StateIn, theBridge, Dist1),
+	airDistance(theBridge, GoalState, Dist2),
+	HHatOut is Dist1 + Dist2.
+	
+find_hhat( StateIn, HHatOut) :-
+	state(bestfirst),
+	current(_,GoalState),
+	\+ differentPen(StateIn, GoalState),
+	norm_hhat(StateIn, HHatOut).
+
+	
+norm_hhat(StateIn, HHatOut) :-
+	current(_,GoalState),
+	airDistance(StateIn, GoalState, HHatOut).
+	
 
 airDistance(A,B,Distance) :-
 	latlong(Lat1,Long1, A),
@@ -75,9 +140,7 @@ find_cost_of_path([H1, H2 | Tail], Y) :-
 	Y is NewDist + X + G.
 	
 find_cost_of_path([H1, H2], Y) :-
-	connected(H1, H2, X),
-	find_cost_of_path(Tail,NewDist),
-	Y is NewDist + X.
+	connected(H1, H2, Y).
 	
 costFinder(X, [H1 | _], Y) :-
 	connected(X,H1,G),

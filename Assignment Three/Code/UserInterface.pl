@@ -12,44 +12,60 @@ getNextPair(X,Y) :-
 	assertz(current(X,Y)).
 	
 printReport(List, Distance) :-
-	write('Distance '),
-	write(Distance),
-	write(' Open: '),
-	countOpen(OpenCount),
+	state(X),
+	write('Search: '),
+	write(X),
+	write(' Distance: '),
+	write(Distance),nl,
+	handleList(List,ListCount),
+	write('Nodes: '),
+	reverse(List,Reversed),
+	write(ListCount),
+	write(' '),
+	write(Reversed),nl,
+	write('Open: '),
+	handleOpen(OpenCount,OpenBag),
 	write(OpenCount),
-	!,
-	write(' Closed: '),
-	countClosed(ClosedCount),
-	write(ClosedCount),nl,
-	!,
-	printBackwardsList(List),nl.
-%	printSearchName,
-%	write(Distance),
-%	printBackwardsList(List),nl,
-%	printListOfClosed,nl,
-%	printListOfOpen,nl.
+	write(' '),
+	write(OpenBag),nl,
+	write('Closed: '),
+	handleClosed(ClosedCount,ClosedBag),
+	write(ClosedCount),
+	write(' '),
+	write(ClosedBag),nl.
 	
 final_routines(_) :-
 	nl.
 	
 newPair :-
-	write('#######################################'),nl,
+	nl,write('#############################################################################'),nl,
 	current(X,Y),
 	write('Start City: '),
 	write(X),
 	write(' End City: '),
 	write(Y), nl.
 	
-handleOpen(X) :-
-	bagof(Y,opened(Y,_,_,_), List),
-	lengthOfList(List,X)
-
-handleClosed(X) :-
-	bagof(Y,closed(Y,_), List),
+handleOpen(X, List) :-
+	bagof(A,B^C^D^opened(A,B,C,D), List),
 	lengthOfList(List,X).
 	
-countClosed(X) :-
-	X is 0.
+handleOpen(X,Y):-
+	X is 0,
+	Y = [].
+
+handleClosed(X, List) :-
+	bagof(Y,Z^closed(Y,Z), List),
+	lengthOfList(List,X).
+	
+handleClosed(X,Y):-
+	X is 0,
+	Y = [].
+	
+handleList(X, Y) :-
+	lengthOfList(X,Length),
+	Y is Length.
+	
+
 	
 printBackwardsList([]).
 printBackwardsList([H|T]) :-
@@ -60,16 +76,6 @@ printBackwardsList([H|T]) :-
 printSearchName :-
 	search(X),
 	write(X).
-	
-printFirstPortion(List) :-
-	getLastElement(List, First),
-	getFirstElement(List, Last),
-	print("First Location "),
-	print(First),
-	print(" Ending Location "),
-	print(Last),
-	nl.
-	
 
 lengthOfList([],0).
 lengthOfList([_|T], Y) :-
