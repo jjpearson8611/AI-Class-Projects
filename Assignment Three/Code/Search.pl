@@ -1,4 +1,4 @@
-% A* Search (Generic Search)
+% A* Search (Generic Search) Jason Pearson
 
 :- dynamic(opened/4).
 :- dynamic(closed/2).
